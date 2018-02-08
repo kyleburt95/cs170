@@ -5,8 +5,14 @@
 
 #searchDiv {
   margin: auto;
-  width: 50%;
+  width: 60%;
   text-align: center;
+  display: flex; justify-content: center;
+}
+
+.container{
+  margin: 5em;
+  display: inline-block;
 }
 
 input {
@@ -41,16 +47,23 @@ input {
 }
 
 .searchButton {
-  padding:6px;
-  font-size: 17px;
-  border: none;
+  padding: 0.3em;
+  font-size: 0.7em;
+  border: 0.1em solid black;
+  width: 5em;
 }
 
-.row button {
+.catButton button {
   padding: 2em;
-  margin:8px;
-  margin-left:3px;
-  margin-right: 3px;
+  margin-left:1.5em;
+  margin-right: 1.5em;
+  width: 6em;
+  display: flex; justify-content: center;
 
+}
+
+a {
+  color:black;
+  text-decoration: underline;
 }
 
