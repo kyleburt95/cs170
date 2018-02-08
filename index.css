@@ -34,19 +34,23 @@ input {
   margin: .5em;
   border: 1px solid black;
   text-align: center;
-<<<<<<< HEAD
   width: 25%;
   height: 25%;
-
-=======
   width: 10%;
   height: 10%
->>>>>>> 61d6284f79c287fa162c8f9ac1d818e5d49e3b09
 }
 
 .searchButton {
   padding:6px;
   font-size: 17px;
   border: none;
+}
+
+.row button {
+  padding: 2em;
+  margin:8px;
+  margin-left:3px;
+  margin-right: 3px;
+
 }
 
