@@ -1,0 +1,10 @@
+#image-map {
+      width: 100%;
+      height: 50vh;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+.row {
+  margin: 4vh;
+}
