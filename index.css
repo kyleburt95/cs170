@@ -26,14 +26,17 @@ input {
   border: none
 }
 
-
+.row1 {
+  display: block;
+}
 
 .categoryButton {
   margin: .5em;
-  border: none;
+  border: 1px solid black;
   text-align: center;
-  width: 12em;
-  height: 12em
+  width: 25%;
+  height: 25%;
+
 }
 
 .searchButton {
