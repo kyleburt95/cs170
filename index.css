@@ -1,6 +1,6 @@
 * {
   text-align: center;
-  font-size: 17px;
+  font-size: 3vw;
 }
 
 #searchDiv {
@@ -34,9 +34,14 @@ input {
   margin: .5em;
   border: 1px solid black;
   text-align: center;
+<<<<<<< HEAD
   width: 25%;
   height: 25%;
 
+=======
+  width: 10%;
+  height: 10%
+>>>>>>> 61d6284f79c287fa162c8f9ac1d818e5d49e3b09
 }
 
 .searchButton {
