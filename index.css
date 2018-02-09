@@ -5,10 +5,9 @@
 
 #searchDiv {
   margin: auto;
-  width: 60%;
-  text-align: center;
   display: flex; justify-content: center;
 }
+
 
 .container{
   margin: 5em;
@@ -17,10 +16,12 @@
 
 input {
   display: block
-  margin: 0 auto;
-  padding: 6px;
-  
-  font-size: 17px;
+  padding: 0.2px;
+  font-size: 0.4em;
+  width: 20em;
+}
+.search_bar{
+  vertical-align: middle;
 }
 
 #addButton {
@@ -65,5 +66,13 @@ input {
 a {
   color:black;
   text-decoration: underline;
+}
+/*.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}*/
+.test{
+  align-content: right;
+  align-items: right;
+  padding-left: 25em;
 }
 
