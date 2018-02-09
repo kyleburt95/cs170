@@ -31,6 +31,38 @@ function booksToggle() {
         .openOn(map);
 }
 
+function stairsToggle() {
+  L.popup()
+        .setLatLng([-66.25, 29.25])
+        .setContent("Stairs")
+        .openOn(map);
+}
+
+function escUpToggle() {
+  L.popup()
+        .setLatLng([-46.875, 26.25])
+        .setContent("Escalator Up")
+        .openOn(map);
+}
+
+
+function escDownToggle() {
+  L.popup()
+        .setLatLng([-54, 23])
+        .setContent("Escalator Down")
+        .openOn(map);
+}
+
+function elevatorToggle() {
+  L.popup()
+        .setLatLng([-47, 36.9375])
+        .setContent("Elevator")
+        .openOn(map);
+}
+
+
+
+
 
 
 // Using leaflet.js to pan and zoom a big image.
@@ -65,6 +97,10 @@ var firstCheck = document.querySelector(".firstCheck");
 var secondCheck = document.querySelector(".secondCheck");
 var thirdCheck = document.querySelector(".thirdCheck");
 var fourthCheck = document.querySelector(".fourthCheck");
+var fifthCheck = document.querySelector(".fifthCheck");
+var sixthCheck = document.querySelector(".sixthCheck");
+var seventhCheck = document.querySelector(".seventhCheck");
+var eighthCheck = document.querySelector(".eighthCheck");
 
 
 firstCheck.addEventListener( 'change', function() {
@@ -97,6 +133,43 @@ fourthCheck.addEventListener( 'change', function() {
     } else {
         // Checkbox is not checked..
     }
+});
+
+fifthCheck.addEventListener( 'change', function() {
+    if(this.checked) {
+        stairsToggle();
+    } else {
+        // Checkbox is not checked..
+    }
+});
+
+sixthCheck.addEventListener( 'change', function() {
+    if(this.checked) {
+        escUpToggle();
+    } else {
+        // Checkbox is not checked..
+    }
+});
+
+seventhCheck.addEventListener( 'change', function() {
+    if(this.checked) {
+        escDownToggle();
+    } else {
+        // Checkbox is not checked..
+    }
+});
+
+eighthCheck.addEventListener( 'change', function() {
+    if(this.checked) {
+        elevatorToggle();
+    } else {
+        // Checkbox is not checked..
+    }
+});
+
+//to get dropdown menu to toggle
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
 });
 
 
