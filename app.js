@@ -20,6 +20,7 @@ var history = require('./routes/history');
 var map = require('./routes/map');
 var sporting = require('./routes/sporting');
 var storeProfile = require('./routes/storeProfile');
+var help = require('./routes/help');
 
 
 // Example route
@@ -41,6 +42,7 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('staticassets'));
 
 // development only
 if ('development' == app.get('env')) {
@@ -49,6 +51,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/department', department.view);
+app.get('/index', index.view);
 app.get('/addstore', addstore.view);
 app.get('/bookstore', bookstore.view);
 app.get('/categories', categories.view);
@@ -59,6 +62,7 @@ app.get('/history', history.view);
 app.get('/map', map.view);
 app.get('/sporting', sporting.view);
 app.get('/storeProfile', storeProfile.view);
+app.get('/help', help.view);
 
 
 
