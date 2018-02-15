@@ -23,6 +23,8 @@ var storeProfile = require('./routes/storeProfile');
 var help = require('./routes/help');
 
 
+
+
 // Example route
 // var user = require('./routes/user');
 
@@ -42,7 +44,8 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static('staticassets'));
+app.use(express.static( 'staticassets'));
+
 
 // development only
 if ('development' == app.get('env')) {
