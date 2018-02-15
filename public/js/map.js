@@ -76,7 +76,7 @@ function elevatorToggle() {
     // dimensions of the image
     var w = 792,
         h = 612,
-        url = "bookstoreBlack.png";
+        url = "/bookstoreBlack.png";
     // calculate the edges of the image, in coordinate space
     var southWest = map.unproject([0, h], map.getMaxZoom()-1);
     var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
