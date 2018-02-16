@@ -124,7 +124,7 @@
 			 "name": "Ace Downtown Hardware",
 				"phoneNumber":"(619)544-9400",
 				"storeHours":"Mon - Fri: 8:00 - 8:00",
-				"PriceRange": "$$",
+				"priceRange": "$$",
 				"address":"675 6th Ave San Diego CA 92101",
 				"storePhotos":"http://www.welcometosandiego.com/wp-content/uploads/2010/08/Ace-Hardware-San-Diego-1024x680.jpg",
 				"accesibilityRating":"3/10"  			
@@ -133,7 +133,7 @@
 				"name": "Coronado Hardware Glass & Paint",
 				"phoneNumber":"(619)435-2266",
 				"storeHours":"Mon - Fri: 8:00 - 8:00",
-				"PriceRange": "$$",
+				"priceRange": "$$",
 				"address":"140 Orange Ave Coronado CA 92118",
 				"storePhotos":"http://coronadovisitorcenter.com/static/media/uploads/lifestyle/.thumbnails/178303_383636491691987_145682180_o.jpg/178303_383636491691987_145682180_o-555x332.jpg",
 				"accesibilityRating":"4/10"
@@ -142,7 +142,7 @@
 			  	"name": "Northpark Hardware",
 				"phoneNumber":"(619)295-2125",
 				"storeHours":"Mon - Fri: 8:00 - 6:00",
-				"PriceRange": "$$",
+				"priceRange": "$$",
 				"address":"3090 University Ave San Diego CA 92104",
 				"storePhotos":"https://s3-media3.fl.yelpcdn.com/bphoto/rm6d6J2U1BXPPTcrf_1G4A/l.jpg",
 				"accesibilityRating":"4/10"
@@ -178,7 +178,7 @@
 			  	"name": "DICK'S Sporting Goods",
 				"phoneNumber":"(619)523-0975",
 				"storeHours":"Mon - Fri: 9:00 - 9:30",
-				"PriceRange": "$$",
+				"priceRange": "$$",
 				"address":"3265 Sports Arena Blvd San Diego CA 92110",
 				"storePhotos":"http://storelocator.dickssportinggoods.com/store_photos/1026-1-l.jpg",
 				"accesibilityRating":"6/10"	
@@ -187,7 +187,7 @@
 				"name": "A & B Sporting Goods",
 				"phoneNumber":"(619)295-2825",
 				"storeHours":"Mon - Fri: 9:00 - 5:30",
-				"PriceRange": "$",
+				"priceRange": "$",
 				"address":"3027 University Ave San Diego CA 92104",
 				"storePhotos":"http://www.explorenorthpark.com/wp-content/uploads/2016/07/ABSP1.png",
 				"accesibilityRating":"4/10"	
@@ -196,7 +196,7 @@
 			  	"name": "Sports Palace",
 				"phoneNumber":"(619)233-6084",
 				"storeHours":"Mon - Fri: 10:00 - 4:00",
-				"PriceRange": "$$",
+				"priceRange": "$$",
 				"address":"339 &th Ave San Diego CA 92101",
 				"storePhotos":"https://s3-media1.fl.yelpcdn.com/bphoto/CpYVD6cIU04aoeo0wFeXOg/o.jpg",
 				"accesibilityRating":"5/10"	
