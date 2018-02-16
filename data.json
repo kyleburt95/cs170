@@ -7,7 +7,7 @@
 				"PriceRange": "$",
 				"address":"3793 30th St San Diego CA 92104",
 				"storePhotos":"http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
-				"accesibilityRating":"6/10"			
+				"accesibilityRating":"Accesibility Rating 6/10"			
 		},
 		{
 			 "name": "Adams Avenue Book Store",
@@ -16,7 +16,7 @@
 				"PriceRange": "$",
 				"address":"3502 Adams Ave San Diego CA 92116",
 				"storePhotos":"https://pics.librarything.com/picsizes/61/12/6112ebf293fd6dc63756a6541674259416c6743.jpg",
-				"accesibilityRating":"5/10"		
+				"accesibilityRating":"Accesibility Rating 5/10"		
 		},
 		{
 			   "name": "Northpark Hardware",
@@ -25,7 +25,7 @@
 				"PriceRange": "$",
 				"address":"3817 th Ave San Diego CA 92103",
 				"storePhotos":"hhttp://www.hoboes.com/library/graphics/reviews/bookstores/Bluestocking.jpg",
-				"accesibilityRating":"4/10"		
+				"accesibilityRating":"Accesibility Rating 4/10"		
 		}		
 	],
   
@@ -37,7 +37,7 @@
 				"priceRange": "$",
 				"address": "4545 La Jolla Village Dr, San Diego, CA 92122",
 				"storePhotos":"https://igx.4sqi.net/img/general/200x200/17691721_psdZn3ULK3CnNxGN8xfedAe5aoLpUIQ2AottkGZofUY.jpg",
-				"accesibilityRating": "4/10" 		
+				"accesibilityRating": "Accesibility Rating 4/10" 		
 		},
 		{
 			 "name": "Ralphs",
@@ -46,7 +46,7 @@
 				"priceRange": "$$",
 				"address": "7007 Friars Rd #713, San Diego, CA 92108",
 				"storePhotos":"https://crabtree-valley-mall.com/sites/default/files/styles/store_image/public/Commercial_Crabtree2117-3183027437-O.jpg?itok=LuII7iF4",
-				"accesibilityRating": "6/10"
+				"accesibilityRating": "Accesibility Rating 6/10"
 		},
 		{
 			  "name": "Forever 21",
@@ -55,7 +55,7 @@
 				"priceRange": "$$",
 				"address": "4545 La Jolla Village Dr H 10, San Diego, CA 92122",
 				"storePhotos":"https://media.glassdoor.com/l/13361/forever-21-office.jpg",
-				"accesibilityRating": "6/10"
+				"accesibilityRating": "Accesibility Rating 6/10"
 		}		
 	],
   
@@ -66,8 +66,8 @@
 				"storeHours": "Mon - Fri: 10:00am - 8:00pm",
 				"priceRange": "$$",
 				"address": "4333 La Jolla Village Dr, San Diego, CA 92122",
-				"storePhotos": "ahttps://daks2k3a4ib2z.cloudfront.net/58a441f90f46d5e57d3de8f3/58f89d27e995e01c51e7e888_001-(1).jpg",
-				"accesibilityRating": "5/10" 	
+				"storePhotos": "https://daks2k3a4ib2z.cloudfront.net/58a441f90f46d5e57d3de8f3/58f89d27e995e01c51e7e888_001-(1).jpg",
+				"accesibilityRating": "Accesibility Rating 5/10" 	
 		},
 		{
 			 "name":"Ross Dress For Less",
@@ -76,7 +76,7 @@
 				"priceRange": "$",
 				"address": "3998 Clairemont Mesa Blvd, San Diego, CA 92117",
 				"storePhotos":"https://coxclarkcom.files.wordpress.com/2016/07/rossdress.jpg?w=875&h=400&crop=1",
-				"accesibilityRating": "4/10"
+				"accesibilityRating": "Accesibility Rating 4/10"
 		},
 		{
 			   "name":"Nordstrom La Jolla (UTC)",
@@ -85,7 +85,7 @@
 				"priceRange": "$$",
 				"address": "34401 La Jolla Village Dr, San Diego, CA 92122",
 				"storePhotos":"https://media.nbcsandiego.com/images/1200*675/Nordstrom-Generic.jpg",
-				"accesibilityRating": "6/10"
+				"accesibilityRating": "Accesibility Rating 6/10"
 		}		
 	],
   
@@ -97,7 +97,7 @@
 				"priceRange": "$$",
 				"address": "8825 Villa La Jolla Dr, La Jolla, CA 92037",
 				"storePhotos":"https://media.sandiegoreader.com/img/places/la_jolla_shores_012_t260.jpg?3de258cb5744af84a211eb26dc28fb560aae5ab6",
-				"accesibilityRating": "6/10"
+				"accesibilityRating": "Accesibility Rating 6/10"
 		},
 		{
 				"name": "Ralphs",
@@ -106,7 +106,7 @@
 				"priceRange": "$$",
 				"address": "8657 Villa La Jolla Dr, La Jolla, CA 92037",
 				"storePhotos":"https://media.nbcsandiego.com/images/652*367/Ralphs-Del-Mar-Heights-Rd.jpg",
-				"accesibilityRating": "6/10"
+				"accesibilityRating": "Accesibility Rating 6/10"
 		},
 		{
 			   "name": "Vons",
@@ -115,7 +115,7 @@
 				"priceRange": "$$",
 				"address": "7788 Regents Rd, San Diego, CA 92122",
 				"storePhotos":"http://www.amgmgt.com/sites/default/files/styles/property_photo_545px/public/photos-projects/237us-university-square/237usvons-2.jpg?itok=KA4JZXtn",
-				"accesibilityRating": "7/10"	
+				"accesibilityRating": "Accesibility Rating 7/10"	
 		}		
 	],
   
@@ -127,7 +127,7 @@
 				"priceRange": "$$",
 				"address":"675 6th Ave San Diego CA 92101",
 				"storePhotos":"http://www.welcometosandiego.com/wp-content/uploads/2010/08/Ace-Hardware-San-Diego-1024x680.jpg",
-				"accesibilityRating":"3/10"  			
+				"accesibilityRating":"Accesibility Rating 3/10"  			
 		},
 		{
 				"name": "Coronado Hardware Glass & Paint",
@@ -136,7 +136,7 @@
 				"priceRange": "$$",
 				"address":"140 Orange Ave Coronado CA 92118",
 				"storePhotos":"http://coronadovisitorcenter.com/static/media/uploads/lifestyle/.thumbnails/178303_383636491691987_145682180_o.jpg/178303_383636491691987_145682180_o-555x332.jpg",
-				"accesibilityRating":"4/10"
+				"accesibilityRating":"Accesibility Rating 4/10"
 		},
 		{
 			  	"name": "Northpark Hardware",
@@ -145,7 +145,7 @@
 				"priceRange": "$$",
 				"address":"3090 University Ave San Diego CA 92104",
 				"storePhotos":"https://s3-media3.fl.yelpcdn.com/bphoto/rm6d6J2U1BXPPTcrf_1G4A/l.jpg",
-				"accesibilityRating":"4/10"
+				"accesibilityRating":"Accesibility Rating 4/10"
 		}		
 	],
   
@@ -181,7 +181,7 @@
 				"priceRange": "$$",
 				"address":"3265 Sports Arena Blvd San Diego CA 92110",
 				"storePhotos":"http://storelocator.dickssportinggoods.com/store_photos/1026-1-l.jpg",
-				"accesibilityRating":"6/10"	
+				"accesibilityRating":"Accesibility Rating 6/10"	
 		},
 		{
 				"name": "A & B Sporting Goods",
@@ -190,7 +190,7 @@
 				"priceRange": "$",
 				"address":"3027 University Ave San Diego CA 92104",
 				"storePhotos":"http://www.explorenorthpark.com/wp-content/uploads/2016/07/ABSP1.png",
-				"accesibilityRating":"4/10"	
+				"accesibilityRating":"Accesibility Rating 4/10"	
 		},
 		{
 			  	"name": "Sports Palace",
@@ -199,7 +199,7 @@
 				"priceRange": "$$",
 				"address":"339 &th Ave San Diego CA 92101",
 				"storePhotos":"https://s3-media1.fl.yelpcdn.com/bphoto/CpYVD6cIU04aoeo0wFeXOg/o.jpg",
-				"accesibilityRating":"5/10"	
+				"accesibilityRating":"Accesibility Rating 5/10"	
 		}		
 	],
   
