@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Login Page</title>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="login.css"
+   </head>
+   <body>
+      <div class="container">
+         <h1>APPNAME</h1>
+      </div>
+      <hr>
+      <div class="home">
+         <div class="item">
+            <div class="content">
+               <form action="#" class="form-horizontal" name="form" id="form">
+                  <div class="logo">
+                     <h1>Login</h1>
+                  </div>
+                  <div id="error"></div>
+                  <div class="input-group span-3"><span class="input-group-addon"><i class="fa fa-user"></i></span><input type="text" class="form-control" placeholder="Email" id="username"></div>
+                  <br><br>
+                  <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input type="password" class="form-control" placeholder="Password" id="password"></div>
+                  <br><br>
+                  <div class="form-group in"><button class="btn btn-default btn-block" id="login">Log In</button><a href="signup.html">New user? Create a new account!</a></div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+      	document.getElementById("login").addEventListener("click",function(){
+			var username = document.getElementById("username").value;
+      		var password = document.getElementById("password").value;
+
+      		if(username == "username" && password == "password"){
+      			document.location.href = 'index.html';
+      		}
+      		else if(username == "" || password = ""){
+      			alert("Please enter all fields");
+      		}
+      		else {
+      			alert("Incorrect username or password");
+      		}
+      		/*else if(username == "" && password == ""){
+      			document.getElementById('error').innerHTML += '<p id="errormsg">Please enter username and password</p';
+      		}
+      		else if(username == ""){
+      			
+      			document.getElementById('error').innerHTML += '<p id="errormsg">Please enter username</p>';
+      		}
+      		else if(password == ""){
+      			document.getElementById('error').innerHTML += "";
+      			document.getElementById('error').innerHTML += '<p id="errormsg">Please enter password</p>';
+      		}
+      		else{
+      			document.getElementById('error').innerHTML += "";
+      			document.getElementById('error').innerHTML += '<p id="errormsg">Incorrect username and password</p>';
+      		}*/
+      	});
+      </script>
+   </body>
+</html>
