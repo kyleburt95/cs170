@@ -4,7 +4,7 @@
       border: 1px solid #ccc;
       margin-bottom: 10px;
     left: 1em;
-    z-index: -1;
+    /*z-index: -1;*/
     margin-top: 2em;
     }
 .row {
@@ -14,6 +14,7 @@
 .tes {
   position: absolute;
   left: 76%;
+  z-index: 5;
 }
 body{
     margin: 1em !important;
