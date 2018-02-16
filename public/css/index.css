@@ -86,8 +86,13 @@ a {
   padding-left: 25em;
 }
 
-.tes {
+.tes1 {
   position: absolute;
+  left: 76%;
+}
+
+.tes {
+  position: relative;
   left: 76%;
 }
 
