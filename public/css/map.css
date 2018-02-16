@@ -9,3 +9,21 @@
   margin: 4vh;
 }
 
+.tes {
+	position: absolute;
+	left: 80%;
+
+}
+
+#navbarSupportedContent15 {
+  position: absolute;
+  top: 4em;
+  background-color: white;
+  padding: 0.7em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  border: .1em solid black;
+  left: 76%;
+}
+
+
