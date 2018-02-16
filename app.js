@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var login = require('./routes/login');
 var department = require('./routes/department');
 var addstore  = require('./routes/addstore');
 var bookstore  = require('./routes/bookstore');
@@ -52,7 +53,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', login.view);
 app.get('/department', department.view);
 app.get('/index', index.view);
 app.get('/addstore', addstore.view);
