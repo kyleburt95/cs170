@@ -6,7 +6,8 @@
       <title>Login Page</title>
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="/css/login.css"
+      <link rel="stylesheet" type="text/css" href="/css/login.css">
+      <script src="js/jquery-1.11.0.js"></script>
    </head>
    <body>
       <div class="container">
@@ -25,12 +26,21 @@
                   <br><br>
                   <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input type="password" class="form-control" placeholder="Password" id="password"></div>
                   <br><br>
-                  <div class="form-group in"><button class="btn btn-default btn-block" id="login">Log In</button><a href="#">New user? Create a new account!</a></div>
+                  <div class="form-group in"><a class="btn btn-default btn-block" id="login" href="#">Log In</a><a href="#">New user? Create a new account!</a></div>
                </form>
             </div>
          </div>
       </div>
       <script>
+        $(document).ready(function() {
+            $('#password').change(function() {
+              var password = $('#password').val();
+              var username = $('#username').val();
+              if(password == 'password' && username == 'username')
+                $('#login').attr('href', '/index');
+            });
+        });
+        /*
       	document.getElementById("login").addEventListener("click",function(){
 			var username = document.getElementById("username").value;
       		var password = document.getElementById("password").value;
@@ -44,7 +54,7 @@
       		else {
       			alert("Incorrect username or password");
       		}
-      		/*else if(username == "" && password == ""){
+      		else if(username == "" && password == ""){
       			document.getElementById('error').innerHTML += '<p id="errormsg">Please enter username and password</p';
       		}
       		else if(username == ""){
@@ -59,7 +69,7 @@
       			document.getElementById('error').innerHTML += "";
       			document.getElementById('error').innerHTML += '<p id="errormsg">Incorrect username and password</p>';
       		}*/
-      	});
+      	//});
       </script>
    </body>
 </html>
