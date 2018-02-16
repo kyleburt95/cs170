@@ -86,11 +86,25 @@ a {
   padding-left: 25em;
 }
 
-/*.tes{
-  margin-top: 2em;
-  margin-right: 1em;
-  margin-left: 1em;
-}*/
+.tes1 {
+  position: absolute;
+  left: 76%;
+}
+
+.tes {
+  position: relative;
+  left: 76%;
+}
+
+#navbarSupportedContent15 {
+  position: absolute;
+  top: 4em;
+  background-color: white;
+  padding: 0.7em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  border: .1em solid black;
+}
 
 .navbar-toggler-icon{
   width:3em;
@@ -117,6 +131,9 @@ a {
   width: 50%;
   height: auto;
 }
+
+
+
 /*.btn-group a:last-child{
   border-bottom: none;
 }

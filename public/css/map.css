@@ -1,11 +1,31 @@
 #image-map {
-      width: 100%;
+      width: 90%;
       height: 50vh;
       border: 1px solid #ccc;
       margin-bottom: 10px;
+    left: 1em;
+    /*z-index: -1;*/
+    margin-top: 2em;
     }
-
 .row {
   margin: 4vh;
+}
+
+.tes {
+  position: absolute;
+  left: 76%;
+  z-index: 5;
+}
+body{
+    margin: 1em !important;
+}
+#navbarSupportedContent15 {
+  position: absolute;
+  top: 3em;
+  background-color: white;
+  padding: 0.2em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  border: .1em solid black;
 }
 
