@@ -112,6 +112,11 @@ a {
   justify-content: center;
   margin-bottom: .5em;
 }
+
+.store img{
+  width: 50%;
+  height: auto;
+}
 /*.btn-group a:last-child{
   border-bottom: none;
 }
