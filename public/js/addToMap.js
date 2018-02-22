@@ -3,8 +3,8 @@ var placedPopup;
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
      placedPopup = L.popup()
-        .setLatLng([e.latlng.lat, e.latlng.lng)
-        .setContent("")
+        .setLatLng([e.latlng.lat, e.latlng.lng])
+        .setContent($("#markerTextInput").val())
         .openOn(map);
 } 
 
@@ -23,7 +23,7 @@ function onMapClick(e) {
  
     var w = 792,
         h = 612,
-        url = "/bookstoreBlack.png";
+        url = "/{{mapImage}}";
     // calculate the edges of the image, in coordinate space
     var southWest = map.unproject([0, h], map.getMaxZoom()-1);
     var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
