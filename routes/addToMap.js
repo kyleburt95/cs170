@@ -18,13 +18,13 @@ exports.update = function(req, res) {
   var test = JSON.parse(datafile);
   console.log(test);
   
-  //var latitude = req.body['lat'];
-  //var longitude = req.body['lng'];
-  //var tag = req.body['tag'];
-  //var popupText = req.body['popupText'];
+  var latitude = req.body['lat'];
+  var longitude = req.body['lng'];
+  var tag = req.body['tag'];
+  var popupText = req.body['popupText'];
   
-  var newPopup = {"latitude" : "latitude", "longitude" : "longitude", "tag" : "tag", "popupText" : "popupText"};
-  test.bookstores[0].popups.push(newPopup);
+  var newPopup = {"latitude" : latitude, "longitude" : longitude, "tag" : tag, "popupText" : popupText};
+  test.bookstores[1].popups.push(newPopup);
   //var test = JSON.parse();
   //console.log(data);
   

@@ -51,7 +51,7 @@ $(document).ready(function() {
         .setContent("Type in field below to change text, and tap to change location")
         .openOn(map);
   
-    //$('#saveButton').click(update);
+    $('#saveButton').click(update);
 });
   
 $("#markerTextInput").change(textChanged);
@@ -61,7 +61,17 @@ function textChanged() {
 }
 
 function update() {
-  $.post('/addToMap/update', function() {
+  var lat = placedPopup.getLatLng().lat;
+  var lng = placedPopup.getLatLng().lng;
+  var tag = $('#tagSelectionInput').val();
+  var popupText = $('#markerTextInput').val();
+  
+  $.post('/addToMap/update', {
+    "lat" : lat,
+    "lng" : lng,
+    "tag" : tag,
+    "popupText" : popupText
+  }, function() {
     console.log('update')
     
   });

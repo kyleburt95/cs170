@@ -70,6 +70,8 @@ app.get('/storeProfile', storeProfile.view);
 app.get('/help', help.view);
 app.get('/addToMap', addToMap.view);
 app.post('/addToMap/update', addToMap.update);
+app.get('/map', map.getPopups);
+
 
 
 // Example route
