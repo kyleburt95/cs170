@@ -45,6 +45,12 @@
           "longitude": "16.713554352070588",
           "tag": "Steep Stairs",
           "popupText": "Steep Stairs"
+        },
+        {
+          "latitude": "-21.5",
+          "longitude": "42.69070490014704",
+          "tag": "Elevator",
+          "popupText": "Elevator"
         }
       ]
     },
