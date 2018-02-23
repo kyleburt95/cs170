@@ -61,6 +61,7 @@ function textChanged() {
 }
 
 function update() {
+  console.log('help')
   var lat = placedPopup.getLatLng().lat;
   var lng = placedPopup.getLatLng().lng;
   var tag = $('#tagSelectionInput').val();

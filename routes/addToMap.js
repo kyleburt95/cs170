@@ -14,7 +14,7 @@ exports.update = function(req, res) {
   //fs.appendFile('../newData.json', "Hello" , function (err) {
   //if (err) throw err;
   //console.log('Replaced!');
-  var datafile = fs.readFileSync('sampleData.json');
+  var datafile = fs.readFileSync('data.json');
   var test = JSON.parse(datafile);
   console.log(test);
   
@@ -29,7 +29,7 @@ exports.update = function(req, res) {
   
   //console.log(req.body);
   //console.log(req.body['popupText']);
-  fs.writeFile('sampleData.json', JSON.stringify(test, null, 2), function(err){
+  fs.writeFile('data.json', JSON.stringify(test, null, 2), function(err){
     console.log('anyth')
   });
 }
