@@ -69,6 +69,7 @@ app.get('/sporting', sporting.view);
 app.get('/storeProfile', storeProfile.view);
 app.get('/help', help.view);
 app.get('/addToMap', addToMap.view);
+app.post('/addToMap/update', addToMap.update);
 
 
 // Example route

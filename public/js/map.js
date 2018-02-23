@@ -4,42 +4,42 @@ function onMapClick(e) {
 
 function outerwareToggle() {
   //L.marker([-58.75, 43.5]).addTo(map);
-   L.popup()
+   L.popup({autoClose:false})
         .setLatLng([-58.75, 43.5])
         .setContent("Outerware")
         .openOn(map);
 }
 
 function textbooksToggle() {
-  L.popup()
+  L.popup({autoClose:false})
         .setLatLng([-59,32])
         .setContent("Textbooks")
         .openOn(map);
 }
 
 function suppliesToggle() {
-  L.popup()
+  L.popup({autoClose:false})
         .setLatLng([-49, 18])
         .setContent("Supplies")
         .openOn(map);
 }
 
 function booksToggle() {
-  L.popup()
+  L.popup({autoClose:false})
         .setLatLng([-63.75, 12.75])
         .setContent("Books")
         .openOn(map);
 }
 
 function stairsToggle() {
-  L.popup()
+  L.popup({autoClose:false})
         .setLatLng([-66.25, 29.25])
         .setContent("Stairs")
         .openOn(map);
 }
 
 function escUpToggle() {
-  L.popup()
+  L.popup({autoClose:false})
         .setLatLng([-46.875, 26.25])
         .setContent("Escalator Up")
         .openOn(map);
@@ -47,14 +47,14 @@ function escUpToggle() {
 
 
 function escDownToggle() {
-  L.popup()
+  L.popup({autoClose:false})
         .setLatLng([-54, 23])
         .setContent("Escalator Down")
         .openOn(map);
 }
 
 function elevatorToggle() {
-  L.popup()
+  L.popup({autoClose:false})
         .setLatLng([-47, 36.9375])
         .setContent("Elevator")
         .openOn(map);
@@ -165,6 +165,7 @@ eighthCheck.addEventListener( 'change', function() {
         elevatorToggle();
     } else {
         // Checkbox is not checked..
+        
     }
 });
 

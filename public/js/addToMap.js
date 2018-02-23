@@ -50,12 +50,21 @@ $(document).ready(function() {
         .setLatLng([map.getCenter().lat, map.getCenter().lng ])
         .setContent("Type in field below to change text, and tap to change location")
         .openOn(map);
+  
+    //$('#saveButton').click(update);
 });
   
 $("#markerTextInput").change(textChanged);
   
 function textChanged() {
   placedPopup.setContent($(this).val())
+}
+
+function update() {
+  $.post('/addToMap/update', function() {
+    console.log('update')
+    
+  });
 }
 
 
