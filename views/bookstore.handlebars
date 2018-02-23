@@ -48,17 +48,31 @@
         {{#each bookstores}}
         <div class="store">
           <img class="img-responsive" src="{{storePhotos}}">
-          <a href="/map"><h3>{{name}}</h3></a>
-          <p>{{description}}</p>
-          <p>{{phoneNumber}}</p>
-          <p>{{storeHours}}</p>
-          <p>{{priceRange}}</p>
-          <p>{{address}}</p>
-          <p>{{accesibilityRating}}</p>
-          <a class="searchButton btn-sm btn-outline-dark" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
+          <a href="/storeProfile"><h3>{{name}}</h3></a>
+          <!-- <a href="/storeProfile"><button class="btn-outline-dark" id="try"> Click </button></a> -->
+          <p id="description">{{description}}</p>
+          <p id="phoneNumber">{{phoneNumber}}</p>
+          <p id="storeHours">{{storeHours}}</p>
+          <p id="priceRange">{{priceRange}}</p>
+          <p id="address">{{address}}</p>
+          <p id="accesibilityRating">{{accesibilityRating}}</p>
+          <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
           <hr>
         </div>
         {{/each}}
+<!--   <script type="text/javascript">
+    $('#try').click(update);
+
+    function update() {
+      var parentDiv = $(this).parent();
+      var description = $('parentDiv').find(":nth-child(3)");
+      console.log(description);
+      // var phoneNumber = $('parentDiv >')
+    $.get('/storeProfile', {
+      "store": storeName;
+    });
+  }
+  </script> -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

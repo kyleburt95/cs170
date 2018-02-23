@@ -22,6 +22,8 @@ var map = require('./routes/map');
 var sporting = require('./routes/sporting');
 var storeProfile = require('./routes/storeProfile');
 var help = require('./routes/help');
+var userProfile = require('./routes/userProfile');
+
 var addToMap = require('./routes/addToMap');
 
 
@@ -56,6 +58,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', login.view);
 app.get('/department', department.view);
+app.get('/userProfile', userProfile.view);
 app.get('/index', index.view);
 app.get('/addstore', addstore.view);
 app.get('/bookstore', bookstore.view);
