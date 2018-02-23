@@ -173,11 +173,18 @@ eighthCheck.addEventListener( 'change', function() {
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
     $.get("/map/getPopups", function(data) {
-      for(var i = 0; i < data.length; i++) {
-        var latitude = data[i].latitude;
-        var longitude = data[i].longitude;
-        var tag = data[i].tag;
-        var popupText = data[i].popupText;
+      var popupArray = data.popupArray;
+      console.log(popupArray.length);
+      for(var i = 0; i < popupArray.length; i++) {
+        var latitude = popupArray[i].latitude;
+        var longitude = popupArray[i].longitude;
+        var tag = popupArray[i].tag;
+        var popupText = popupArray[i].popupText;
+        
+         L.popup({autoClose:false})
+        .setLatLng([latitude, longitude])
+        .setContent(popupText)
+        .openOn(map);
       }
     })
 });
