@@ -29,22 +29,17 @@
       "mapImage": "bookstoreBlack.png",
       "popups": [
         {
-          "latitude": "-9.000023999999996",
-          "longitude": "10.172972000000001",
-          "tag": "a",
-          "popupText": "wqwe"
+          "latitude": "-46.5",
+          "longitude": "48.18418243916322",
+          "tag": "Bathroom",
+          "popupText": "Bathroom closed"
         },
-        {},
-        {},
         {
-          "latitude": "-54.75",
-          "longitude": "30.459382856600726",
-          "tag": "kyle",
-          "popupText": "Hello"
-        },
-        {},
-        {},
-        {}
+          "latitude": "-38.75",
+          "longitude": "34.94989564062425",
+          "tag": "Stairs",
+          "popupText": "Stairs"
+        }
       ]
     },
     {

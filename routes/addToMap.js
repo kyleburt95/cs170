@@ -22,7 +22,6 @@ exports.update = function(req, res) {
   var longitude = req.body['lng'];
   var tag = req.body['tag'];
   var popupText = req.body['popupText'];
-  
   var newPopup = {"latitude" : latitude, "longitude" : longitude, "tag" : tag, "popupText" : popupText};
   test.bookstores[1].popups.push(newPopup);
   //var test = JSON.parse();
