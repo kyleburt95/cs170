@@ -173,7 +173,11 @@ eighthCheck.addEventListener( 'change', function() {
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
     $.get("/map/getPopups", function(data) {
-      alert(data);
+      for(var i = 0; i < data.length; i++) {
+        for(popup in data[i]) {
+          
+        }
+      }
     })
 });
 
