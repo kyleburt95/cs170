@@ -24,6 +24,9 @@ var storeProfile = require('./routes/storeProfile');
 var help = require('./routes/help');
 var userProfile = require('./routes/userProfile');
 
+var addToMap = require('./routes/addToMap');
+
+
 
 
 // Example route
@@ -68,6 +71,10 @@ app.get('/map', map.view);
 app.get('/sporting', sporting.view);
 app.get('/storeProfile', storeProfile.view);
 app.get('/help', help.view);
+app.get('/addToMap', addToMap.view);
+app.post('/addToMap/update', addToMap.update);
+app.get('/map/getPopups', map.getPopups);
+app.post('/addstore/update', addstore.update);
 
 
 

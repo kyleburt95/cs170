@@ -7,7 +7,8 @@
 				"PriceRange": "$",
 				"address":"3793 30th St San Diego CA 92104",
 				"storePhotos":"http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
-				"accesibilityRating":"Accessibility Rating 6/10"			
+				"accesibilityRating":"Accessibility Rating 6/10",
+                "mapImage" : "bookstoreBlack.png"
 		},
 		{
 			 "name": "Adams Avenue Book Store",
@@ -16,7 +17,8 @@
 				"PriceRange": "$",
 				"address":"3502 Adams Ave San Diego CA 92116",
 				"storePhotos":"https://pics.librarything.com/picsizes/61/12/6112ebf293fd6dc63756a6541674259416c6743.jpg",
-				"accesibilityRating":"Accessibility Rating 5/10"		
+				"accesibilityRating":"Accessibility Rating 5/10",
+                "mapImage" : "bookstoreBlack.png"
 		},
 		{
 			   "name": "Northpark Hardware",
@@ -25,7 +27,8 @@
 				"PriceRange": "$",
 				"address":"3817 th Ave San Diego CA 92103",
 				"storePhotos":"hhttp://www.hoboes.com/library/graphics/reviews/bookstores/Bluestocking.jpg",
-				"accesibilityRating":"Accessibility Rating 4/10"		
+				"accesibilityRating":"Accessibility Rating 4/10",
+                "mapImage" : "bookstoreBlack.png" 
 		}		
 	],
   
