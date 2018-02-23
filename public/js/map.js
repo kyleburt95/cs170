@@ -172,7 +172,7 @@ eighthCheck.addEventListener( 'change', function() {
 //to get dropdown menu to toggle
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
-    $.get("/map/get", function(data) {
+    $.get("/map/getPopups", function(data) {
       alert(data);
     })
 });
