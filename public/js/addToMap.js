@@ -65,7 +65,7 @@ function update() {
   var lng = placedPopup.getLatLng().lng;
   var tag = $('#tagSelectionInput').val();
   var popupText = $('#markerTextInput').val();
-  
+  {"store" : }
   $.post('/addToMap/update', {
     "lat" : lat,
     "lng" : lng,
