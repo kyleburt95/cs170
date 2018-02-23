@@ -18,8 +18,8 @@ function statusChangeCallback(response) {
 }
 function changeUser(response) {
 	console.log(response);
-	console.log(response.name);
-	// $('.facebookLogin').hide();
+	//console.log(response.name);
+	$('.facebookLogin').hide();
  // 	$("#fbName").text("whatevername");
  	// $("#fbPhoto").attr("src", response.picture.data.url);
 	// $("#photo").attr("src", response.picture.data.url)

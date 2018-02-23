@@ -45,17 +45,14 @@
         {{#each bookstores}}
         <div class="store">
           <img class="img-responsive" src="{{storePhotos}}">
-          <a href="/map"><h3>{{name}}</h3></a>
-          <button class="btn-outline-dark" id="try"> Click </button>
+          <a href="/storeProfile"><h3>{{name}}</h3></a>
+          <!-- <a href="/storeProfile"><button class="btn-outline-dark" id="try"> Click </button></a> -->
           <p id="description">{{description}}</p>
           <p id="phoneNumber">{{phoneNumber}}</p>
           <p id="storeHours">{{storeHours}}</p>
           <p id="priceRange">{{priceRange}}</p>
           <p id="address">{{address}}</p>
           <p id="accesibilityRating">{{accesibilityRating}}</p>
-
-
-  
           <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
           <hr>
         </div>
@@ -65,7 +62,7 @@
 
     function update() {
       var parentDiv = $(this).parent();
-      var description = $('parentDiv > p').attr('description');
+      var description = $('parentDiv').find(":nth-child(3)");
       console.log(description);
       // var phoneNumber = $('parentDiv >')
     $.get('/storeProfile', {
