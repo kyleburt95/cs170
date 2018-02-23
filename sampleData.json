@@ -33,7 +33,18 @@
           "longitude": "10.172972000000001",
           "tag": "a",
           "popupText": "wqwe"
-        }
+        },
+        {},
+        {},
+        {
+          "latitude": "-54.75",
+          "longitude": "30.459382856600726",
+          "tag": "kyle",
+          "popupText": "Hello"
+        },
+        {},
+        {},
+        {}
       ]
     },
     {
@@ -68,7 +79,6 @@
       "storePhotos": "https://crabtree-valley-mall.com/sites/default/files/styles/store_image/public/Commercial_Crabtree2117-3183027437-O.jpg?itok=LuII7iF4",
       "accesibilityRating": "Accessibility Rating 6/10",
       "popups": []
-
     },
     {
       "name": "Forever 21",
@@ -79,7 +89,6 @@
       "storePhotos": "https://media.glassdoor.com/l/13361/forever-21-office.jpg",
       "accesibilityRating": "Accessibility Rating 6/10",
       "popups": []
-
     }
   ],
   "department": [
@@ -92,7 +101,6 @@
       "storePhotos": "https://daks2k3a4ib2z.cloudfront.net/58a441f90f46d5e57d3de8f3/58f89d27e995e01c51e7e888_001-(1).jpg",
       "accesibilityRating": "Accessibility Rating 5/10",
       "popups": []
-
     },
     {
       "name": "Ross Dress For Less",
@@ -103,7 +111,6 @@
       "storePhotos": "https://coxclarkcom.files.wordpress.com/2016/07/rossdress.jpg?w=875&h=400&crop=1",
       "accesibilityRating": "Accessibility Rating 4/10",
       "popups": []
-
     },
     {
       "name": "Nordstrom La Jolla (UTC)",
@@ -114,7 +121,6 @@
       "storePhotos": "https://media.nbcsandiego.com/images/1200*675/Nordstrom-Generic.jpg",
       "accesibilityRating": "Accessibility Rating 6/10",
       "popups": []
-
     }
   ],
   "grocery": [
@@ -127,7 +133,6 @@
       "storePhotos": "https://media.sandiegoreader.com/img/places/la_jolla_shores_012_t260.jpg?3de258cb5744af84a211eb26dc28fb560aae5ab6",
       "accesibilityRating": "Accessibility Rating 6/10",
       "popups": []
-
     },
     {
       "name": "Ralphs",
@@ -138,7 +143,6 @@
       "storePhotos": "https://media.nbcsandiego.com/images/652*367/Ralphs-Del-Mar-Heights-Rd.jpg",
       "accesibilityRating": "Accessibility Rating 6/10",
       "popups": []
-
     },
     {
       "name": "Vons",
@@ -149,7 +153,6 @@
       "storePhotos": "http://www.amgmgt.com/sites/default/files/styles/property_photo_545px/public/photos-projects/237us-university-square/237usvons-2.jpg?itok=KA4JZXtn",
       "accesibilityRating": "Accessibility Rating 7/10",
       "popups": []
-
     }
   ],
   "hardware": [
@@ -162,7 +165,6 @@
       "storePhotos": "http://www.welcometosandiego.com/wp-content/uploads/2010/08/Ace-Hardware-San-Diego-1024x680.jpg",
       "accesibilityRating": "Accessibility Rating 3/10",
       "popups": []
-
     },
     {
       "name": "Coronado Hardware Glass & Paint",
@@ -173,7 +175,6 @@
       "storePhotos": "http://coronadovisitorcenter.com/static/media/uploads/lifestyle/.thumbnails/178303_383636491691987_145682180_o.jpg/178303_383636491691987_145682180_o-555x332.jpg",
       "accesibilityRating": "Accessibility Rating 4/10",
       "popups": []
-
     },
     {
       "name": "Northpark Hardware",
@@ -184,7 +185,6 @@
       "storePhotos": "https://s3-media3.fl.yelpcdn.com/bphoto/rm6d6J2U1BXPPTcrf_1G4A/l.jpg",
       "accesibilityRating": "Accessibility Rating 4/10",
       "popups": []
-
     }
   ],
   "history": [
@@ -207,7 +207,6 @@
       "storePhotos": "http://storelocator.dickssportinggoods.com/store_photos/1026-1-l.jpg",
       "accesibilityRating": "Accessibility Rating 6/10",
       "popups": []
-
     },
     {
       "name": "A & B Sporting Goods",
@@ -218,7 +217,6 @@
       "storePhotos": "http://www.explorenorthpark.com/wp-content/uploads/2016/07/ABSP1.png",
       "accesibilityRating": "Accessibility Rating 4/10",
       "popups": []
-
     },
     {
       "name": "Sports Palace",
@@ -229,7 +227,6 @@
       "storePhotos": "https://s3-media1.fl.yelpcdn.com/bphoto/CpYVD6cIU04aoeo0wFeXOg/o.jpg",
       "accesibilityRating": "Accessibility Rating 5/10",
       "popups": []
-
     }
   ],
   "storeProfile": [

@@ -174,9 +174,10 @@ $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
     $.get("/map/getPopups", function(data) {
       for(var i = 0; i < data.length; i++) {
-        for(popup in data[i]) {
-          
-        }
+        var latitude = data[i].latitude;
+        var longitude = data[i].longitude;
+        var tag = data[i].tag;
+        var popupText = data[i].popupText;
       }
     })
 });
