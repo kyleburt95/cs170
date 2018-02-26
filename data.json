@@ -4,7 +4,7 @@
 			   "name": "Verbatim Books",
 				"phoneNumber":"(619)501-7466",
 				"storeHours":"Mon - Fri: 10:00 - 7:00",
-				"PriceRange": "$",
+				"priceRange": "$",
 				"address":"3793 30th St San Diego CA 92104",
 				"storePhotos":"http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
 				"accesibilityRating":"Accessibility Rating 6/10",
@@ -14,19 +14,19 @@
 			 "name": "Adams Avenue Book Store",
 				"phoneNumber":"(619)281-3330",
 				"storeHours":"Mon - Fri: 10:00 - 6:00",
-				"PriceRange": "$",
+				"priceRange": "$",
 				"address":"3502 Adams Ave San Diego CA 92116",
 				"storePhotos":"https://pics.librarything.com/picsizes/61/12/6112ebf293fd6dc63756a6541674259416c6743.jpg",
 				"accesibilityRating":"Accessibility Rating 5/10",
                 "mapImage" : "bookstoreBlack.png"
 		},
 		{
-			   "name": "Northpark Hardware",
+			   "name": "Hoboes",
 				"phoneNumber":"(619)296-1424",
 				"storeHours":"Mon - Fri: 11:00 - 7:00",
-				"PriceRange": "$",
+				"priceRange": "$",
 				"address":"3817 th Ave San Diego CA 92103",
-				"storePhotos":"hhttp://www.hoboes.com/library/graphics/reviews/bookstores/Bluestocking.jpg",
+				"storePhotos":"http://lgbtweekly.com/wp-content/uploads/2013/06/bluestocking2.jpg",
 				"accesibilityRating":"Accessibility Rating 4/10",
                 "mapImage" : "bookstoreBlack.png" 
 		}		
