@@ -122,7 +122,7 @@ a {
 .btn-group button{
   display: inline-block;
   width: 85%;
-  padding: 2.3em;
+  padding: 10px;
   justify-content: center;
   margin-bottom: .5em;
 }
@@ -130,6 +130,10 @@ a {
 .store img{
   width: 50%;
   height: auto;
+}
+
+.category {
+  font-size: 25px;
 }
 
 
