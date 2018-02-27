@@ -1,10 +1,30 @@
-exports.view = function(req, res){
-  var storeData = req.body;
-  res.render('storeProfile', storeData);
-};
+var descriptions = require('../data.json');
 
-var fs = require('fs');
-exports.update = function(req, rest) {
-	var storename = req.body['storename'];
+
+exports.view = function(req, res){
+
+  // var charu = req.body['store'];
+  // res.render('storeProfile');
+  console.log(req.body['hiddenName'])
+
+ res.render('storeProfile', {
+    'projects': [
+      { 'name': req.body['hiddenName'],
+        'phoneNumber': req.body['hiddenPhoneNumber'],
+        'hours': req.body['hiddenStoreHours']
+      }
+    ]  
+  });
 }
+  
+// 
+// var fs = require('fs');
+
+// exports.update = function(req, res) {
+// 	// var storename = req.body['storename'];
+
+// 	var storeData = req.body;
+// 	res.render('storeProfile', storeData);
+
+// };
 

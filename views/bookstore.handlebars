@@ -13,75 +13,146 @@
 </head>
 <body>
 <!-- 	<a href="index.html"><button class="btn btn-outline-dark"> Back </button></a>
- -->	
-				    <div class="tes">
-     <nav class="navbar navbar-light navbar-1 white">
+-->	
+<div class="tes">
+ <nav class="navbar navbar-light navbar-1 white">
 
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
-        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+  aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent15">
 
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/storeProfile">Profile</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/help">Help</a>
-            </li>
-          <li class="nav-item active">
-                <a class="nav-link" href="/addstore">Add Store</a>
-            </li>
-        </ul>
-        <!-- Links -->
-    </div>
-    <!-- Collapsible content -->
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/storeProfile">Profile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/help">Help</a>
+      </li>
+    </ul>
+    <!-- Links -->
+  </div>
+  <!-- Collapsible content -->
 </nav>
 </div>
-		<h3> Bookstores </h3>
-        {{#each bookstores}}
-        <div class="store">
-          <img class="img-responsive" src="{{storePhotos}}">
-          <a href="/storeProfile"><h3>{{name}}</h3></a>
-          <a href="/storeProfile"><button class="btn-outline-dark" id="try"> Click </button></a>
-          <p id="description">{{description}}</p>
-          <p id="phoneNumber">{{phoneNumber}}</p>
-          <p id="storeHours">{{storeHours}}</p>
-          <p id="priceRange">{{priceRange}}</p>
-          <p id="address">{{address}}</p>
-          <p id="accesibilityRating">{{accesibilityRating}}</p>
-          <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
-          <hr>
-        </div>
-        {{/each}}
-   <script type="text/javascript">
-    $('#try').click(update);
 
-    function update() {
-      var parentDiv = $(this).parent();
-      var description = $('parentDiv').find(":nth-child(3)");
-      console.log(description);
-      // var phoneNumber = $('parentDiv >')
+<h3> Bookstores </h3>
+{{#each bookstores}}
+<div class="store">
+  <img class="img-responsive" src="{{storePhotos}}">
+  <a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
+<!--   <a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
+-->  <p id="description">{{description}}</p>
+<p id="phoneNumber">{{phoneNumber}}</p>
+<p id="storeHours">{{storeHours}}</p>
+<p id="priceRange">{{priceRange}}</p>
+<p id="address">{{address}}</p>
+<p id="accesibilityRating">{{accesibilityRating}}</p>
+<a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
+</div>
+<div class="hiddenForm">
+  <form action="/storeProfile" method="post">
+    <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
+    <input type="hidden" name="hiddenName" value="{{name}}">
+    <input type="hidden" name="hiddenDescription" value="{{description}}">
+    <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
+    <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
+    <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
+    <input type="hidden" name="hiddenAddress" value="{{address}}">
+    <input type="hidden" name="hiddenAccesibillity" value="{{accesibilityRating}}">
+    <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
+    <button type="submit" class="btn-outline-dark" id="try"> Click </button>
+  </form>
+  <hr>
+</div>
+{{/each}}
+
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //$(".store #try").click(update);
+
+  
+});
+
+  function update() {
+    // var des = $("#phoneNumber").val();
+    // e.preventDefault();
+    
+    var profile = $(this).closest(".store").get();
+
+    console.log($(this).closest(".store").find("img").attr("src"));
+    console.log($(this).closest(".store").find("h3").text());
+    console.log($(this).closest(".store").find(":nth-child(4)").text());
+    console.log($(this).closest(".store").find(":nth-child(5)").text());
+    console.log($(this).closest(".store").find(":nth-child(6)").text());
+    console.log($(this).closest(".store").find(":nth-child(7)").text());
+    console.log($(this).closest(".store").find(":nth-child(8)").text());
+
+
+    var storeImage = $(this).closest(".store").find("img").attr("src");
+    var storeName = $(this).closest(".store").find("h3").text();
+    var storeDescription = $(this).closest(".store").find(":nth-child(4)").text();
+    var storeHours = $(this).closest(".store").find(":nth-child(5)").text();
+    var storePrice = $(this).closest(".store").find(":nth-child(6)").text();
+    var storeAddress = $(this).closest(".store").find(":nth-child(7)").text();
+    var storeRating = $(this).closest(".store").find(":nth-child(8)").text();
+    
+    console.log(storeName);
+    console.log(storeDescription);
     $.post('/storeProfile', {
-      "name" : name,
-      "phoneNumber" : phoneNumber,
-      "storeHours" : storeHours,
-      "priceRange" : priceRange,
-      "address" : address,
-      "storePhotos" : storePhotos,
-      "accesibilityRating" : accesibilityRating,
-      "mapImage" : mapImage,
-      "popups" : popups
+      "name": "kyle",
+      "phoneNumber": "kyle",
+      "hours": "kyle"
     });
+    
+
+    // $.get('/storeProfile/' + storeName, function(result) {
+    //   console.log(result);
+    //   $(".container .test").text(result);
+    // });
+
+    
+    // $(document).ready(function() {
+    //   $.each(profile, function(i, val) {
+    //     console.log(i, val);
+    //   });
+    // });
+
+    // var ary = profile.get();
+    // // console.log(ary);
+    // console.log(profile);
+    // console.log("HELLO");
+    // console.log($('#phoneNumber').val());
+    // console.log("hello");
+  //   $.post('/storeProfile', function(result) {
+  //     $("h3").text("hi");
+  // });
   }
-  </script>
-	
+
+    // var parentDiv = $(this).parent();
+    // var description = $('parentDiv').find(":nth-child(3)");
+    // console.log(parentDiv);
+    // $.post('/storeProfile', {
+    //   "store": name,
+    //   "description": description,
+    //   "phoneNumber": phoneNumber
+    // });
+      // var phoneNumber = $('parentDiv >')
+    // $.get('/storeProfile', {
+    //   "store": parentDiv
+    //   // "description": description;
+    // });
+ // }
+</script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

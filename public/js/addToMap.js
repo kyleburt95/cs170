@@ -4,7 +4,7 @@ function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
      placedPopup = L.popup()
         .setLatLng([e.latlng.lat, e.latlng.lng])
-        .setContent($("#markerTextInput").val())
+        .setContent($('#popups option:selected').text())
         .openOn(map);
 } 
 
@@ -64,12 +64,11 @@ function update() {
   console.log('help')
   var lat = placedPopup.getLatLng().lat;
   var lng = placedPopup.getLatLng().lng;
-  var tag = $('#tagSelectionInput').val();
-  var popupText = $('#markerTextInput').val();
+  var popupText = $('#popups option:selected').text();
+  console.log("hello", popupText);
   $.post('/addToMap/update', {
     "lat" : lat,
     "lng" : lng,
-    "tag" : tag,
     "popupText" : popupText
   }, function() {
     console.log('update')

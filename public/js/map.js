@@ -178,7 +178,6 @@ $(document).ready(function() {
       for(var i = 0; i < popupArray.length; i++) {
         var latitude = popupArray[i].latitude;
         var longitude = popupArray[i].longitude;
-        var tag = popupArray[i].tag;
         var popupText = popupArray[i].popupText;
         
          L.popup({autoClose:false})

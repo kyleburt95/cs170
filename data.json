@@ -2,65 +2,39 @@
   "bookstores": [
     {
       "name": "Verbatim Books",
-      "phoneNumber": "1111",
+      "phoneNumber": "(619)501-7466",
       "storeHours": "Mon - Fri: 10:00 - 7:00",
-      "PriceRange": "$",
+      "priceRange": "$",
       "address": "3793 30th St San Diego CA 92104",
       "storePhotos": "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
       "accesibilityRating": "Accessibility Rating 6/10",
       "mapImage": "bookstoreBlack.png",
-      "popups": [
-        {
-          "latitude": "-50",
-          "longitude": "37.19722736113087",
-          "tag": "hello",
-          "popupText": "mar"
-        }
-      ]
+      "popups": []
     },
     {
       "name": "Adams Avenue Book Store",
       "phoneNumber": "(619)281-3330",
       "storeHours": "Mon - Fri: 10:00 - 6:00",
-      "PriceRange": "$",
+      "priceRange": "$",
       "address": "3502 Adams Ave San Diego CA 92116",
       "storePhotos": "https://pics.librarything.com/picsizes/61/12/6112ebf293fd6dc63756a6541674259416c6743.jpg",
       "accesibilityRating": "Accessibility Rating 5/10",
       "mapImage": "bookstoreBlack.png",
       "popups": [
         {
-          "latitude": "-46.5",
-          "longitude": "48.18418243916322",
-          "tag": "Bathroom",
-          "popupText": "Bathroom closed"
-        },
-        {
-          "latitude": "-38.75",
-          "longitude": "34.94989564062425",
-          "tag": "Stairs",
-          "popupText": "Stairs"
-        },
-        {
-          "latitude": "-29.22205600000001",
-          "longitude": "16.713554352070588",
-          "tag": "Steep Stairs",
-          "popupText": "Steep Stairs"
-        },
-        {
-          "latitude": "-21.5",
-          "longitude": "42.69070490014704",
-          "tag": "Elevator",
-          "popupText": "Elevator"
+          "latitude": "-58.38893805309735",
+          "longitude": "34.47814517536207",
+          "popupText": "Escalator Up"
         }
       ]
     },
     {
-      "name": "Northpark Hardware",
+      "name": "Hoboes",
       "phoneNumber": "(619)296-1424",
       "storeHours": "Mon - Fri: 11:00 - 7:00",
-      "PriceRange": "$",
+      "priceRange": "$",
       "address": "3817 th Ave San Diego CA 92103",
-      "storePhotos": "hhttp://www.hoboes.com/library/graphics/reviews/bookstores/Bluestocking.jpg",
+      "storePhotos": "http://lgbtweekly.com/wp-content/uploads/2013/06/bluestocking2.jpg",
       "accesibilityRating": "Accessibility Rating 4/10",
       "mapImage": "bookstoreBlack.png",
       "popups": []
