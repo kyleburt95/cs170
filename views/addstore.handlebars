@@ -35,6 +35,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/help">Help</a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/addstore">Add Store</a>
+            </li>
         </ul>
         <!-- Links -->
     </div>
@@ -50,6 +53,22 @@
       <div class="form-group text-left">
         <label for="phonenumber">Phone Number:</label>
         <input type="tel" name="phonenumber" id="phonenumber" class="form-control">
+      </div>
+       <div class="form-group text-left">
+        <label for="phonenumber">Store Hours:</label>
+        <input type="tel" name="storehours" id="storehours" class="form-control">
+      </div>
+       <div class="form-group text-left">
+        <label for="phonenumber">Price Range:</label>
+        <input type="tel" name="pricerange" id="pricerange" class="form-control">
+      </div>
+       <div class="form-group text-left">
+        <label for="phonenumber">Address:</label>
+        <input type="tel" name="address" id="address" class="form-control">
+      </div>
+       <div class="form-group text-left">
+        <label for="phonenumber">Accessibility Rating:</label>
+        <input type="tel" name="accessibility" id="accessibility" class="form-control">
       </div>
       <div class="form-group text-left">
         <label for="storetype">Store Type:</label>
@@ -73,13 +92,21 @@
         var storename = $('#storename').val();
         var phonenumber = $('#phonenumber').val();
         var storetype = $('#storetype option:selected').text();
+        var storehours = $('#storehours').val();
+        var pricerange = $('#pricerange').val();
+        var address = $('#address').val();
+        var accessibility = $('#accessibility').val();
 
         console.log(storetype);
 
         $.post('/addToMap/update', {
           "storename" : storename,
           "phonenumber" : phonenumber,
-          "storetype" : storetype
+          "storetype" : storetype,
+          "storehours" : storehours,
+          "pricerange" : pricerange,
+          "address" : address,
+          "accessibility" : accessibility
         }, function() {
           console.log('update');
 

@@ -76,7 +76,7 @@ app.post('/addToMap/update', addToMap.update);
 app.get('/map/getPopups', map.getPopups);
 app.post('/addstore/update', addstore.update);
 //delete later
-app.get('/storeProfile', storeProfile.update);
+app.post('/storeProfile', storeProfile.view);
 
 
 

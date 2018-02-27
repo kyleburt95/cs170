@@ -52,6 +52,11 @@
       "accesibilityRating": "Accessibility Rating 4/10",
       "mapImage": "bookstoreBlack.png",
       "popups": []
+    },
+    {
+      "name": "kyle",
+      "phoneNumber": "21212",
+      "storetype": "bookstores"
     }
   ],
   "clothing": [
@@ -179,6 +184,17 @@
       "address": "3090 University Ave San Diego CA 92104",
       "storePhotos": "https://s3-media3.fl.yelpcdn.com/bphoto/rm6d6J2U1BXPPTcrf_1G4A/l.jpg",
       "accesibilityRating": "Accessibility Rating 4/10",
+      "popups": []
+    },
+    {
+      "name": "Vince Store",
+      "phoneNumber": "619-232-1212",
+      "storehours": "9-5",
+      "PriceRange": "$",
+      "address": "1234 Vince Street",
+      "storePhotos": "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
+      "accesibilityRating": "0/10",
+      "mapImage": "bookstoreBlack.png",
       "popups": []
     }
   ],

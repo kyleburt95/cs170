@@ -24,6 +24,7 @@
   <!-- Collapsible content -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent15">
 
+
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -53,7 +54,7 @@
 <p id="priceRange">{{priceRange}}</p>
 <p id="address">{{address}}</p>
 <p id="accesibilityRating">{{accesibilityRating}}</p>
-<a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
+<a href="/storeProfile"><button class="btn-outline-dark" id="try"> Click </button></a>
 <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
 <hr>
 </div>
@@ -83,6 +84,13 @@
     var storePrice = $(this).closest(".store").find(":nth-child(6)").text();
     var storeAddress = $(this).closest(".store").find(":nth-child(7)").text();
     var storeRating = $(this).closest(".store").find(":nth-child(8)").text();
+
+    $.post('/storeProfile', {
+      "name": storeName,
+      "phoneNumber": storeDescription,
+      "hours": storeHours
+    });
+    
 
     // $.get('/storeProfile/' + storeName, function(result) {
     //   console.log(result);

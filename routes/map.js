@@ -6,7 +6,7 @@ exports.view = function(req, res){
 };
 
 exports.getPopups = function(req, res) {
-  var datafile = fs.readFileSync('sampleData.json');
+  var datafile = fs.readFileSync('data.json');
   var test = JSON.parse(datafile);
   
   var popupArray = test.bookstores[1].popups;
