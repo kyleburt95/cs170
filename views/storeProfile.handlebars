@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/css/index.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
    <div class="tes1">
@@ -47,10 +49,20 @@
     <input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value=""><br>
     <input type="submit" value="submit">
   </form>
+  
+  <div class="store">
+          <img class="img-responsive" src="{{storePhotos}}">
+          <h3>{{name}}</h3>
+          <p id="description">{{description}}</p>
+          <p id="phoneNumber">{{phoneNumber}}</p>
+          <p id="storeHours">{{storeHours}}</p>
+          <p id="priceRange">{{priceRange}}</p>
+          <p id="address">{{address}}</p>
+          <p id="accesibilityRating">{{accesibilityRating}}</p>
+          <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
+          <hr>
+        </div>
 </div>
-<script>
-  $("#input-id").rating();
-</script>
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/css/star-rating.min.css" />

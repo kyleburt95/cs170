@@ -1,6 +1,6 @@
 exports.view = function(req, res){
-  // var charu = req.body['store'];
-  res.render('storeProfile');
+  var storeData = req.body;
+  res.render('storeProfile', storeData);
 };
 
 var fs = require('fs');
