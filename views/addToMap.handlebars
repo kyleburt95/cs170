@@ -62,14 +62,16 @@
   <div class="container">
    <form method="post" action="/addToMap/update">
     <div class="form-group">
-      <label for="newTag">New Marker Tag</label>
-      <input name="tag" type="search" class="form-control" id="tagSelectionInput" placeholder="Enter Tag">
-      <small id="tagHelp">Select a tag to help categorize your marker</small>
-    </div>
-    <div class="form-group">
-     <label for="markerText">Marker Text</label>
-      <input name="popupText" type="text" class="form-control" id="markerTextInput" placeholder="Enter Text">
-      <small id="textHelp">Enter the text that will be displayed in the marker</small>
+     <select multiple class="form-control" id="popups">
+      <option id="elevator">Elevator</option>
+      <option id="escalatorDown">Escalator Down</option>
+      <option id="escalatorUp">Escalator Up</option>
+      <option id="closure">Closure</option>
+      <option id="hazard">Hazard</option>
+      <option id="restroom">Restroom</option>
+      <option id="stairs">Stairs</option>
+      <option id="checkout">Checkout</option>
+    </select>
     </div>
    </form>
     <button class="btn btn primary" id="saveButton">Save</button>

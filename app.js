@@ -69,13 +69,13 @@ app.get('/hardware', hardware.view);
 app.get('/history', history.view);
 app.get('/map', map.view);
 app.get('/sporting', sporting.view);
-app.get('/storeProfile', storeProfile.view);
 app.get('/help', help.view);
 app.get('/addToMap', addToMap.view);
 app.post('/addToMap/update', addToMap.update);
 app.get('/map/getPopups', map.getPopups);
 app.post('/addstore/update', addstore.update);
 //delete later
+app.get('/storeProfile', storeProfile.view)
 app.post('/storeProfile', storeProfile.view);
 
 // app.post('/storeProfile', storeProfile.update);
