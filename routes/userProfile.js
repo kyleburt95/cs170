@@ -1,9 +1,7 @@
 	
 exports.view = function(req, res){
 
-	var info = req.body;
-
-	console.log(info);
+	console.log(req.body);
 	res.render('userProfile');
 		//logIn();
 	};

@@ -29,3 +29,8 @@ h3{
 #facebookPhoto img {
 	border: 0.07em black solid;
 }
+
+.img-responsive{
+	width: 65%;
+	height: auto;
+}
