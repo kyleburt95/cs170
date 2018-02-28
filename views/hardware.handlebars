@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/categories.css">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
@@ -45,17 +45,29 @@
 <h3> Hardware Stores </h3>
 {{#each hardware}}
 <div class="store">
-  <img class="img-responsive" src="{{storePhotos}}">
-  <a href="/storeProfile"><h3>{{name}}</h3></a>
-  <a href="#"><button class="btn-outline-dark" id="try"> Click </button> </a>
-  <p>{{description}}</p>
-  <p>{{phoneNumber}}</p>
-  <p>{{storeHours}}</p>
-  <p>{{priceRange}}</p>
-  <p>{{address}}</p>
-  <p>{{accesibilityRating}}</p>
-  <a class="searchButton btn-sm btn-outline-dark" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
-
+<img class="img-responsive" src="{{storePhotos}}">
+<a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
+<p id="description">{{description}}</p>
+<p id="phoneNumber">{{phoneNumber}}</p>
+<p id="storeHours">{{storeHours}}</p>
+<p id="priceRange">{{priceRange}}</p>
+<p id="address">{{address}}</p>
+<p id="accesibilityRating">{{accesibilityRating}}</p>
+<a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
+</div>
+<div class="hiddenForm">
+  <form action="/storeProfile" method="post">
+    <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
+    <input type="hidden" name="hiddenName" value="{{name}}">
+    <input type="hidden" name="hiddenDescription" value="{{description}}">
+    <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
+    <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
+    <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
+    <input type="hidden" name="hiddenAddress" value="{{address}}">
+    <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
+    <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
+    <button type="submit" class="btn-outline-dark" id="try"> Click </button>
+  </form>
   <hr>
 </div>
 {{/each}}
