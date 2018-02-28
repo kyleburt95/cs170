@@ -14,36 +14,39 @@
 </head>
 <body>
 	<!-- <a href="index.html"><button class="btn btn-outline-dark"> Back </button></a> -->
-						    <div class="tes">
-     <nav class="navbar navbar-light navbar-1 white">
+    <div class="container-fluid" id="naviContainer">
+    <div class="row no-gutters" id="topheader">
+        <div class="col-xs-6" id="history">
+            <a class="nav navbar-nav navbar-left" href="/history"><i class="fas fa-history"></i></a>
+        </div>
+        <div class="col-xs-6" id="hamburger">
+            	<!-- navbar -->
+		<nav class="navbar navbar-light navbar-1 white">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+			aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    			<div class="collapse navbar-collapse" id="navbarSupportedContent15">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/userprofile">Profile</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/help">Help</a>
+					</li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/addstore">Add Store</a>
+                    </li>
+				</ul>
+			</div>
+		</nav>
+        </div>
 
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
-        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/storeProfile">Profile</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/help">Help</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/addstore">Add Store</a>
-            </li>
-        </ul>
-        <!-- Links -->
     </div>
-    <!-- Collapsible content -->
-</nav>
-</div>
+    </div>
+    
+    <div class="container-fluid addstorebox">
 		<h3> Add Store </h3>
     <form action="/addstore/update" method="post">
       <div class="form-group text-left">
@@ -84,6 +87,7 @@
       </div>
       <button type="submit" class="btn btn-primary" id="submit">Submit</button>
     </form>
+    </div>
   
     <script>
       $('#submit').click(update);
