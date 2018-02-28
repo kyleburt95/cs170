@@ -2,15 +2,21 @@ var descriptions = require('../data.json');
 
 
 exports.view = function(req, res){
+
   // var charu = req.body['store'];
   // res.render('storeProfile');
+  console.log(req.body['hiddenName'])
 
-  var storeData = req.body;
-
-  var test = "HELLO";
-  console.log(storeData);
-  res.render('storeProfile', {data: storeData});
-};
+ res.render('storeProfile', {
+    'projects': [
+      { 'name': req.body['hiddenName'],
+        'phoneNumber': req.body['hiddenPhoneNumber'],
+        'hours': req.body['hiddenStoreHours']
+      }
+    ]  
+  });
+}
+  
 // 
 // var fs = require('fs');
 

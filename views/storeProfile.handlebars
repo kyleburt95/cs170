@@ -45,8 +45,9 @@
 <h3>Profile</h3>
 <a href="/map">Map</a>
 <div class="container">
-  {{#each data}}
-  <a href="/storeProfile" id="name"><h3>{{data}}</h3></a>
+
+  {{#each projects}}
+  <a href="/storeProfile" id="name"><h3>{{name}}</h3></a>
   <p id="description">{{phoneNumber}}</p>
   <p id="storeHours"> {{hours}} </p>
   {{/each}}

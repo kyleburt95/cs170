@@ -42,6 +42,7 @@
   <!-- Collapsible content -->
 </nav>
 </div>
+
 <h3> Bookstores </h3>
 {{#each bookstores}}
 <div class="store">
@@ -54,18 +55,37 @@
 <p id="priceRange">{{priceRange}}</p>
 <p id="address">{{address}}</p>
 <p id="accesibilityRating">{{accesibilityRating}}</p>
-<a href="/storeProfile"><button class="btn-outline-dark" id="try"> Click </button></a>
 <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
-<hr>
+</div>
+<div class="hiddenForm">
+  <form action="/storeProfile" method="post">
+    <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
+    <input type="hidden" name="hiddenName" value="{{name}}">
+    <input type="hidden" name="hiddenDescription" value="{{description}}">
+    <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
+    <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
+    <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
+    <input type="hidden" name="hiddenAddress" value="{{address}}">
+    <input type="hidden" name="hiddenAccesibillity" value="{{accesibilityRating}}">
+    <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
+    <button type="submit" class="btn-outline-dark" id="try"> Click </button>
+  </form>
+  <hr>
 </div>
 {{/each}}
-<script type="text/javascript">
-  $(".store #try").click(update);
+
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //$(".store #try").click(update);
+
+  
+});
 
   function update() {
     // var des = $("#phoneNumber").val();
     // e.preventDefault();
-
+    
     var profile = $(this).closest(".store").get();
 
     console.log($(this).closest(".store").find("img").attr("src"));
@@ -84,11 +104,13 @@
     var storePrice = $(this).closest(".store").find(":nth-child(6)").text();
     var storeAddress = $(this).closest(".store").find(":nth-child(7)").text();
     var storeRating = $(this).closest(".store").find(":nth-child(8)").text();
-
+    
+    console.log(storeName);
+    console.log(storeDescription);
     $.post('/storeProfile', {
-      "name": storeName,
-      "phoneNumber": storeDescription,
-      "hours": storeHours
+      "name": "kyle",
+      "phoneNumber": "kyle",
+      "hours": "kyle"
     });
     
 
@@ -114,6 +136,7 @@
   //     $("h3").text("hi");
   // });
   }
+
     // var parentDiv = $(this).parent();
     // var description = $('parentDiv').find(":nth-child(3)");
     // console.log(parentDiv);
