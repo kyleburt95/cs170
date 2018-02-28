@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	text-align: center;
+	margin: 1em !important;
+}
+
+.tes{
+	position: absolute;
+	left: 78%
+}
+
+h3{
+	padding-top: 1.2em;
+}
+
+#navbarSupportedContent15{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    background-color: azure;
+    margin-top: 7rem;
+    right: 1rem;
+    padding-left: .5rem;
+    width: 107%;
+    z-index: 100;
+}
+
+.img-responsive {
+	width: 50%;
+	height: auto;
+}

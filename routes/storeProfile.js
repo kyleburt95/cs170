@@ -3,13 +3,16 @@ var descriptions = require('../data.json');
 
 exports.view = function(req, res){
 
-  console.log(req.body['hiddenName'])
+  console.log(req.body);
 
  res.render('storeProfile', {
     'projects': [
       { 'name': req.body['hiddenName'],
         'phoneNumber': req.body['hiddenPhoneNumber'],
-        'hours': req.body['hiddenStoreHours']
+        'hours': req.body['hiddenStoreHours'],
+        'priceRange': req.body['hiddenPriceRange'],
+        'address': req.body['hiddenAddress'],
+        'accesibilityRating': req.body['hiddenAccesibility']
       }
     ]  
   });
