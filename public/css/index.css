@@ -6,10 +6,12 @@
     padding-left: 1.75rem;
 }
 
+/*
 .container{
   margin: 5rem;
   display: inline-block;
 }
+*/
 
 input {
   display: block
@@ -161,6 +163,10 @@ a {
 }
 #contentBox{
     text-align: center;
+}
+.contentbox{
+    text-align: center;
+    margin-top: 1rem;
 }
 
 
