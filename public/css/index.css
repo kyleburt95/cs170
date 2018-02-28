@@ -63,7 +63,7 @@ h2{
   padding: 2rem;
   margin-left:1.5rem;
   margin-right: 1.5rem;
-  width: 6em;
+  width: 6rem;
   display: flex; justify-content: center;
 
 }
@@ -104,13 +104,15 @@ a {
 .btn-group {
   display: block;
   margin-bottom: .7rem;
+  font-size: 25px;
 }
 .btn-group button{
   display: inline-block;
   width: 85%;
-  padding: 2.3rem;
+  padding: 1rem;
   justify-content: center;
   margin-bottom: .5rem;
+    font-size: 1.5rem;
 }
 
 .store img{
@@ -121,6 +123,7 @@ a {
     width:50%;
     margin-top: .5rem;
 }
+
 
 .row{
     width: 100%;
@@ -158,12 +161,6 @@ a {
 }
 #contentBox{
     text-align: center;
-    position: fixed;
 }
-
-/*.btn-group a:last-child{
-  border-bottom: none;
-}
-*/
 
 
