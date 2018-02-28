@@ -2,14 +2,9 @@
 	box-sizing: border-box;
 }
 
-body{
+.contentbox{
 	text-align: center;
-	margin: 1em !important;
-}
 
-.tes{
-	position: absolute;
-	left: 78%
 }
 
 h3{
@@ -31,4 +26,50 @@ h3{
 .img-responsive {
 	width: 50%;
 	height: auto;
+}
+
+.fa-history{
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+    margin-top: .35rem;
+}
+#hamburger{
+    width:50%;
+    margin-top: .5rem;
+}
+.row{
+    width: 100%;
+}
+#history{
+	width:50%;
+    margin-top: .75rem;
+}
+#topheader{
+    background-color: aquamarine;
+    padding: 0px;
+    margin:0px;
+}
+#naviContainer{
+    background-color: aquamarine;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 0rem;
+}
+.navbar{
+    float: right;
+}
+#navbarSupportedContent15{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    background-color: azure;
+    margin-top: 7rem;
+    right: 1rem;
+    padding-left: .5rem;
+    width: 107%;
+    z-index: 100;
+}
+.navbar-toggler-icon{
+  width:2rem;
+  height:2.5rem;
 }
