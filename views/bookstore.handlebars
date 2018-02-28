@@ -12,8 +12,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<!-- 	<a href="index.html"><button class="btn btn-outline-dark"> Back </button></a>
--->	
 <div class="tes">
  <nav class="navbar navbar-light navbar-1 white">
 
@@ -46,10 +44,9 @@
 <h3> Bookstores </h3>
 {{#each bookstores}}
 <div class="store">
-  <img class="img-responsive" src="{{storePhotos}}">
-  <a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
-<!--   <a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
--->  <p id="description">{{description}}</p>
+<img class="img-responsive" src="{{storePhotos}}">
+<a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
+<p id="description">{{description}}</p>
 <p id="phoneNumber">{{phoneNumber}}</p>
 <p id="storeHours">{{storeHours}}</p>
 <p id="priceRange">{{priceRange}}</p>
@@ -82,36 +79,36 @@
   
 });
 
-  function update() {
-    // var des = $("#phoneNumber").val();
-    // e.preventDefault();
+  // function update() {
+  //   // var des = $("#phoneNumber").val();
+  //   // e.preventDefault();
     
-    var profile = $(this).closest(".store").get();
+  //   var profile = $(this).closest(".store").get();
 
-    console.log($(this).closest(".store").find("img").attr("src"));
-    console.log($(this).closest(".store").find("h3").text());
-    console.log($(this).closest(".store").find(":nth-child(4)").text());
-    console.log($(this).closest(".store").find(":nth-child(5)").text());
-    console.log($(this).closest(".store").find(":nth-child(6)").text());
-    console.log($(this).closest(".store").find(":nth-child(7)").text());
-    console.log($(this).closest(".store").find(":nth-child(8)").text());
+  //   console.log($(this).closest(".store").find("img").attr("src"));
+  //   console.log($(this).closest(".store").find("h3").text());
+  //   console.log($(this).closest(".store").find(":nth-child(4)").text());
+  //   console.log($(this).closest(".store").find(":nth-child(5)").text());
+  //   console.log($(this).closest(".store").find(":nth-child(6)").text());
+  //   console.log($(this).closest(".store").find(":nth-child(7)").text());
+  //   console.log($(this).closest(".store").find(":nth-child(8)").text());
 
 
-    var storeImage = $(this).closest(".store").find("img").attr("src");
-    var storeName = $(this).closest(".store").find("h3").text();
-    var storeDescription = $(this).closest(".store").find(":nth-child(4)").text();
-    var storeHours = $(this).closest(".store").find(":nth-child(5)").text();
-    var storePrice = $(this).closest(".store").find(":nth-child(6)").text();
-    var storeAddress = $(this).closest(".store").find(":nth-child(7)").text();
-    var storeRating = $(this).closest(".store").find(":nth-child(8)").text();
+  //   var storeImage = $(this).closest(".store").find("img").attr("src");
+  //   var storeName = $(this).closest(".store").find("h3").text();
+  //   var storeDescription = $(this).closest(".store").find(":nth-child(4)").text();
+  //   var storeHours = $(this).closest(".store").find(":nth-child(5)").text();
+  //   var storePrice = $(this).closest(".store").find(":nth-child(6)").text();
+  //   var storeAddress = $(this).closest(".store").find(":nth-child(7)").text();
+  //   var storeRating = $(this).closest(".store").find(":nth-child(8)").text();
     
-    console.log(storeName);
-    console.log(storeDescription);
-    $.post('/storeProfile', {
-      "name": "kyle",
-      "phoneNumber": "kyle",
-      "hours": "kyle"
-    });
+  //   console.log(storeName);
+  //   console.log(storeDescription);
+  //   $.post('/storeProfile', {
+  //     "name": "kyle",
+  //     "phoneNumber": "kyle",
+  //     "hours": "kyle"
+  //   });
     
 
     // $.get('/storeProfile/' + storeName, function(result) {
@@ -135,7 +132,7 @@
   //   $.post('/storeProfile', function(result) {
   //     $("h3").text("hi");
   // });
-  }
+//  }
 
     // var parentDiv = $(this).parent();
     // var description = $('parentDiv').find(":nth-child(3)");

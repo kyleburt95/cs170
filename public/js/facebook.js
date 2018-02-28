@@ -1,34 +1,30 @@
-// profile_name = "";
-// profile_picture = "";
-
-
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-    window.top.location = "/index";
+    // window.top.location = "/index";
   });
 }
 
 function statusChangeCallback(response) {
   console.log('Facebook login status changed.');
   console.log(response);
-    if (response.status === 'connected') {
+  if (response.status === 'connected') {
     // Logged into your app and Facebook.
-        console.log('Successfully logged in with Facebook');
-         FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
-         // window.top.location = "#";
+    console.log('Successfully logged in with Facebook');
+    FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+    window.top.location = "/index";
 
-}
-}
+       }
+     }
+
 function changeUser(response) {
-	console.log(response);
-  var profile_name = response.name;
+console.log(response);
+ //  var profile_name = response.name;
+ //  var profile_picture = response.picture.data.url;
 
-  var profile_picture = response.picture.data.url;
+ $(".facebookLogin").hide();
 
-	console.log(profile_name);
-  console.log(profile_picture);
-	$('.facebookLogin').hide();
+ $.post('/userProfile', response);
 
 
  // 	$("#fbName").text("whatevername");
