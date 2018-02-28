@@ -9,7 +9,13 @@
       "storePhotos": "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
       "accesibilityRating": "Accessibility Rating 6/10",
       "mapImage": "bookstoreBlack.png",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-67.40486725663717",
+          "longitude": "7.242008083777328",
+          "popupText": "Elevator"
+        }
+      ]
     },
     {
       "name": "Adams Avenue Book Store",
@@ -37,7 +43,13 @@
       "storePhotos": "http://lgbtweekly.com/wp-content/uploads/2013/06/bluestocking2.jpg",
       "accesibilityRating": "Accessibility Rating 4/10",
       "mapImage": "bookstoreBlack.png",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-45.115486725663715",
+          "longitude": "48.9689968767224",
+          "popupText": "Restroom"
+        }
+      ]
     }
   ],
   "clothing": [

@@ -9,9 +9,15 @@ exports.view = function(req, res){
 
  res.render('storeProfile', {
     'projects': [
-      { 'name': req.body['hiddenName'],
+      { 
+        'storePhotos' : req.body['hiddenStorePhotos'],
+        'name': req.body['hiddenName'],
         'phoneNumber': req.body['hiddenPhoneNumber'],
-        'hours': req.body['hiddenStoreHours']
+        'storeHours': req.body['hiddenStoreHours'],
+        'priceRange' : req.body['hiddenPriceRange'],
+        'address' : req.body['hiddenAddress'],
+        'accesibilityRating' : req.body['hiddenAccesibilityRating'],
+        'mapImage' : req.body['hiddenMapImage']
       }
     ]  
   });

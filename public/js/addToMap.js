@@ -65,11 +65,12 @@ function update() {
   var lat = placedPopup.getLatLng().lat;
   var lng = placedPopup.getLatLng().lng;
   var popupText = $('#popups option:selected').text();
-  console.log("hello", popupText);
+  var address = $('#hiddenAddress').val();
   $.post('/addToMap/update', {
     "lat" : lat,
     "lng" : lng,
-    "popupText" : popupText
+    "popupText" : popupText,
+    "address" : address
   }, function() {
     console.log('update')
     

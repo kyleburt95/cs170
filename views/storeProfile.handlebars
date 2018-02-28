@@ -43,13 +43,36 @@
   </nav>
 </div>
 <h3>Profile</h3>
+
+{{#each projects}}
+<form action="/map" method="get">
+  <input type="hidden" name="hiddenAddress" value="{{address}}">
+  <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+  <button type="submit" class="btn-outline-dark">View Store Map</button>
+</form>
+{{/each}}
+  
 <a href="/map">Map</a>
 <div class="container">
 
   {{#each projects}}
-  <a href="/storeProfile" id="name"><h3>{{name}}</h3></a>
-  <p id="description">{{phoneNumber}}</p>
-  <p id="storeHours"> {{hours}} </p>
+    <div class="store">
+    <img class="img-responsive" src="{{storePhotos}}">
+    <a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
+    <!--   <a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
+    -->  <p id="description">{{description}}</p>
+    <p id="phoneNumber">{{phoneNumber}}</p>
+    <p id="storeHours">{{storeHours}}</p>
+    <p id="priceRange">{{priceRange}}</p>
+    <p id="address">{{address}}</p>
+    <p id="accesibilityRating">{{accesibilityRating}}</p>
+    <div class="hiddenForm">
+      <form action="/addToMap" method="get">
+        <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+        <input type="hidden" name="hiddenAddress" value="{{address}}">
+        <button type="submit" class="btn-outline-dark">Add a Popup to the Map</button>
+      </form>  
+    </div>
   {{/each}}
 </div>
 <div>

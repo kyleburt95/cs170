@@ -118,6 +118,10 @@
         <input class="eighthCheck" type="checkbox">  
       </div>
     </div>
+    {{#each data}}
+    <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
+    <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+    {{/each}}
   </div>
   
   
