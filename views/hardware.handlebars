@@ -36,6 +36,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="/help">Help</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/addstore">Add Store</a>
+      </li>
     </ul>
     <!-- Links -->
   </div>
@@ -45,15 +48,15 @@
 <h3> Hardware Stores </h3>
 {{#each hardware}}
 <div class="store">
-<img class="img-responsive" src="{{storePhotos}}">
-<a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
-<p id="description">{{description}}</p>
-<p id="phoneNumber">{{phoneNumber}}</p>
-<p id="storeHours">{{storeHours}}</p>
-<p id="priceRange">{{priceRange}}</p>
-<p id="address">{{address}}</p>
-<p id="accesibilityRating">{{accesibilityRating}}</p>
-<a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
+  <img class="img-responsive" src="{{storePhotos}}">
+  <a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
+  <p id="description">{{description}}</p>
+  <p id="phoneNumber">{{phoneNumber}}</p>
+  <p id="storeHours">{{storeHours}}</p>
+  <p id="priceRange">{{priceRange}}</p>
+  <p id="address">{{address}}</p>
+  <p id="accesibilityRating">{{accesibilityRating}}</p>
+  <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
 </div>
 <div class="hiddenForm">
   <form action="/storeProfile" method="post">
