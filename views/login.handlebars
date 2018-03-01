@@ -27,7 +27,7 @@
                   <br><br>
                   <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input type="password" class="form-control" placeholder="Password" id="password"></div>
                   <br><br>
-                  <a class="facebookLogin" id="login"> 
+                  <a class="facebookLogin" id="fblogin"> 
                      <fb:login-button scope="public_profile,email" onlogin="checkLoginState()"> 
                   </fb:login-button>
                </a>
@@ -38,13 +38,14 @@
    </div>
    <script>
      $(document).ready(function() {
-      $('#password').change(function() {
-        var password = $('#password').val();
-        var username = $('#username').val();
-        if(password == 'password' && username == 'username')
-          $('#login').attr('href', '/index');
-    });
-   });
+        $('#password').change(function() {
+          var password = $('#password').val();
+          var username = $('#username').val();
+          if(password == 'password' && username == 'username'){
+            $('#login').attr('href', '/index');
+          }
+        });
+      });
 </script>
 {{> facebook}}
 <script src="/js/facebook.js"></script>
