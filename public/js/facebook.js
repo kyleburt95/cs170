@@ -15,12 +15,17 @@ function statusChangeCallback(response) {
     // Logged into your app and Facebook.
     console.log('Successfully logged in with Facebook');
     FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
-    window.top.location = "/index";
+    // window.top.location = "/index";
   }
 }
 
 function changeUser(response) {
   // console.log(response);
   $(".facebookLogin").hide();
+  // console.log(response.name);
+  // console.log(response.picture.data.url);
+  sessionStorage.setItem("current_user", response.name);
+  sessionStorage.setItem("current_user_photo", response.picture.data.url);
+  window.top.location = "/index";
 }
 

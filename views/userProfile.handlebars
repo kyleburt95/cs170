@@ -48,22 +48,22 @@
     <div class="container contentbox">
 	<h3 style="text-align: center"> Profile </h3>
 	<div class="container">
-		<o id="facebookName"> Name:</o>
+		<p id="facebookName"> Name:</p>
 		<div id="facebookPhoto" class="profile">
-			Profile photo: <br><img id="fbPhoto" class="img-responsive" src="defaultPicture.png">
+			Profile photo: <br><img id="fbPhoto" class="img-responsive" src=" ">
 		</div>
 	</div>
     </div>
+    <script type="text/javascript">
+	var user_name = sessionStorage.getItem("current_user");
+	var user_photo = sessionStorage.getItem("current_user_photo");
+	$("#facebookName").text(user_name);
+	$("#fbPhoto").attr("src", user_photo);
+	</script>
 	<!-- 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
-	<script type="text/javascript">
-		var user_name = localStorage.getItem("current_user");
-		var user_photo = localStorage.getItem("current_user_pic");
-		$("#facebookName").text(user_name);
-		$("#fbPhoto").attr("src", user_photo);
-	</script>
 </body>
 </html>
