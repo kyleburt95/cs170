@@ -34,6 +34,11 @@
           "latitude": "-23.573893805309737",
           "longitude": "40",
           "popupText": "Closure"
+        },
+        {
+          "latitude": "-18.56504424778761",
+          "longitude": "27.5",
+          "popupText": "Restroom"
         }
       ]
     },
