@@ -3,9 +3,7 @@ var descriptions = require('../data.json');
 
 exports.view = function(req, res){
 
-  // var charu = req.body['store'];
-  // res.render('storeProfile');
-  console.log(req.body['hiddenName'])
+  console.log(req.body);
 
  res.render('storeProfile', {
     'projects': [
@@ -16,8 +14,9 @@ exports.view = function(req, res){
         'storeHours': req.body['hiddenStoreHours'],
         'priceRange' : req.body['hiddenPriceRange'],
         'address' : req.body['hiddenAddress'],
-        'accesibilityRating' : req.body['hiddenAccesibilityRating'],
+        'accesibilityRating' : req.body['hiddenAccesibility'],
         'mapImage' : req.body['hiddenMapImage']
+
       }
     ]  
   });

@@ -1,34 +1,31 @@
-profile_name = "";
-profile_picture = "";
-
-
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-    // window.top.location = "/index";
   });
 }
 
 function statusChangeCallback(response) {
   console.log('Facebook login status changed.');
   console.log(response);
-    if (response.status === 'connected') {
+  // The response object is returned with a status field that lets the
+  // app know the current login status of the person.
+  // Full docs on the response object can be found in the documentation
+  // for FB.getLoginStatus().
+  if (response.status === 'connected') {
     // Logged into your app and Facebook.
-        console.log('Successfully logged in with Facebook');
-         FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
-         window.top.location = "/index";
+    console.log('Successfully logged in with Facebook');
+    FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+    // window.top.location = "/index";
+  }
+}
 
-}
-}
 function changeUser(response) {
-	console.log(response);
-  profile_name = response.name;
-  profile_picture = response.picture.data.url;
-	//console.log(response.name);
-	$('.facebookLogin').hide();
- // 	$("#fbName").text("whatevername");
- 	// $("#fbPhoto").attr("src", response.picture.data.url);
-	// $("#photo").attr("src", response.picture.data.url)
-
-  return profile_picture, profile_name;
+  // console.log(response);
+  $(".facebookLogin").hide();
+  // console.log(response.name);
+  // console.log(response.picture.data.url);
+  sessionStorage.setItem("current_user", response.name);
+  sessionStorage.setItem("current_user_photo", response.picture.data.url);
+  window.top.location = "/index";
 }
+

@@ -24,6 +24,11 @@
           "latitude": "-21.824336283185843",
           "longitude": "30.71584512039358",
           "popupText": "Hazard"
+        },
+        {
+          "latitude": "-25.577433628318587",
+          "longitude": "60",
+          "popupText": "Restroom"
         }
       ]
     },
@@ -166,17 +171,6 @@
       "address": "7788 Regents Rd, San Diego, CA 92122",
       "storePhotos": "http://www.amgmgt.com/sites/default/files/styles/property_photo_545px/public/photos-projects/237us-university-square/237usvons-2.jpg?itok=KA4JZXtn",
       "accesibilityRating": "Accessibility Rating 7/10",
-      "popups": []
-    },
-    {
-      "name": "Vince's Grocery Store",
-      "phoneNumber": "(619)456-2321",
-      "storehours": "2AM-7AM",
-      "PriceRange": "$$$$$",
-      "address": "1111 Vincent Street",
-      "storePhotos": "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
-      "accesibilityRating": "0/10",
-      "mapImage": "bookstoreBlack.png",
       "popups": []
     }
   ],

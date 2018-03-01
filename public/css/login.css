@@ -48,3 +48,8 @@ hr{
 h1{
 	text-align: center;
 }
+#login-title{
+    background-color: aquamarine;
+    padding-top: 1.5rem;
+    padding-bottom: 1.75rem;
+}

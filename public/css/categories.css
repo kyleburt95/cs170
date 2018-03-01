@@ -2,18 +2,21 @@
 	box-sizing: border-box;
 }
 
-#facebookPhoto img {
-	border: 0.07em black solid;
+.contentbox{
+	text-align: center;
+
 }
 
-.img-responsive{
-	width: 65%;
+h3{
+	padding-top: 1.2em;
+}
+
+.img-responsive {
+	width: 50%;
 	height: auto;
 }
-.contentbox{
-    text-align: center;
-    margin-top: 1rem;
-}
+
+
 #hamburger{
     width:50%;
     margin-top: .5rem;

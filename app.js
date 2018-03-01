@@ -78,6 +78,8 @@ app.post('/addstore/update', addstore.update);
 app.get('/storeProfile', storeProfile.view)
 app.post('/storeProfile', storeProfile.view);
 
+// app.post('/storeProfile', storeProfile.update);
+
 
 
 // Example route

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Assignment 6</title>
+  <title>NavGo</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,66 +11,65 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
-
-   <div class="tes1">
-      <nav class="navbar navbar-light navbar-1 white">
-      <!-- <a class="nav navbar-nav navbar-left" href="/history"><i class="fas fa-history"></i></a> -->
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
-        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/userProfile">Profile</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/help">Help</a>
-            </li>
+    
+    <div class="container-fluid" id="naviContainer">
+    <div class="row no-gutters" id="topheader">
+        <div class="col-xs-6" id="history">
+            <a class="nav navbar-nav navbar-left" href="/history"><i class="fas fa-history"></i></a>
+        </div>
+        <div class="col-xs-6" id="hamburger">
+            	<!-- navbar -->
+		<nav class="navbar navbar-light navbar-1 white">
+			<button class="navbar-toggler" id="navbtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+			aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    			<div class="collapse navbar-collapse" id="navbarSupportedContent15">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/userprofile">Profile</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/help">Help</a>
+					</li>
           <li class="nav-item active">
-                <a class="nav-link" href="/addstore">Add Store</a>
-            </li>
-        </ul>
-        <!-- Links -->
+            <a class="nav-link" href="/addstore">Add Store</a>
+          </li>
+				</ul>
+			</div>
+		</nav>
+        </div>
+
     </div>
-    <!-- Collapsible content -->
-</nav>
-</div>
- <a class="nav navbar-nav navbar-left" href="/history"><i class="fas fa-history"></i></a>
+    </div>
+
+
+  <div class="container-fluid" id="contentBox">
+  <h1 id="appname">NavGo</h1>
   
-<!--  <div class="container">-->
-   
-  <!-- <button class="btn-sm btn-outline-dark" id="addButton">Add Store</button> -->
-  
-  <h2>App Name</h2>
-  
-  <div class="row align-items-center mb-5">
-  <div id = "searchDiv">
+  <div class="row align-items-center mb-5" id="searchbar">
+  <div class="align-items-center" id="searchDiv">
     <input class="search_bar" type="text" placeholder="Where are you shopping?">
     <a href="/storeProfile"><button class="searchButton btn-sm btn-outline-dark">Search</button></a>
   </div>
-</div>
+  </div>
 
 
- <div class="btn-group">
-    <a href="/hardware"><button type="button" class="btn btn-outline-dark category">Hardware</button></a>
-    <a href="/clothing"><button type="button" class="btn btn-outline-dark category">Clothing</button></a>
-    <a href="/bookstore"><button type="button" class="btn btn-outline-dark category">Bookstore</button></a>
-    <a href="/grocery"><button type="button" class="btn btn-outline-dark category">Grocery</button></a>
-    <a href="/sporting"><button type="button" class="btn btn-outline-dark category">Sporting</button></a>
-    <a href="/department"><button type="button" class="btn btn-outline-dark category">Department</button></a>
+
+ <div class="btn-group" id="buttonbox">
+    <a href="/hardware"><button type="button" class="btn btn-outline-dark">Hardware</button></a>
+    <a href="/clothing"><button type="button" class="btn btn-outline-dark">Clothing</button></a>
+    <a href="/bookstore"><button type="button" class="btn btn-outline-dark">Bookstore</button></a>
+    <a href="/grocery"><button type="button" class="btn btn-outline-dark">Grocery</button></a>
+    <a href="/sporting"><button type="button" class="btn btn-outline-dark">Sporting</button></a>
+    <a href="/department"><button type="button" class="btn btn-outline-dark">Department</button></a>
 </div>
 
 
   <div class="text-center">
-   <a  href="/addstore" style="font-size: 1.5em"> Don't see your store? </a>
+   <a  href="/addstore" style="font-size: 1.5em" id="addstore"> Don't see your store? </a>
+  </div>
   </div>
 <!--</div>-->
 
