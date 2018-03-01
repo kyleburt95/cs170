@@ -1,9 +1,11 @@
 #searchDiv {
-  display: flex; justify-content: center;
+  display: flex; 
+  justify-content: center;
 }
 #searchbar{
     justify-content: center;
     padding-left: 1.75rem;
+    font-size: 1.1rem;
 }
 
 /*
@@ -21,7 +23,7 @@ input {
 }
 .search_bar{
   vertical-align: middle;
-  width: 15em;
+  width: 13em;
   border-width: .2rem;
   font-size: 1.3rem;
     text-align: center;
@@ -55,17 +57,18 @@ h2{
 
 .searchButton {
   padding: 0.3rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   border: 0.1rem solid black;
-  width: 5rem;
-    margin-left: .3rem;
+  width: 4.5rem;
+  margin-left: .3rem;
+  text-align: center;
 }
 
 .catButton button {
   padding: 2rem;
   margin-left:1.5rem;
   margin-right: 1.5rem;
-  width: 6rem;
+  width: 5rem;
   display: flex; justify-content: center;
 
 }
@@ -123,7 +126,7 @@ a {
 }
 #hamburger{
     width:50%;
-    margin-top: .5rem;
+    
 }
 
 
@@ -133,16 +136,15 @@ a {
 
 #history{
 	width:50%;
-    margin-top: .75rem;
+  margin-top: 5px;
 }
 
 #topheader{
-    background-color: aquamarine;
-    padding: 0px;
-    margin:0px;
+    background-color: #386F9A;
 }
+
 #naviContainer{
-    background-color: aquamarine;
+    background-color: #386F9A;
     width: 100%;
     padding-left: 1rem;
     padding-right: 0rem;
@@ -150,16 +152,20 @@ a {
 .navbar{
     float: right;
 }
+#navbtn {
+  background-color: #e6e6e6;
+  height: 46px;
+}
+
 #navbarSupportedContent15{
-    width: 100%;
     text-align: left;
     position: absolute;
-    background-color: azure;
-    margin-top: 7rem;
+    background-color: #e6e6e6;
+    margin-top: 7.8rem;
     right: 1rem;
     padding-left: .5rem;
-    width: 107%;
     z-index: 100;
+    width: 100%;
 }
 #contentBox{
     text-align: center;
@@ -168,5 +174,20 @@ a {
     text-align: center;
     margin-top: 1rem;
 }
+
+#appname {
+  padding: 10px 0;
+}
+
+#addstore {
+  color: blue;
+}
+
+@media (max-width: 360px) {
+  #search_bar {
+    font-size: 0.5rem;
+  }
+
+)
 
 

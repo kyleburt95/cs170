@@ -1,31 +1,53 @@
 #image-map {
-      width: 90%;
       height: 50vh;
       border: 1px solid #ccc;
-      margin-bottom: 10px;
-    left: 1em;
-    /*z-index: -1;*/
-    margin-top: 2em;
+      margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     }
 .row {
   margin: 4vh;
+  width: 100%;
 }
-
-.tes {
-  position: absolute;
-  left: 76%;
-  z-index: 5;
+#hamburger{
+    width:50%;
+    margin-top: .5rem;
 }
-body{
-    margin: 1em !important;
+#history{
+	width:50%;
+    margin-top: .75rem;
 }
-#navbarSupportedContent15 {
-  position: absolute;
-  top: 3em;
-  background-color: white;
-  padding: 0.2em;
-  padding-bottom: 0.2em;
-  padding-top: 0.2em;
-  border: .1em solid black;
+#topheader{
+    background-color: aquamarine;
+    padding: 0px;
+    margin:0px;
 }
-
+#naviContainer{
+    background-color: aquamarine;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 0rem;
+}
+.navbar{
+    float: right;
+}
+#navbarSupportedContent15{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    background-color: azure;
+    margin-top: 7rem;
+    right: 1rem;
+    padding-left: .5rem;
+    width: 107%;
+    z-index: 100;
+}
+.navbar-toggler-icon{
+  width:2rem;
+  height:2.5rem;
+}
+.boxofcheckboxes{
+    padding-right: 3rem;
+    text-align: center;
+}
