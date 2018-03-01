@@ -5,7 +5,7 @@ html{
 
 .content{
     height: 100%;
-    padding: 0 40px;
+    padding: 3rem;
     padding-top: 40px;
     display: flex;
     align-items: center;
@@ -17,12 +17,7 @@ html{
     text-align: center;
 }
 .logo{
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 2px;
-    line-height: 90px;
+    margin-bottom: 8rem;
 }
 .logo h1{
     font-weight: 700;
@@ -37,11 +32,10 @@ hr{
     color: #333;
     background-color: #333;
 }
-h1{
-	text-align: center;
-}
 #login-title{
     background-color: #386F9A;
-    height: 62px;
+    height: 6.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
