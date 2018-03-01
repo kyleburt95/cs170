@@ -75,7 +75,11 @@ h2{
 
 a {
   color:black;
-  text-decoration: underline;
+}
+
+.line {
+  width: 100%;
+  padding: 0;
 }
 /*.navbar.navbar-1 .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
@@ -128,8 +132,6 @@ a {
     width:50%;
     
 }
-
-
 .row{
     width: 100%;
 }
@@ -161,11 +163,12 @@ a {
     text-align: left;
     position: absolute;
     background-color: #e6e6e6;
-    margin-top: 7.8rem;
-    right: 1rem;
+    margin-top: 5.7rem;
+    padding-right: 23rem;
+    right: 0rem;
     padding-left: .5rem;
     z-index: 100;
-    width: 100%;
+    max-width: 100%;
 }
 #contentBox{
     text-align: center;
@@ -181,13 +184,7 @@ a {
 
 #addstore {
   color: blue;
+  text-decoration: underline;
 }
-
-@media (max-width: 360px) {
-  #search_bar {
-    font-size: 0.5rem;
-  }
-
-)
 
 

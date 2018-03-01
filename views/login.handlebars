@@ -10,8 +10,10 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    </head>
    <body>
+
+
       <div class="container-fluid" id="login-title">
-         <h1>PINS</h1>
+         <i class="fas fa-chevron-left"></i>
       </div>
       <div class="home">
          <div class="item">
@@ -25,7 +27,7 @@
                   <br><br>
                   <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input type="password" class="form-control" placeholder="Password" id="password"></div>
                   <br><br>
-                  <a classs="facebookLogin"> 
+                  <a class="facebookLogin" id="login"> 
                      <fb:login-button scope="public_profile,email" onlogin="checkLoginState()"> 
                   </fb:login-button>
                </a>
