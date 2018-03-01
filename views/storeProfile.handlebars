@@ -45,14 +45,6 @@
     </div>
     <!-- Collapsible content -->
 <h3 style="text-align:center">Profile</h3>
-
-{{#each projects}}
-<form action="/map" method="get">
-  <input type="hidden" name="hiddenAddress" value="{{address}}">
-  <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
-  <button type="submit" class="btn-outline-dark">View Store Map</button>
-</form>
-{{/each}}
 <div class="text-center">
   {{#each projects}}
     <div class="store">
@@ -66,11 +58,11 @@
     <p id="address">{{address}}</p>
     <p id="accesibilityRating">{{accesibilityRating}}</p>
     <div class="hiddenForm">
-      <form action="/addToMap" method="get">
-        <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+      <form action="/map" method="get">
         <input type="hidden" name="hiddenAddress" value="{{address}}">
-        <button type="submit" class="btn-outline-dark">Add a Popup to the Map</button>
-      </form>  
+        <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+        <button type="submit" class="btn-outline-dark">View Store Map</button>
+      </form>
     </div>
   {{/each}}
 </div>
