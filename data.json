@@ -39,6 +39,16 @@
           "latitude": "-18.56504424778761",
           "longitude": "27.5",
           "popupText": "Restroom"
+        },
+        {
+          "latitude": "-24.568888888888893",
+          "longitude": "88.5",
+          "popupText": "Stairs"
+        },
+        {
+          "latitude": "-23.066716641679164",
+          "longitude": "5.25",
+          "popupText": "Closure"
         }
       ]
     },

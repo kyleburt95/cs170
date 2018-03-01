@@ -115,8 +115,11 @@
       </div>
     </div>
     {{#each data}}
-    <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
-    <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+    <form method="get" action="/addToMap">
+      <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
+      <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+      <button type="submit" class="btn-outline-dark">+</button>
+    </form>
     {{/each}}
   </div>
   
