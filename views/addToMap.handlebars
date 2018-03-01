@@ -58,7 +58,7 @@
 
   <div id="image-map"></div>
   
-  
+  {{#each data}}
   <div class="container">
    <form method="post" action="/addToMap/update">
     <div class="form-group">
@@ -73,9 +73,12 @@
       <option id="checkout">Checkout</option>
     </select>
     </div>
+     <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
+     <input id="hiddenAddress" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
    </form>
     <button class="btn btn primary" id="saveButton">Save</button>
   </div>
+  {{/each}}
   
   
   

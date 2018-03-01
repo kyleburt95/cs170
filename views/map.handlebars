@@ -57,13 +57,13 @@
   <div class="container-fluid boxofcheckboxes">
     <div class="row">
       <div class="col-4 border rounded">
-        Outerware
+        Elevators
       </div>
       <div class="col-2">
         <input class="firstCheck" type="checkbox">
       </div>
       <div class="col-4 border rounded">
-        Stairs
+        Hazard
       </div>
       <div class="col-2">
         <input class="fifthCheck" type="checkbox">
@@ -72,13 +72,13 @@
 
     <div class="row">
       <div class="col-4 border rounded">
-        Textbooks
+        Escalator Down
       </div>
       <div class="col-2">
         <input class="secondCheck" type="checkbox">
       </div>
       <div class="col-4 border rounded">
-        Esc Up
+        Restroom
       </div>
       <div class="col-2">
         <input class="sixthCheck" type="checkbox">  
@@ -87,13 +87,13 @@
 
     <div class="row">
       <div class="col-4 border rounded">
-        Supplies
+        Escalator Up
       </div>
       <div class="col-2">
         <input class="thirdCheck" type="checkbox">
       </div>
       <div class="col-4 border rounded">
-        Esc Down
+        Stairs
       </div>
       <div class="col-2">
         <input class="seventhCheck" type="checkbox">
@@ -102,18 +102,22 @@
 
     <div class="row">
       <div class="col-4 border rounded">
-        Books
+        Closure
       </div>
       <div class="col-2">
         <input class="fourthCheck" type="checkbox">
       </div>
       <div class="col-4 border rounded">
-        Elevator
+        Checkout
       </div>
       <div class="col-2">
         <input class="eighthCheck" type="checkbox">  
       </div>
     </div>
+    {{#each data}}
+    <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
+    <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+    {{/each}}
   </div>
   
   

@@ -5,26 +5,43 @@ var fs = require('fs');
 //console.log(test);
 
 exports.view = function(req, res){
-        var mapImage = req.query.mapImage;
+        var mapImage = req.query.hiddenMapImage;
+        var address = req.query.hiddenAddress;
         console.log(mapImage);
-		res.render('addToMap', {'mapImage' : mapImage});
+		res.render('addToMap', {'data' : [
+          {
+            "mapImage" : mapImage,
+            "address" : address
+          }
+        ]});
 		//logIn();
 	};
 
 exports.update = function(req, res) {
-  //fs.appendFile('../newData.json', "Hello" , function (err) {
-  //if (err) throw err;
-  //console.log('Replaced!');
+  //get data.json
   var datafile = fs.readFileSync('data.json');
   var test = JSON.parse(datafile);
-  console.log(test);
   
+  //get latitude and longitude of 
   var latitude = req.body['lat'];
   var longitude = req.body['lng'];
   var popupText = req.body['popupText'];
+  var address = req.body['address'];
   var newPopup = {"latitude" : latitude, "longitude" : longitude, "popupText" : popupText};
-  console.log(newPopup);
-  test.bookstores[1].popups.push(newPopup);
+  for(storeCategory in test) {
+    var array = test[storeCategory];
+    //console.log(array);
+    for (var i = 0; i < array.length; i++) {      
+      if(array[i].address == address) {
+        array[i].popups.push(newPopup);
+        
+      }
+      
+    }
+    
+  }
+  
+  //test.bookstores[1].popups.push(newPopup);
   //var test = JSON.parse();
   //console.log(data);
   

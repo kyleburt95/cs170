@@ -43,19 +43,35 @@
 		</nav>
         </div>
     </div>
-    </div>
-
+    <!-- Collapsible content -->
 <h3 style="text-align:center">Profile</h3>
-<a href="/map">Map</a>
 
+{{#each projects}}
+<form action="/map" method="get">
+  <input type="hidden" name="hiddenAddress" value="{{address}}">
+  <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+  <button type="submit" class="btn-outline-dark">View Store Map</button>
+</form>
+{{/each}}
 <div class="text-center">
   {{#each projects}}
-  <a href="/storeProfile" id="name"><h3>{{name}}</h3></a>
-  <p id="description">{{phoneNumber}}</p>
-  <p id="storeHours"> {{hours}} </p>
-  <p id="priceRange">{{priceRange}}</p>
-  <p id="address">{{address}}</p>
-  <p id="accesibilityRating">{{accesibilityRating}}</p>
+    <div class="store">
+    <img class="img-responsive" src="{{storePhotos}}">
+    <a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
+    <!--   <a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
+    -->  <p id="description">{{description}}</p>
+    <p id="phoneNumber">{{phoneNumber}}</p>
+    <p id="storeHours">{{storeHours}}</p>
+    <p id="priceRange">{{priceRange}}</p>
+    <p id="address">{{address}}</p>
+    <p id="accesibilityRating">{{accesibilityRating}}</p>
+    <div class="hiddenForm">
+      <form action="/addToMap" method="get">
+        <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+        <input type="hidden" name="hiddenAddress" value="{{address}}">
+        <button type="submit" class="btn-outline-dark">Add a Popup to the Map</button>
+      </form>  
+    </div>
   {{/each}}
 </div>
 <div class="text-center">
@@ -76,6 +92,8 @@
 
 <!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
 -->
+      </div>
+  </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/css/star-rating.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
