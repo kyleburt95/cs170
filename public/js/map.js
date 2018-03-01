@@ -1,23 +1,52 @@
+var elevatorArray = [];
+var escalatorDownArray = [];
+var escalatorUpArray = [];
+var closureArray = [];
+var hazardArray = [];
+var restroomArray = [];
+var stairsArray = [];
+var checkoutArray = [];
+var otherArray = [];
+
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
 } 
 
-function outerwareToggle() {
+function toggle(array) {
   //L.marker([-58.75, 43.5]).addTo(map);
-   L.popup({autoClose:false})
-        .setLatLng([-58.75, 43.5])
-        .setContent("Outerware")
+  /**
+  console.log('hello');
+  for(var i = 0; i < array.length; i++) {
+    console.log(array.length);
+     L.popup({autoClose:false})
+        .setLatLng([array[i].latitude, array[i].longitude])
+        .setContent(array[i].popupText)
         .openOn(map);
+  }
+  */
+  
+  for(var i = 0; i < array.length; i++) {
+    var currentPopup = array[i];
+    currentPopup.openOn(map);
+  }
 }
 
+function unToggle(array) {
+  for(var i = 0; i < array.length; i++) {
+    var currentPopup = array[i];
+    map.closePopup(currentPopup);
+  }
+}
 function textbooksToggle() {
-  L.popup({autoClose:false})
+  
+  l = L.popup({autoClose:false})
         .setLatLng([-59,32])
         .setContent("Textbooks")
         .openOn(map);
 }
 
 function suppliesToggle() {
+  map.closePopup(l);
   L.popup({autoClose:false})
         .setLatLng([-49, 18])
         .setContent("Supplies")
@@ -52,7 +81,7 @@ function escDownToggle() {
         .setContent("Escalator Down")
         .openOn(map);
 }
-
+/**
 function elevatorToggle() {
   L.popup({autoClose:false})
         .setLatLng([-47, 36.9375])
@@ -60,7 +89,7 @@ function elevatorToggle() {
         .openOn(map);
 }
 
-
+*/
 
 
 
@@ -106,84 +135,134 @@ var eighthCheck = document.querySelector(".eighthCheck");
 
 firstCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        outerwareToggle();
+        toggle(elevatorArray);
     } else {
+        unToggle(elevatorArray);
         // Checkbox is not checked..
     }
 });
 
 secondCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        textbooksToggle();
+        toggle(escalatorDownArray);
     } else {
         // Checkbox is not checked..
+      unToggle(escalatorDownArray);
     }
 });
 
 thirdCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        suppliesToggle();
+        toggle(escalatorUpArray);
     } else {
         // Checkbox is not checked..
+      unToggle(escalatorUpArray);
     }
 });
 
 fourthCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        booksToggle();
+        toggle(closureArray);
     } else {
         // Checkbox is not checked..
+      unToggle(closureArray);
     }
 });
 
 fifthCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        stairsToggle();
+        toggle(hazardArray);
     } else {
         // Checkbox is not checked..
+      unToggle(hazardArray);
     }
 });
 
 sixthCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        escUpToggle();
+      toggle(restroomArray);
     } else {
         // Checkbox is not checked..
+      unToggle(restroomArray);
     }
 });
 
 seventhCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        escDownToggle();
+        toggle(stairsArray);
     } else {
         // Checkbox is not checked..
+      unToggle(stairsArray);
     }
 });
 
 eighthCheck.addEventListener( 'change', function() {
     if(this.checked) {
-        elevatorToggle();
+      toggle(checkoutArray);
     } else {
         // Checkbox is not checked..
-        
+        unToggle(checkoutArray);
     }
 });
 
 //to get dropdown menu to toggle
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
+    //send get request to get popups of store, address of store used as id to search through data.json
     $.get("/map/getPopups",{"address" : $('#hiddenAddress').val()}, function(data) {
       var popupArray = data.popupArray;
       console.log(popupArray.length);
+      //loop through
       for(var i = 0; i < popupArray.length; i++) {
+        //get values of current popup
         var latitude = popupArray[i].latitude;
         var longitude = popupArray[i].longitude;
         var popupText = popupArray[i].popupText;
         
-         L.popup({autoClose:false})
+        var currentPopup = L.popup({autoClose:false})
         .setLatLng([latitude, longitude])
         .setContent(popupText)
-        .openOn(map);
+        /**
+        if(popupText == "Elevator")
+          elevatorArray.push(popupArray[i]);
+        else if(popupText == "Escalator Down")
+          escalatorDownArray.push(popupArray[i]);
+        else if(popupText == "Escalator Up")
+          escalatorUpArray.push(popupArray[i]);
+        else if(popupText == "Closure")
+          closureArray.push(popupArray[i])
+        else if(popupText == "Hazard")
+          hazardArray.push(popupArray[i])
+        else if(popupText == "Restroom")
+          restroomArray.push(popupArray[i])
+        else if(popupText == "Stairs")
+          stairsArray.push(popupArray[i])
+        else if(popupText == "Checkout")
+          checkoutArray.push(popupArray[i]);
+        else
+          otherArray.push(popupArray[i]);
+          */
+        
+        if(popupText == "Elevator")
+          elevatorArray.push(currentPopup);
+        else if(popupText == "Escalator Down")
+          escalatorDownArray.push(currentPopup);
+        else if(popupText == "Escalator Up")
+          escalatorUpArray.push(currentPopup);
+        else if(popupText == "Closure")
+          closureArray.push(currentPopup)
+        else if(popupText == "Hazard")
+          hazardArray.push(currentPopup)
+        else if(popupText == "Restroom")
+          restroomArray.push(currentPopup)
+        else if(popupText == "Stairs")
+          stairsArray.push(currentPopup)
+        else if(popupText == "Checkout")
+          checkoutArray.push(currentPopup);
+        else
+          otherArray.push(currentPopup);
+        
+        
       }
     })
 });

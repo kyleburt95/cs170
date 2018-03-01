@@ -14,6 +14,16 @@
           "latitude": "-67.40486725663717",
           "longitude": "7.242008083777328",
           "popupText": "Elevator"
+        },
+        {
+          "latitude": "-58.90398230088496",
+          "longitude": "8.236068404371068",
+          "popupText": "Elevator"
+        },
+        {
+          "latitude": "-21.824336283185843",
+          "longitude": "30.71584512039358",
+          "popupText": "Hazard"
         }
       ]
     },
