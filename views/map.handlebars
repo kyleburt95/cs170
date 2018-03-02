@@ -56,7 +56,7 @@
     <form method="get" action="/addToMap">
       <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
       <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
-      <button type="submit" class="btn-outline-dark">Add a Pin to the Map</button>
+      <button type="submit" class="btn-outline-dark" id="addPinButton">+</button>
     </form>
     {{/each}}
   <div id="image-map"></div>

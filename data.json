@@ -54,6 +54,11 @@
           "latitude": "-16.05622188905547",
           "longitude": "51.5",
           "popupText": "Restroom"
+        },
+        {
+          "latitude": "-10.0472263868066",
+          "longitude": "57.75",
+          "popupText": "Checkout"
         }
       ]
     },
