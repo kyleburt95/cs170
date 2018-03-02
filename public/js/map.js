@@ -24,7 +24,8 @@ function toggle(array) {
         .openOn(map);
   }
   */
-  
+  if(array.length == 0)
+    alert("No popups have been added for this category yet")
   for(var i = 0; i < array.length; i++) {
     var currentPopup = array[i];
     currentPopup.openOn(map);
