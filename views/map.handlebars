@@ -52,6 +52,13 @@
     </div>
     </div>
 
+  {{#each data}}
+    <form method="get" action="/addToMap">
+      <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
+      <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+      <button type="submit" class="btn-outline-dark">Add a Pin to the Map</button>
+    </form>
+    {{/each}}
   <div id="image-map"></div>
   
   <div class="container-fluid boxofcheckboxes">
@@ -114,13 +121,7 @@
         <input class="eighthCheck" type="checkbox">  
       </div>
     </div>
-    {{#each data}}
-    <form method="get" action="/addToMap">
-      <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
-      <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
-      <button type="submit" class="btn-outline-dark">+</button>
-    </form>
-    {{/each}}
+    
   </div>
   
   

@@ -14,22 +14,20 @@
 
 </head>
 <body>
-<!-- 	<a href="index.html"><button class="btn btn-outline-dark"> Back </button></a>
--->	
-    <div class="container-fluid" id="naviContainer">
+<div class="container-fluid" id="naviContainer">
    <div class="row no-gutters" id="topheader">
       <div class="col-xs-6" id="history">
-         <!--<a class="nav navbar-nav navbar-left" href="/history"><i class="fas fa-history"></i></a>-->
+
       </div>
       <div class="col-xs-6" id="hamburger">
         
-         <nav class="navbar navbar-light navbar-1 navbar-inverse">
+         <nav class="navbar navbar-light navbar-1 white">
             <button class="navbar-toggler" id="navbtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent15">
                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                     <a class="nav-link" href="/page_A">Home</a>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="/page_A">Home</a>
                   </li>
                   <li class="nav-item active">
                      <a class="nav-link" href="/userprofile">Profile</a>
@@ -61,15 +59,18 @@
     <input type="hidden" name="hiddenAddress" value="{{address}}">
     <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
     <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
-    <button type="submit" class="btn-outline-dark" id="try"> {{name}} </button>
+    <button type="submit" id="storename"> {{name}} </button>
   </form>
 </div>
-<p id="description">{{description}}</p>
-<p id="phoneNumber">{{phoneNumber}}</p>
-<p id="storeHours">{{storeHours}}</p>
-<p id="priceRange">{{priceRange}}</p>
-<p id="address">{{address}}</p>
 <p id="accesibilityRating">{{accesibilityRating}}</p>
+   <hr id="short">
+   <div class="storeinfo">
+      <p id="description">{{description}}</p>
+      <p id="address">{{address}}</p>
+      <p id="phoneNumber">{{phoneNumber}}</p>
+      <p id="storeHours">{{storeHours}}</p>
+      <p id="priceRange">{{priceRange}}</p>
+   </div>
 </div>
 <hr>
 {{/each}}
