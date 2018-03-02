@@ -54,17 +54,18 @@
     <div class="store">
     <img class="img-responsive" src="{{storePhotos}}">
     <a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
+    <p id="accesibilityRating">{{accesibilityRating}}</p>
     <!--   <a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
     -->  
     <div class="hiddenForm">
       <form action="/map" method="get">
         <input type="hidden" name="hiddenAddress" value="{{address}}">
         <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
-        <button type="submit" class="btn-outline-dark">View Store Map</button>
+        <button type="submit" class="btn btn-primary">View Store Map</button>
       </form>
     </div>
     <hr id="short">
-    <p id="accesibilityRating">{{accesibilityRating}}</p>
+    
     
 <div class="info">
   <p id="description">{{description}}</p>
