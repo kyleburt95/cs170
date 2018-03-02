@@ -25,6 +25,7 @@ var help = require('./routes/help');
 var userProfile = require('./routes/userProfile');
 
 var addToMap = require('./routes/addToMap');
+var page_B = require('./routes/page_B');
 
 
 
@@ -74,9 +75,10 @@ app.get('/addToMap', addToMap.view);
 app.post('/addToMap/update', addToMap.update);
 app.get('/map/getPopups', map.getPopups);
 app.post('/addstore/update', addstore.update);
-//delete later
 app.get('/storeProfile', storeProfile.view)
 app.post('/storeProfile', storeProfile.view);
+
+app.get('/page_B', page_B.view);
 
 // app.post('/storeProfile', storeProfile.update);
 
