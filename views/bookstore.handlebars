@@ -49,7 +49,7 @@
 {{#each bookstores}}
 <div class="store">
 <img class="img-responsive" src="{{storePhotos}}">
-  <div class="hiddenForm">
+  
   <form action="/storeProfile" method="post">
     <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
     <input type="hidden" name="hiddenName" value="{{name}}">
@@ -73,9 +73,10 @@
 </div>
 </div>
 <hr>
-
 {{/each}}
 </div>
+
+
 
   
   <script type="text/javascript">

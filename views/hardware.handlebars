@@ -49,17 +49,8 @@
 <hr>
 {{#each hardware}}
 <div class="store">
-  <img class="img-responsive" src="{{storePhotos}}">
-  <a href="/storeProfile" id="name" value="{{name}}"><h3>{{name}}</h3></a>
-  <p id="description">{{description}}</p>
-  <p id="phoneNumber">{{phoneNumber}}</p>
-  <p id="storeHours">{{storeHours}}</p>
-  <p id="priceRange">{{priceRange}}</p>
-  <p id="address">{{address}}</p>
-  <p id="accesibilityRating">{{accesibilityRating}}</p>
-  <a class="btn btn-default btn-block" href="/addToMap?mapImage={{mapImage}}">Add Popup</a>
-</div>
-<div class="hiddenForm">
+<img class="img-responsive" src="{{storePhotos}}">
+  <div class="hiddenForm">
   <form action="/storeProfile" method="post">
     <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
     <input type="hidden" name="hiddenName" value="{{name}}">
@@ -70,10 +61,17 @@
     <input type="hidden" name="hiddenAddress" value="{{address}}">
     <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
     <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
-    <button type="submit" class="btn-outline-dark" id="try"> Click </button>
+    <button type="submit" class="btn-outline-dark" id="try"> {{name}} </button>
   </form>
-  <hr>
 </div>
+<p id="description">{{description}}</p>
+<p id="phoneNumber">{{phoneNumber}}</p>
+<p id="storeHours">{{storeHours}}</p>
+<p id="priceRange">{{priceRange}}</p>
+<p id="address">{{address}}</p>
+<p id="accesibilityRating">{{accesibilityRating}}</p>
+</div>
+<hr>
 {{/each}}
 </div>
 <script type="text/javascript">
