@@ -26,6 +26,6 @@ function changeUser(response) {
   // console.log(response.picture.data.url);
   sessionStorage.setItem("current_user", response.name);
   sessionStorage.setItem("current_user_photo", response.picture.data.url);
-  window.top.location = "/index";
+  window.top.location = "/page_A";
 }
 
