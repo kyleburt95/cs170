@@ -8,86 +8,86 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!--   <link rel="stylesheet" type="text/css" href="css/index.css">
- -->
- <link rel="stylesheet" type="text/css" href="css/categories.css">  
- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+<link rel="stylesheet" type="text/css" href="css/categories.css">  
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid" id="naviContainer">
+  <div class="container-fluid" id="naviContainer">
     <div class="row no-gutters" id="topheader">
-        <div class="col-xs-6" id="history">
-        </div>
-        <div class="col-xs-6" id="hamburger">
-            	<!-- navbar -->
-		<nav class="navbar navbar-light navbar-1 white">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
-			aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    			<div class="collapse navbar-collapse" id="navbarSupportedContent15">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="/userprofile">Profile</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="/help">Help</a>
-					</li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/addstore">Add Store</a>
-                    </li>
-				</ul>
-			</div>
-		</nav>
-        </div>
+      <div class="col-xs-6" id="history">
+      </div>
+      <div class="col-xs-6" id="hamburger">
+       <!-- navbar -->
+       <nav class="navbar navbar-light navbar-1 white">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+         aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+          <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+            <a class="nav-link" href="/page_A">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/userprofile">Profile</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/help">Help</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/addstore">Add Store</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-    </div>
-    </div>
-    
+</div>
+</div>
+
 <div class="container contentbox">
-<h3> Bookstores </h3>
-{{#each bookstores}}
-<div class="store">
-<img class="img-responsive" src="{{storePhotos}}">
-  <div class="hiddenForm">
-  <form action="/storeProfile" method="post">
-    <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
-    <input type="hidden" name="hiddenName" value="{{name}}">
-    <input type="hidden" name="hiddenDescription" value="{{description}}">
-    <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
-    <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
-    <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
-    <input type="hidden" name="hiddenAddress" value="{{address}}">
-    <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
-    <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
-    <button type="submit" class="btn-outline-dark" id="try"> {{name}} </button>
-  </form>
-</div>
-<p id="description">{{description}}</p>
-<p id="phoneNumber">{{phoneNumber}}</p>
-<p id="storeHours">{{storeHours}}</p>
-<p id="priceRange">{{priceRange}}</p>
-<p id="address">{{address}}</p>
-<p id="accesibilityRating">{{accesibilityRating}}</p>
-</div>
-<hr>
+  <h3> Bookstores </h3>
+  {{#each bookstores}}
+  <div class="store">
+    <img class="img-responsive" src="{{storePhotos}}">
+    <div class="hiddenForm">
+      <form action="/storeProfile" method="post">
+        <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
+        <input type="hidden" name="hiddenName" value="{{name}}">
+        <input type="hidden" name="hiddenDescription" value="{{description}}">
+        <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
+        <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
+        <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
+        <input type="hidden" name="hiddenAddress" value="{{address}}">
+        <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
+        <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
+        <button type="submit" class="btn-outline-dark" id="try"> {{name}} </button>
+      </form>
+    </div>
+    <p id="description">{{description}}</p>
+    <p id="phoneNumber">{{phoneNumber}}</p>
+    <p id="storeHours">{{storeHours}}</p>
+    <p id="priceRange">{{priceRange}}</p>
+    <p id="address">{{address}}</p>
+    <p id="accesibilityRating">{{accesibilityRating}}</p>
+  </div>
+  <hr>
 
-{{/each}}
+  {{/each}}
 </div>
 
-  
-  <script type="text/javascript">
-    $(document).ready(function() {
+
+<script type="text/javascript">
+  $(document).ready(function() {
       //$(".store #try").click(update);
 
-  
-});
+
+    });
 
   // function update() {
   //   // var des = $("#phoneNumber").val();
   //   // e.preventDefault();
-    
+
   //   var profile = $(this).closest(".store").get();
 
   //   console.log($(this).closest(".store").find("img").attr("src"));
@@ -106,7 +106,7 @@
   //   var storePrice = $(this).closest(".store").find(":nth-child(6)").text();
   //   var storeAddress = $(this).closest(".store").find(":nth-child(7)").text();
   //   var storeRating = $(this).closest(".store").find(":nth-child(8)").text();
-    
+
   //   console.log(storeName);
   //   console.log(storeDescription);
   //   $.post('/storeProfile', {
@@ -114,7 +114,7 @@
   //     "phoneNumber": "kyle",
   //     "hours": "kyle"
   //   });
-    
+
 
     // $.get('/storeProfile/' + storeName, function(result) {
     //   console.log(result);
