@@ -23,10 +23,10 @@ input {
 }
 .search_bar{
   vertical-align: middle;
-  width: 13em;
+  width: 15em;
   border-width: .2rem;
   font-size: 1.3rem;
-    text-align: center;
+  text-align: center;
 }
 
 #addButton {
@@ -55,14 +55,6 @@ h2{
   height: 10%
 }
 
-.searchButton {
-  padding: 0.3rem;
-  font-size: 1rem;
-  border: 0.1rem solid black;
-  width: 4.5rem;
-  margin-left: .3rem;
-  text-align: center;
-}
 
 .catButton button {
   padding: 2rem;
