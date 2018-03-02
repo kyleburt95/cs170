@@ -1,0 +1,8 @@
+.searchButton {
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: 0.1rem solid black;
+  width: 4.5rem;
+  margin-left: .3rem;
+  text-align: center;
+}
