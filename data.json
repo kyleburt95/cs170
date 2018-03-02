@@ -66,6 +66,11 @@
           "latitude": "-58.38893805309735",
           "longitude": "34.47814517536207",
           "popupText": "Escalator Up"
+        },
+        {
+          "latitude": "-68.63407407407406",
+          "longitude": "8.75",
+          "popupText": "Elevator"
         }
       ]
     },
