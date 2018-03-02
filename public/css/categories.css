@@ -2,18 +2,13 @@
 	box-sizing: border-box;
 }
 
-.contentbox{
-	text-align: center;
 
+.store img {
+	width: 60%;
 }
 
-h3{
-	padding-top: 1.2em;
-}
-
-.img-responsive {
-	width: 50%;
-	height: auto;
+.store h3 {
+    padding-top: 20px;
 }
 
 
@@ -29,12 +24,10 @@ h3{
     margin-top: .75rem;
 }
 #topheader{
-    background-color: aquamarine;
     padding: 0px;
     margin:0px;
 }
 #naviContainer{
-    background-color: aquamarine;
     width: 100%;
     padding-left: 1rem;
     padding-right: 0rem;
@@ -56,4 +49,25 @@ h3{
 .navbar-toggler-icon{
   width:2rem;
   height:2.5rem;
+}
+
+#storename {
+    font-size: 25px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.storeinfo {
+    text-align: left;
+    line-height: 10px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#accesibilityRating {
+    font-size: 18px;
+    font-weight: bold;
+}
+#short {
+    width: 40px;
 }
