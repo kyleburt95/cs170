@@ -8,7 +8,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
+var page_A = require('./routes/page_A');
 var login = require('./routes/login');
 var department = require('./routes/department');
 var addstore  = require('./routes/addstore');
@@ -60,7 +60,7 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/department', department.view);
 app.get('/userProfile', userProfile.view);
-app.get('/index', index.view);
+app.get('/page_A', page_A.view);
 app.get('/addstore', addstore.view);
 app.get('/bookstore', bookstore.view);
 app.get('/categories', categories.view);
