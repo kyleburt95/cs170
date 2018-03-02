@@ -8,9 +8,11 @@ var stairsArray = [];
 var checkoutArray = [];
 var otherArray = [];
 
+/**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
 } 
+*/
 
 function toggle(array) {
   //L.marker([-58.75, 43.5]).addTo(map);
