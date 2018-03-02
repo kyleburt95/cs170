@@ -124,7 +124,7 @@ function elevatorToggle() {
     iconUrl: 'my-icon.png',
 });
     
-    map.on('click', onMapClick);
+   // map.on('click', onMapClick);
     
 var firstCheck = document.querySelector(".firstCheck");
 var secondCheck = document.querySelector(".secondCheck");
