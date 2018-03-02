@@ -101,7 +101,13 @@
       "address": "4545 La Jolla Village Dr, San Diego, CA 92122",
       "storePhotos": "https://igx.4sqi.net/img/general/200x200/17691721_psdZn3ULK3CnNxGN8xfedAe5aoLpUIQ2AottkGZofUY.jpg",
       "accesibilityRating": "Accessibility Rating 4/10",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-33.33185185185185",
+          "longitude": "28.5",
+          "popupText": "Hazard"
+        }
+      ]
     },
     {
       "name": "Ralphs",
@@ -271,7 +277,13 @@
       "address": "3027 University Ave San Diego CA 92104",
       "storePhotos": "http://www.explorenorthpark.com/wp-content/uploads/2016/07/ABSP1.png",
       "accesibilityRating": "Accessibility Rating 4/10",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-20.813343328335833",
+          "longitude": "31.75",
+          "popupText": "Elevator"
+        }
+      ]
     },
     {
       "name": "Sports Palace",
