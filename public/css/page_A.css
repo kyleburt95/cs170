@@ -1,8 +1,14 @@
 .searchButton {
   padding: 0.3rem;
   font-size: 1rem;
-  border: 0.1rem solid black;
   width: 4.5rem;
-  margin-left: .3rem;
+  margin-left: 5px;
   text-align: center;
+}
+
+.search_bar {
+	text-align: left;
+	padding-left: 5px;
+	border: 1px solid gray;
+	width: 16rem;
 }

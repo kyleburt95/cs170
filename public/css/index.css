@@ -27,6 +27,7 @@ input {
   border-width: .2rem;
   font-size: 1.3rem;
   text-align: center;
+  border-radius: 5px;
 }
 
 #addButton {
@@ -156,7 +157,7 @@ a {
     position: absolute;
     background-color: #e6e6e6;
     margin-top: 5.7rem;
-    padding-right: 23rem;
+    padding-right: 22rem;
     right: 0rem;
     padding-left: .5rem;
     z-index: 100;
@@ -177,6 +178,13 @@ a {
 #addstore {
   color: blue;
   text-decoration: underline;
+  font-size: 1em;
 }
+
+#type {
+  font-size: 30px;
+  padding-top: 15px;
+}
+
 
 
