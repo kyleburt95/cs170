@@ -26,8 +26,8 @@
                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent15">
                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                     <a class="nav-link active" href="/page_A">Home</a>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="/page_A">Home</a>
                   </li>
                   <li class="nav-item active">
                      <a class="nav-link" href="/userprofile">Profile</a>
@@ -43,37 +43,37 @@
 </div>
     
 <div class="container contentbox">
-<h3><b>Bookstores</b></h3>
+   <h3><b>Bookstores</b></h3>
+   <hr>
+   {{#each bookstores}}
+   <div class="store">
+      <img class="img-responsive" src="{{storePhotos}}">
+      <form action="/storeProfile" method="post">
+         <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
+         <input type="hidden" name="hiddenName" value="{{name}}">
+         <input type="hidden" name="hiddenDescription" value="{{description}}">
+         <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
+         <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
+         <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
+         <input type="hidden" name="hiddenAddress" value="{{address}}">
+         <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
+         <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
+         <button type="submit" id="storename"> {{name}} </button>
+      </form>
+   </div>
+   <p id="accesibilityRating">{{accesibilityRating}}</p>
+   <hr id="short">
+   <div class="storeinfo">
+      <p id="description">{{description}}</p>
+      <p id="address">{{address}}</p>
+      <p id="phoneNumber">{{phoneNumber}}</p>
+      <p id="storeHours">{{storeHours}}</p>
+      <p id="priceRange">{{priceRange}}</p>
+   </div>
+  {{/each}}
+</div>
 <hr>
-{{#each bookstores}}
-<div class="store">
-<img class="img-responsive" src="{{storePhotos}}">
-  
-  <form action="/storeProfile" method="post">
-    <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
-    <input type="hidden" name="hiddenName" value="{{name}}">
-    <input type="hidden" name="hiddenDescription" value="{{description}}">
-    <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
-    <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
-    <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
-    <input type="hidden" name="hiddenAddress" value="{{address}}">
-    <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
-    <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
-    <button type="submit" id="storename"> {{name}} </button>
-  </form>
-</div>
-<p id="accesibilityRating">{{accesibilityRating}}</p><hr id="short">
-<div class="storeinfo">
-  <p id="description">{{description}}</p>
-  <p id="address">{{address}}</p>
-  <p id="phoneNumber">{{phoneNumber}}</p>
-  <p id="storeHours">{{storeHours}}</p>
-  <p id="priceRange">{{priceRange}}</p>
-</div>
-</div>
-<hr>
-{{/each}}
-</div>
+
 
 
 

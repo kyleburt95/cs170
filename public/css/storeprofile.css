@@ -63,5 +63,35 @@
 }
 
 .store {
-  margin-top: 5%;
+  margin: 5% 0;
 }
+
+#short {
+    width: 40px;
+}
+
+#accesibilityRating {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #FEC540;
+}
+
+.store h3 {
+  margin-top: 20px;
+}
+
+.info {
+  text-align: left;
+  line-height: 85%;
+  word-wrap: break-word;
+  margin-left: 2rem;
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+  overflow-wrap: normal;
+}
+
+#address {
+    line-height: 18px;
+}
+

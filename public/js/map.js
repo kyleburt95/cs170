@@ -8,9 +8,11 @@ var stairsArray = [];
 var checkoutArray = [];
 var otherArray = [];
 
+/**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
 } 
+*/
 
 function toggle(array) {
   //L.marker([-58.75, 43.5]).addTo(map);
@@ -24,7 +26,8 @@ function toggle(array) {
         .openOn(map);
   }
   */
-  
+  if(array.length == 0)
+    alert("No popups have been added for this category yet")
   for(var i = 0; i < array.length; i++) {
     var currentPopup = array[i];
     currentPopup.openOn(map);
@@ -121,7 +124,7 @@ function elevatorToggle() {
     iconUrl: 'my-icon.png',
 });
     
-    map.on('click', onMapClick);
+   // map.on('click', onMapClick);
     
 var firstCheck = document.querySelector(".firstCheck");
 var secondCheck = document.querySelector(".secondCheck");

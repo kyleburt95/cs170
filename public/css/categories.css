@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 }
 
-
 .store img {
 	width: 60%;
 }
@@ -10,7 +9,9 @@
 .store h3 {
     padding-top: 20px;
 }
-
+.store {
+    text-align: center;
+}
 
 #hamburger{
     width:50%;
@@ -55,19 +56,30 @@
     font-size: 25px;
     text-decoration: underline;
     color: blue;
+    text-align: center;
 }
 
 .storeinfo {
     text-align: left;
-    line-height: 10px;
-    margin-left: 1rem;
+    line-height: 85%;
+    word-wrap: break-word;
+    margin-left: 2rem;
+    margin-right: 1.2rem;
     margin-top: 1rem;
+    overflow-wrap: normal;
 }
 
 #accesibilityRating {
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    color: #EBC53E;
 }
 #short {
     width: 40px;
 }
+
+#address {
+    line-height: 18px;
+}
+

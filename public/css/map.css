@@ -1,8 +1,12 @@
+html {
+  padding-top: 0;
+  margin-top: 0;
+}
 #image-map {
       height: 50vh;
       border: 1px solid #ccc;
       margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
     }
@@ -16,15 +20,14 @@
 }
 #history{
 	width:50%;
-    margin-top: .75rem;
+
 }
-#topheader{
-    background-color: aquamarine;
-    padding: 0px;
-    margin:0px;
+#topheader {
+  margin: 0;
+  padding: 0;
 }
 #naviContainer{
-    background-color: aquamarine;
+    
     width: 100%;
     padding-left: 1rem;
     padding-right: 0rem;
@@ -50,4 +53,17 @@
 .boxofcheckboxes{
     padding-right: 3rem;
     text-align: center;
+}
+
+#addPinButton {
+  float: right;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+.boxofcheckboxes input {
+  width: 100%;
+  font-size: 0.85rem;
 }
