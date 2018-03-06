@@ -82,6 +82,8 @@ app.post('/storeProfile', storeProfile.view);
 
 app.get('/page_B', page_B.view);
 
+app.get('/bookstore', bookstore.search);
+
 // app.post('/storeProfile', storeProfile.update);
 
 
