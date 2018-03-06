@@ -73,8 +73,35 @@
       <p id="priceRange">{{priceRange}}</p>
    </div>
 </div>
-<hr>
-{{/each}}
+
+<div class="container contentbox">
+  <h3> Sporting Stores </h3>
+  {{#each sporting}}
+  <div class="store">
+    <img class="img-responsive" src="{{storePhotos}}">
+    <div class="hiddenForm">
+      <form action="/storeProfile" method="post">
+        <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
+        <input type="hidden" name="hiddenName" value="{{name}}">
+        <input type="hidden" name="hiddenDescription" value="{{description}}">
+        <input type="hidden" name="hiddenPhoneNumber" value="{{phoneNumber}}">
+        <input type="hidden" name="hiddenStoreHours" value="{{storeHours}}">
+        <input type="hidden" name="hiddenPriceRange" value="{{priceRange}}">
+        <input type="hidden" name="hiddenAddress" value="{{address}}">
+        <input type="hidden" name="hiddenAccesibility" value="{{accesibilityRating}}">
+        <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">   
+        <button type="submit" class="btn-outline-dark" id="try"> {{name}} </button>
+      </form>
+    </div>
+    <p id="description">{{description}}</p>
+    <p id="phoneNumber">{{phoneNumber}}</p>
+    <p id="storeHours">{{storeHours}}</p>
+    <p id="priceRange">{{priceRange}}</p>
+    <p id="address">{{address}}</p>
+    <p id="accesibilityRating">{{accesibilityRating}}</p>
+  </div>
+  <hr>
+  {{/each}}
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

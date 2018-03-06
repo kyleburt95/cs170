@@ -58,6 +58,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', login.view);
+app.get('/login', login.view);
 app.get('/department', department.view);
 app.get('/userProfile', userProfile.view);
 app.get('/page_A', page_A.view);
