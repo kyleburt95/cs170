@@ -48,9 +48,11 @@
   <div class="row align-items-center mb-5" id="searchbar">
   <div class="align-items-center" id="searchDiv">
   <input class="search_bar" type="text" placeholder="Search...">
-  <a href="/storeProfile" id="searchbtn"><button class="searchButton btn btn-primary">Search</button></a>
+  <a href="#" id="searchbtn"><button class="searchButton btn btn-primary">Search</button></a>
   </div>
   </div>
+
+
 
  <div class="btn-group" id="buttonbox">
     <a href="/hardware"><button type="button" class="btn btn-outline-dark">Hardware</button></a>
@@ -68,8 +70,17 @@
   </div>
 <!--</div>-->
 
-
   <script>
+    $(document).ready(function() {
+      $("#searchbtn").click(function(){
+
+      ga('create','UA-114623091-2','auto');
+      ga('send', 'event', 'Search', 'click');
+      });
+    });
+  </script>
+
+<!--   <script>
     $(document).ready(function() {
       $("#searchID").click(search)
     });
@@ -83,7 +94,7 @@
       // $.post('/bookstore', )
     }
     // }
-  </script>
+  </script> -->
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -98,6 +109,5 @@
 
   gtag('config', 'UA-115210996-1');
 </script>
-
 </body>
 </html>
