@@ -63,6 +63,7 @@ app.get('/userProfile', userProfile.view);
 app.get('/page_A', page_A.view);
 app.get('/addstore', addstore.view);
 app.get('/bookstore', bookstore.view);
+app.get('/bookstore/search', bookstore.search);
 app.get('/categories', categories.view);
 app.get('/clothing', clothing.view);
 app.get('/grocery', grocery.view);
