@@ -5,8 +5,17 @@ exports.view = function(req, res){
 };
 
 exports.search = function(req, res){
-	var q = req.query.q.toLowerCase();
 	var bookstores = data.bookstores;
-	var filteredBookstores = data.bookstores.filter(bookstore => bookstore.name.toLowerCase().indexOf(q) !== -1);
+	var filteredBookstores = bookstores;
+	for (var key in req.query){
+		if (key === "name"){
+			var name = req.query.name.toLowerCase();
+			filteredBookstores = filteredBookstores.filter(bookstore => bookstore.name.toLowerCase().indexOf(name) !== -1);
+		}
+		else {
+			var value = req.query[key].toLowerCase();
+			filteredBookstores = filteredBookstores.filter(bookstore => bookstore[key].toLowerCase() === value);
+		}
+	}
 	res.render('bookstore', {"bookstores" : filteredBookstores});
 }
