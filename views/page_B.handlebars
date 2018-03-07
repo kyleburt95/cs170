@@ -42,7 +42,7 @@
          <h1 id="appname">NavGo</h1>
          <div class="row align-items-center mb-5" id="searchbar">
             <input class="search_bar" type="text" id="bar" placeholder="Search...">
-            <a href="/storeProfile"><button class="searchButton btn btn-primary" id="searchbtn">Search</button></a>
+            <a href="#"><button class="searchButton btn btn-primary" id="searchbtn">Search</button></a>
          </div>
          <div class="btn-group table" id="buttonbox">
             <a href="/hardware" id="category1"><button type="button" class="btn btn-outline-dark">Hardware</button></a>
@@ -60,7 +60,6 @@
       <script>
     $(document).ready(function(){
       $("#searchbtn").click(function(e){
-        alert("enter");
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'Search', 'click');
@@ -69,7 +68,6 @@
         window.location.replace(url);
       });
       $("#category1").click(function(e){
-        e.preventDefault();
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category1', 'click');

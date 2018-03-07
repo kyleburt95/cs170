@@ -87,7 +87,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   <script>
     $(document).ready(function(){
       $("#searchbtn").click(function(e){
-        alert("enter");
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'Search', 'click');
@@ -96,7 +95,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         window.location.replace(url);
       });
       $("#category1").click(function(e){
-        e.preventDefault();
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category1', 'click');
