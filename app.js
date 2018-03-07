@@ -82,6 +82,7 @@ app.post('/storeProfile', storeProfile.view);
 
 app.get('/page_B', page_B.view);
 app.get('/places', places.view);
+app.get('/places/search', places.search);
 
 // app.get('/bookstore', bookstore.search);
 

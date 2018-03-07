@@ -55,7 +55,6 @@
 
 
  <div class="btn-group" id="buttonbox">
-    <form 
     <a href="/hardware" id="category1"><button type="button" class="btn btn-outline-dark">Hardware</button></a>
     <a href="/clothing" id="category2"><button type="button" class="btn btn-outline-dark">Clothing</button></a>
     <a href="/bookstore" id="category3"><button type="button" class="btn btn-outline-dark">Bookstore</button></a>
@@ -71,56 +70,58 @@
   </div>
 
   <script>
-    $(document).ready(function() {
+    $(document).ready(function(){
       $("#searchbtn").click(function(e){
+        alert("enter");
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'Search', 'click');
         ga('send', 'pageview');
-        url = window.location + '/search?name=' + $('#search_bar').val(); 
+        url = '/places/search?name=' + $('#search_bar').val(); 
         window.location.replace(url);
       });
       $("#category1").click(function(e){
         e.preventDefault();
+        e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category1', 'click');
         ga('send', 'pageview');
-        window.location.replace('/hardware');
+        window.location.replace('/places/search?category=hardware');
       });
       $("#category2").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category2', 'click');
         ga('send', 'pageview');
-        window.location.replace('/clothing');
+        window.location.replace('/places/search?category=clothing');
       });
       $("#category3").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category3', 'click');
         ga('send', 'pageview');
-        window.location.replace('/bookstore');
+        window.location.replace('/places/search?category=bookstore');
       });
       $("#category4").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category4', 'click');
         ga('send', 'pageview');
-        window.location.replace('/grocery');
+        window.location.replace('/places/search?category=grocery');
       });
       $("#category5").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category5', 'click');
         ga('send', 'pageview');
-        window.location.replace('/sporting');
+        window.location.replace('/places/search?category=sporting');
       });
       $("#category6").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category6', 'click');
         ga('send', 'pageview');
-        window.location.replace('/department');
+        window.location.replace('/places/search?category=department');
       });
     });
   </script>
