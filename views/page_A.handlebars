@@ -47,7 +47,7 @@
   
   <div class="row align-items-center mb-5" id="searchbar">
   <div class="align-items-center" id="searchDiv">
-  <input class="search_bar" type="text" placeholder="Search...">
+  <input class="search_bar" type="text" placeholder="Search..." id="search_bar">
   <a href="/storeProfile" id="searchbtn"><button class="searchButton btn btn-primary">Search</button></a>
   </div>
   </div>
@@ -68,23 +68,62 @@
    <a  href="/addstore" id="addstore"> Don't see your store? </a>
   </div>
   </div>
-
-<script>
-    $(document).ready(function() {
-      $("#searchbtn").click(search)
+  <script>
+    $(document).ready(function(){
+      $("#searchbtn").click(function(e){
+        alert("enter");
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'Search', 'click');
+        ga('send', 'pageview');
+        url = '/places/search?name=' + $('#search_bar').val(); 
+        window.location.replace(url);
+      });
+      $("#category1").click(function(e){
+        e.preventDefault();
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'category1', 'click');
+        ga('send', 'pageview');
+        window.location.replace('/places/search?category=hardware');
+      });
+      $("#category2").click(function(e){
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'category2', 'click');
+        ga('send', 'pageview');
+        window.location.replace('/places/search?category=clothing');
+      });
+      $("#category3").click(function(e){
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'category3', 'click');
+        ga('send', 'pageview');
+        window.location.replace('/places/search?category=bookstore');
+      });
+      $("#category4").click(function(e){
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'category4', 'click');
+        ga('send', 'pageview');
+        window.location.replace('/places/search?category=grocery');
+      });
+      $("#category5").click(function(e){
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'category5', 'click');
+        ga('send', 'pageview');
+        window.location.replace('/places/search?category=sporting');
+      });
+      $("#category6").click(function(e){
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'category6', 'click');
+        ga('send', 'pageview');
+        window.location.replace('/places/search?category=department');
+      });
     });
-
-    function search() {
-
-      var a = document.getElementById('search_barID').value;
-      console.log(a);
-
-      $.get('/bookstore', {"name": a});
-      // $.post('/bookstore', )
-    }
-    // }
-  </script> 
-
+  </script>
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
