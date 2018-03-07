@@ -1,6 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+  <!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='170935255-0',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
+
   <title>NavGo</title>
   
   <meta charset="utf-8">
@@ -47,7 +62,7 @@
   
   <div class="row align-items-center mb-5" id="searchbar">
   <div class="align-items-center" id="searchDiv">
-  <input class="search_bar" type="text" placeholder="Search...">
+  <input class="search_bar" type="text" placeholder="Search..." id="search_bar">
   <a href="/storeProfile" id="searchbtn"><button class="searchButton btn btn-primary">Search</button></a>
   </div>
   </div>
@@ -70,48 +85,56 @@
   </div>
 
   <script>
-    $(document).ready(function() {
-      $("#searchbtn").click(function(){
+    $(document).ready(function(){
+      $("#searchbtn").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'Search', 'click');
         ga('send', 'pageview');
+        url = '/places/search?name=' + $('#search_bar').val(); 
+        window.location.replace(url);
       });
-      $("#category1").click(function(){
+      $("#category1").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category1', 'click');
         ga('send', 'pageview');
+        window.location.replace('/places/search?category=hardware');
       });
-      $("#category2").click(function(){
+      $("#category2").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category2', 'click');
         ga('send', 'pageview');
+        window.location.replace('/places/search?category=clothing');
       });
-      $("#category3").click(function(){
+      $("#category3").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category3', 'click');
         ga('send', 'pageview');
+        window.location.replace('/places/search?category=bookstore');
       });
-      $("#category4").click(function(){
+      $("#category4").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category4', 'click');
         ga('send', 'pageview');
+        window.location.replace('/places/search?category=grocery');
       });
-      $("#category5").click(function(){
+      $("#category5").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category5', 'click');
         ga('send', 'pageview');
+        window.location.replace('/places/search?category=sporting');
       });
-      $("#category6").click(function(){
+      $("#category6").click(function(e){
         e.preventDefault();
         ga('create','UA-114623091-2','auto');
         ga('send', 'event', 'category6', 'click');
         ga('send', 'pageview');
+        window.location.replace('/places/search?category=department');
       });
     });
   </script>
