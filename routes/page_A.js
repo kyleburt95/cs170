@@ -9,8 +9,12 @@ exports.view = function(req, res){
 
 function initializePage() {
 	// your code here
-	$("#searchbtn").click(function(){
-		ga('create','UA-114623091-2','auto');
-		ga('send', 'event', 'Search', 'click');
-	});
+	$(document).ready(function() {
+      $("#searchbtn").click(function(){
+        e.preventDefault();
+        ga('create','UA-114623091-2','auto');
+        ga('send', 'event', 'Search', 'click');
+        ga('send', 'pageview');
+      });
+    });
 }
