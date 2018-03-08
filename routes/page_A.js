@@ -4,6 +4,7 @@
  */
 
 exports.view = function(req, res){
+  test = false;
   res.render('page_A');
 };
 
