@@ -168,7 +168,7 @@ a {
 }
 .contentbox{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 
 #appname {
@@ -185,6 +185,9 @@ a {
   font-size: 30px;
   padding-top: 15px;
 }
-
+/* NAV */
+#navbarNavDropdown {
+  background-color: #E3E3E3;
+}
 
 
