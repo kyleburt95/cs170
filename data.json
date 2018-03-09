@@ -222,7 +222,18 @@
       "address": "675 6th Ave San Diego CA 92101",
       "storePhotos": "http://www.welcometosandiego.com/wp-content/uploads/2010/08/Ace-Hardware-San-Diego-1024x680.jpg",
       "accesibilityRating": "Accessibility Rating 3/5",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-34.85157421289355",
+          "longitude": "56.75",
+          "popupText": "Elevator"
+        },
+        {
+          "latitude": "-35.85307346326836",
+          "longitude": "27.75",
+          "popupText": "Elevator"
+        }
+      ]
     },
     {
       "name": "Coronado Hardware Glass & Paint",
