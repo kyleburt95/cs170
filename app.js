@@ -36,6 +36,23 @@ var signup = require('./routes/signup');
 
 var app = express();
 
+//multer file storage
+/**
+var multer = require('multer');
+var storage = multer.diskStorage({
+  destination: function(req, file, callback) {
+    callback(null, './staticassets');
+  },
+  filename: function(req, file, callback) {
+    callback(null,Date.now() + file.originalName);
+  }
+});
+var upload = multer({storage : storage}).single('myFile');
+*/
+
+
+
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -52,6 +69,11 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static( 'staticassets'));
 
+/**
+var multer = require('multer');
+var upload = multer({dest: 'a/'});
+app.use(upload);
+*/
 
 // development only
 if ('development' == app.get('env')) {
@@ -78,6 +100,7 @@ app.get('/addToMap', addToMap.view);
 app.post('/addToMap/update', addToMap.update);
 app.get('/map/getPopups', map.getPopups);
 app.post('/addstore/update', addstore.update);
+
 app.get('/storeProfile', storeProfile.view)
 app.post('/storeProfile', storeProfile.view);
 

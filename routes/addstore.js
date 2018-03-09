@@ -1,5 +1,8 @@
 var fs = require('fs');
 
+
+
+
 exports.view = function(req, res){
   res.render('addstore');
 };
@@ -19,6 +22,10 @@ exports.update = function(req, res){
   //console.log(storetype);
   //console.log(storename);
   
+  //get filename from multer request
+  //console.log(req.file);
+  //var mapName = req.file.filename;
+  
   var newStore = {"name" : storename,
                   "phoneNumber" : phonenumber,
                   "storehours" : storehours,
@@ -26,7 +33,7 @@ exports.update = function(req, res){
                   "address" : address,
                   "storePhotos" : "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
                   "accesibilityRating" : accessibility,
-                  "mapImage" : "bookstoreBlack.png",
+                  "mapImage" : 'bookstoreBlack.png',
                   "popups" : []
                  };
   

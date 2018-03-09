@@ -1,11 +1,15 @@
 #searchDiv {
   display: flex; 
   justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 #searchbar{
     justify-content: center;
     padding-left: 1.75rem;
     font-size: 1.1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 /*
@@ -96,12 +100,14 @@ a {
 .navbar-toggler-icon{
   width:2rem;
   height:2.5rem;
+    background-color: #386F9A;
 }
 
 .fa-history{
   width: 2.5rem !important;
   height: 2.5rem !important;
     margin-top: .35rem;
+    z-index: -100;
 }
 .btn-group {
   display: block;
@@ -148,7 +154,7 @@ a {
     float: right;
 }
 #navbtn {
-  background-color: #e6e6e6;
+  background-color: #386F9A;
   height: 46px;
 }
 
@@ -163,8 +169,15 @@ a {
     z-index: 100;
     max-width: 100%;
 }
+
+#navbarSupportedContent15 a {
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
 #contentBox{
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 .contentbox{
     text-align: center;
@@ -172,7 +185,7 @@ a {
 }
 
 #appname {
-  padding: 10px 0;
+/*  padding: 10px 0;*/
 }
 
 #addstore {
@@ -189,5 +202,7 @@ a {
 .nav-item {
   border-bottom: 1px solid white;
 }
+
+
 
 

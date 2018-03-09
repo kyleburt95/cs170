@@ -1,6 +1,13 @@
 h1 {
 	text-align: center;
 	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.form-horizontal{
+	font-family: 'Roboto Condensed', sans-serif;
+
 }
 html {
 	width: 100%;
