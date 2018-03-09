@@ -161,13 +161,13 @@ a {
 #navbarSupportedContent15{
     text-align: left;
     position: absolute;
-    background-color: #e6e6e6;
+    background-color: rgba(0,0,0,.6);
     margin-top: 5.7rem;
     padding-right: 22rem;
     right: 0rem;
     padding-left: .5rem;
     z-index: 100;
-    max-width: 100%;
+    width: 100%;
 }
 
 #navbarSupportedContent15 a {
