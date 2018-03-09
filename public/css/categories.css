@@ -6,11 +6,28 @@
 	width: 60%;
 }
 
+#title b{
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+
 .store h3 {
     padding-top: 20px;
 }
 .store {
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#filterBtn {
+    font-family: 'Roboto Condensed', sans-serif;
+  
 }
 
 #hamburger{

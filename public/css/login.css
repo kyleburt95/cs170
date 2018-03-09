@@ -1,4 +1,6 @@
 body{
+    background:linear-gradient(#42dcf4,#41f4d9);
+    font-family: 'Roboto Condensed', sans-serif;
 }
 html{
     width: 100%;
@@ -36,7 +38,7 @@ hr{
 }
 #login-title{
 /*    background:rgba(114, 114, 114, .65);*/
-    background: #e8e8e8;
+    background: #386F9A;
     height: 11rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -52,5 +54,7 @@ hr{
     margin-top: 1rem;
 }
 #logintext{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #727272;
 }

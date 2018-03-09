@@ -6,6 +6,9 @@
     justify-content: center;
     margin-bottom: .5rem;
     font-size: 1.5rem;
+	font-family: 'Roboto Condensed', sans-serif;
+
+
 }
 
 #bar {
@@ -15,4 +18,22 @@
 	padding: 5px;
 }
 
+
+
+#appname{
+ font-family: 'Roboto Condensed', sans-serif;
+ height: 8rem;
+margin-top: 1.5rem;
+
+}
+
+button{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.text-center {
+font-family: 'Roboto Condensed', sans-serif;
+
+}
 

@@ -229,7 +229,7 @@ $(document).ready(function() {
         
         var currentPopup = L.popup({autoClose:false})
         .setLatLng([latitude, longitude])
-        .setContent(popText);
+        .setContent(popupText);
         /**
         if(popupText == "Elevator")
           elevatorArray.push(popupArray[i]);
