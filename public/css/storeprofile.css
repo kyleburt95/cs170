@@ -70,15 +70,38 @@
     width: 40px;
 }
 
+#submit {
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+button{
+      font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#navbarSupportedContent15 a{
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#storeRate{
+      font-family: 'Roboto Condensed', sans-serif;
+
+}
 #accesibilityRating {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     color: #FEC540;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .store h3 {
   margin-top: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .info {
@@ -89,6 +112,8 @@
   margin-right: 1.2rem;
   margin-top: 1rem;
   overflow-wrap: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 #address {
