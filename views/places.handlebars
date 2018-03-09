@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Department Store</title>
+  <title>Places</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,19 @@
 
     
 <div class="container contentbox">
-<h3><b>Places</b></h3>
+  <div class="row">
+<h3 id="title" class="mx-auto"><b>Places</b></h3>
+<div class="dropdown" id="filter">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Filter
+  </button>
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#" id="name">Name</a>
+    <a class="dropdown-item" href="#" id="price">Price</a>
+    <a class="dropdown-item" href="#" id="rating">Accessbility Rating</a>
+  </div>
+</div>
+</div>
 <hr>
 {{#each places}}
 <div class="store">
@@ -80,7 +92,7 @@
 </div>
 <script type="text/javascript">
   $(document).ready(function() {
-      //$(".store #try").click(update);
+    $('#name').
 
 
     });

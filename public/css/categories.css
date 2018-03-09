@@ -83,3 +83,14 @@
     line-height: 18px;
 }
 
+#filter {
+    position: absolute;
+    right: 0;
+    margin-right: 3%;
+}
+#title {
+    text-align: center;
+}
+.contentbox{
+    margin-top: 10%;
+}
