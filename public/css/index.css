@@ -1,11 +1,15 @@
 #searchDiv {
   display: flex; 
   justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 #searchbar{
     justify-content: center;
     padding-left: 1.75rem;
     font-size: 1.1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 /*
@@ -165,8 +169,15 @@ a {
     z-index: 100;
     max-width: 100%;
 }
+
+#navbarSupportedContent15 a {
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
 #contentBox{
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 .contentbox{
     text-align: center;
@@ -191,5 +202,7 @@ a {
 #navbarNavDropdown {
   background-color: #E3E3E3;
 }
+
+
 
 

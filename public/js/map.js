@@ -126,14 +126,14 @@ function elevatorToggle() {
     
    // map.on('click', onMapClick);
     
-var firstCheck = document.querySelector(".firstCheck");
-var secondCheck = document.querySelector(".secondCheck");
-var thirdCheck = document.querySelector(".thirdCheck");
-var fourthCheck = document.querySelector(".fourthCheck");
-var fifthCheck = document.querySelector(".fifthCheck");
-var sixthCheck = document.querySelector(".sixthCheck");
-var seventhCheck = document.querySelector(".seventhCheck");
-var eighthCheck = document.querySelector(".eighthCheck");
+var firstCheck = document.querySelector("#firstCheck");
+var secondCheck = document.querySelector("#secondCheck");
+var thirdCheck = document.querySelector("#thirdCheck");
+var fourthCheck = document.querySelector("#fourthCheck");
+var fifthCheck = document.querySelector("#fifthCheck");
+var sixthCheck = document.querySelector("#sixthCheck");
+var seventhCheck = document.querySelector("#seventhCheck");
+var eighthCheck = document.querySelector("#eighthCheck");
 
 
 firstCheck.addEventListener( 'change', function() {
@@ -222,9 +222,14 @@ $(document).ready(function() {
         var longitude = popupArray[i].longitude;
         var popupText = popupArray[i].popupText;
         
+        //create container to hold button
+        //var pop = "<b>" + popupText + "</b>" + "<br>" + "<button> Delete </button>"
+        
+        
+        
         var currentPopup = L.popup({autoClose:false})
         .setLatLng([latitude, longitude])
-        .setContent(popupText)
+        .setContent(popupText);
         /**
         if(popupText == "Elevator")
           elevatorArray.push(popupArray[i]);

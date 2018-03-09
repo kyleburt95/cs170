@@ -12,3 +12,22 @@
 	border: 1px solid gray;
 	width: 16rem;
 }
+
+#appname h1{
+ font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+button{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text-center {
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#searchbtn {
+font-family: 'Roboto Condensed', sans-serif;
+
+}

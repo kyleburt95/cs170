@@ -8,8 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/addstore.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
 </head>
 <body>
@@ -47,7 +49,7 @@
 </div>
 
 <div class="container-fluid addstorebox">
-  <h3> Add Store </h3>
+  <h3 id="addTitle"> Add Store </h3>
   <form action="/addstore/update" method="post">
     <div class="form-group text-left">
       <label for="storename">Store Name:</label>
@@ -58,19 +60,19 @@
       <input type="tel" name="phonenumber" id="phonenumber" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Store Hours:</label>
+      <label for="storehours">Store Hours:</label>
       <input type="tel" name="storehours" id="storehours" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Price Range:</label>
+      <label for="pricerange">Price Range:</label>
       <input type="tel" name="pricerange" id="pricerange" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Address:</label>
+      <label for="address">Address:</label>
       <input type="tel" name="address" id="address" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Accessibility Rating:</label>
+      <label for="accessibility">Accessibility Rating:</label>
       <input type="tel" name="accessibility" id="accessibility" class="form-control">
     </div>
     <div class="form-group text-left">
@@ -85,12 +87,16 @@
         <option value="other" name="other">Other</option>
       </select>
     </div>
+    <div class="form-group text-left">
+      <label for="storemap">Upload Store Map</label>
+      <input name="map" type="file" class="form-control">
+    </div>
     <button type="submit" class="btn btn-primary" id="submit">Submit</button>
   </form>
 </div>
 
 <script>
-  $('#submit').click(update);
+  //$('#submit').click(update);
   
   function update() {
     var storename = $('#storename').val();
@@ -103,7 +109,7 @@
 
     console.log(storetype);
 
-    $.post('/addToMap/update', {
+    $.post('/addstore/update', {
       "storename" : storename,
       "phonenumber" : phonenumber,
       "storetype" : storetype,
