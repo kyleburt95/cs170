@@ -274,7 +274,13 @@
       "address": "339 &th Ave San Diego CA 92101",
       "storePhotos": "https://s3-media1.fl.yelpcdn.com/bphoto/CpYVD6cIU04aoeo0wFeXOg/o.jpg",
       "accessibilityRating": "Accessibility Rating 4/5",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-47.66670323252633",
+          "longitude": "50.11576555667605",
+          "popupText": "Closure"
+        }
+      ]
     }
   ],
   "storeProfile": [

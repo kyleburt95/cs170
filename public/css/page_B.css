@@ -1,6 +1,8 @@
 #searchbtn {
 	margin-top: 10px;
 	padding: 8px 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 #bar {
@@ -8,4 +10,20 @@
 	border: 1px solid gray;
 	text-align: left;
 	padding: 5px;
+}
+
+
+#appname{
+ font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+button{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.text-center {
+font-family: 'Roboto Condensed', sans-serif;
+
 }

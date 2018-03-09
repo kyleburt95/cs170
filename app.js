@@ -86,10 +86,6 @@ app.get('/places', places.view);
 app.get('/places/search', places.search);
 app.get('/signup', signup.view);
 
-app.get('/signUp', signUp.view);
-app.get('/signUp', signUp.update);
-// app.post('/signUp', signUp.update);
-
 // app.get('/bookstore', bookstore.search);
 
 // app.post('/storeProfile', storeProfile.update);

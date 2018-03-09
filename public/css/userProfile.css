@@ -17,6 +17,8 @@
 #hamburger{
     width:50%;
     margin-top: .5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 .row{
     width: 100%;
@@ -56,4 +58,9 @@
     text-align: center;
     bottom: 0;
     margin-bottom: 
+}
+
+#log button{
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
