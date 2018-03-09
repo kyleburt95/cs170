@@ -12,9 +12,10 @@
 	padding: 5px;
 }
 
-
 #appname{
  font-family: 'Roboto Condensed', sans-serif;
+ height: 8rem;
+margin-top: 1.5rem;
 
 }
 

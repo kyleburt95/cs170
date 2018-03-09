@@ -38,7 +38,7 @@ hr{
 }
 #login-title{
 /*    background:rgba(114, 114, 114, .65);*/
-    background: #e8e8e8;
+    background: #386F9A;
     height: 11rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -54,10 +54,7 @@ hr{
     margin-top: 1rem;
 }
 #logintext{
-<<<<<<< HEAD
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
-=======
     color: #727272;
->>>>>>> c32c7f74c6fe5eef22131c6b8f227bf166094062
 }
