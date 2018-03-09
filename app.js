@@ -27,6 +27,7 @@ var userProfile = require('./routes/userProfile');
 var addToMap = require('./routes/addToMap');
 var page_B = require('./routes/page_B');
 var places = require('./routes/places');
+var signup = require('./routes/signup');
 
 
 
@@ -83,6 +84,7 @@ app.post('/storeProfile', storeProfile.view);
 app.get('/page_B', page_B.view);
 app.get('/places', places.view);
 app.get('/places/search', places.search);
+app.get('/signup', signup.view);
 
 // app.get('/bookstore', bookstore.search);
 
