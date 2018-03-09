@@ -1,5 +1,4 @@
 body{
-    background:linear-gradient(#42dcf4,#41f4d9);
 }
 html{
     width: 100%;
@@ -36,8 +35,9 @@ hr{
     background-color: #333;
 }
 #login-title{
-    background-color: #386F9A;
-    height: 8rem;
+/*    background:rgba(114, 114, 114, .65);*/
+    background: #e8e8e8;
+    height: 11rem;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -45,12 +45,12 @@ hr{
     margin-top: 25px;
 }
 #navgoicon{
-    height: 6rem;
+    height: 9rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 #logintext{
-    color: white;
+    color: #727272;
 }
