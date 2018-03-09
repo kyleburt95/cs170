@@ -58,19 +58,19 @@
       <input type="tel" name="phonenumber" id="phonenumber" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Store Hours:</label>
+      <label for="storehours">Store Hours:</label>
       <input type="tel" name="storehours" id="storehours" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Price Range:</label>
+      <label for="pricerange">Price Range:</label>
       <input type="tel" name="pricerange" id="pricerange" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Address:</label>
+      <label for="address">Address:</label>
       <input type="tel" name="address" id="address" class="form-control">
     </div>
     <div class="form-group text-left">
-      <label for="phonenumber">Accessibility Rating:</label>
+      <label for="accessibility">Accessibility Rating:</label>
       <input type="tel" name="accessibility" id="accessibility" class="form-control">
     </div>
     <div class="form-group text-left">
@@ -85,12 +85,16 @@
         <option value="other" name="other">Other</option>
       </select>
     </div>
+    <div class="form-group text-left">
+      <label for="storemap">Upload Store Map</label>
+      <input name="map" type="file" class="form-control">
+    </div>
     <button type="submit" class="btn btn-primary" id="submit">Submit</button>
   </form>
 </div>
 
 <script>
-  $('#submit').click(update);
+  //$('#submit').click(update);
   
   function update() {
     var storename = $('#storename').val();
@@ -103,7 +107,7 @@
 
     console.log(storetype);
 
-    $.post('/addToMap/update', {
+    $.post('/addstore/update', {
       "storename" : storename,
       "phonenumber" : phonenumber,
       "storetype" : storetype,

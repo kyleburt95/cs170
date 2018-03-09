@@ -201,6 +201,16 @@
       "storePhotos": "http://www.amgmgt.com/sites/default/files/styles/property_photo_545px/public/photos-projects/237us-university-square/237usvons-2.jpg?itok=KA4JZXtn",
       "accesibilityRating": "Accessibility Rating 4/5",
       "popups": []
+    },
+    {
+      "name": "Albertsons",
+      "phoneNumber": "6194567136",
+      "storeHours": "7AM-9PM",
+      "priceRange": "$",
+      "address": "1222 Mayapple Way",
+      "storePhotos": "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
+      "accesibilityRating": "3",
+      "popups": []
     }
   ],
   "hardware": [
