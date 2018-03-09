@@ -102,6 +102,7 @@ a {
   width: 2.5rem !important;
   height: 2.5rem !important;
     margin-top: .35rem;
+    z-index: -100;
 }
 .btn-group {
   display: block;
@@ -172,7 +173,7 @@ a {
 }
 
 #appname {
-  padding: 10px 0;
+/*  padding: 10px 0;*/
 }
 
 #addstore {
