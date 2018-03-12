@@ -215,7 +215,7 @@ $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
   
     //hide checkboxes on page load
-    $('#checkboxes').hide();
+    //$('#checkboxes').hide();
   
   /**
     $("#filter").click(function() {
