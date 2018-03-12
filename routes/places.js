@@ -15,6 +15,22 @@ exports.search = function(req, res){
 				return place.name.toLowerCase().indexOf(name) !== -1;
 			})
 		}
+		else if (key === "sortOn" || key === "sortOrder") {
+			var sortOn = req.query.sortOn;
+			var sortOrder = req.query.sortOrder;
+			filteredPlaces = filteredPlaces.sort(function(a, b) {
+				console.log("in sort: " + sortOn + ", " + sortOrder);
+				if (a[sortOn] < b[sortOn]){
+					return sortOrder === "asc" ? -1 : 1;
+				}
+				else if (a[sortOn] === b[sortOn]){
+					return 0;
+				}
+				else {
+					return sortOrder === "asc" ? 1 : -1;
+				} 
+			})
+		}
 		else {
 			var value = req.query[key].toLowerCase();
 			//filteredBookstores = filteredBookstores.filter(bookstore => bookstore[key].toLowerCase() === value);
