@@ -59,7 +59,6 @@ function onTwoFingerDrag(e) {
       center: [0, 0],
       zoom: 2,
       dragging: false,
-      tap: false,
       crs: L.CRS.Simple
     });
     // dimensions of the image
