@@ -180,7 +180,7 @@ a {
 }
 .contentbox{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 #appname {
@@ -198,10 +198,12 @@ a {
   padding-top: 15px;
 }
 /* NAV */
-#navbarNavDropdown {
-  background-color: #E3E3E3;
+.nav-item {
+  border-bottom: 1px solid white;
 }
 
-
+#where {
+  margin-top: 20px;
+}
 
 
