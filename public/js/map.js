@@ -103,6 +103,8 @@ function elevatorToggle() {
       maxZoom: 4,
       center: [0, 0],
       zoom: 2,
+      dragging: false,
+      tap: false,
       crs: L.CRS.Simple
     });
     // dimensions of the image
@@ -211,6 +213,15 @@ eighthCheck.addEventListener( 'change', function() {
 //to get dropdown menu to toggle
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
+  
+    //hide checkboxes on page load
+    $('#checkboxes').hide();
+  
+  /**
+    $("#filter").click(function() {
+      $('#checkboxes').slideToggle();
+    })
+   */ 
     //send get request to get popups of store, address of store used as id to search through data.json
     $.get("/map/getPopups",{"address" : $('#hiddenAddress').val()}, function(data) {
       var popupArray = data.popupArray;
