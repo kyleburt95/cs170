@@ -13,7 +13,6 @@
   <link rel="stylesheet" type="text/css" href="/css/index.css">
   <link rel="stylesheet" type="text/css" href="/css/map.css">
   <!-- <link rel="stylesheet" type="text/css" href="/css/index.css"> -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
@@ -54,7 +53,7 @@
   <div id="add-map"></div>
   {{#each data}}
   <div class="container">
-   <form method="post" action="/addToMap/update">
+   <form>
     <div class="form-group">
      <select class="form-control" id="popups">
       <option id="elevator">Elevator</option>
@@ -68,7 +67,7 @@
     </select>
     </div>
      <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
-     <input id="hiddenAddress" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+     <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
      <button class="btn btn-primary" id="saveButton">Save</button>
    </form>
   </div>

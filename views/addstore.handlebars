@@ -78,7 +78,7 @@
     <div class="form-group text-left">
       <label for="storetype">Store Type:</label>
       <select class="form-control" id="storetype" name="storetype">
-        <option value="bookstores" name="bookstore">Bookstore</option>
+        <option value="bookstore" name="bookstore">Bookstore</option>
         <option value="clothing" name="clothing">Clothing</option>
         <option value="department" name="department">Department</option>
         <option value="grocery" name="grocery">Grocery</option>
@@ -89,7 +89,7 @@
     </div>
     <div class="form-group text-left">
       <label for="storemap">Upload Store Map</label>
-      <input name="map" type="file" class="form-control">
+      <input name="map" type="file" class="form-control" enctype="multipart/form-data">
     </div>
     <button type="submit" class="btn btn-primary" id="submit">Submit</button>
   </form>
@@ -106,6 +106,7 @@
     var pricerange = $('#pricerange').val();
     var address = $('#address').val();
     var accessibility = $('#accessibility').val();
+    var mapImage = 'store2.jpg';
 
     console.log(storetype);
 
@@ -116,7 +117,8 @@
       "storehours" : storehours,
       "pricerange" : pricerange,
       "address" : address,
-      "accessibility" : accessibility
+      "accessibility" : accessibility,
+      "mapImage" : mapImage
     }, function() {
       console.log('update');
 

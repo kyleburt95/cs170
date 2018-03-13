@@ -6,6 +6,9 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
+var multer = require('multer');
+var fs = require('fs');
+var upload = multer({dest: 'staticassets/'})
 var handlebars = require('express3-handlebars')
 
 var page_A = require('./routes/page_A');
@@ -86,6 +89,50 @@ app.get('/department', department.view);
 app.get('/userProfile', userProfile.view);
 app.get('/page_A', page_A.view);
 app.get('/addstore', addstore.view);
+app.post('/addstore/update', upload.single('map'), function(req, res, next) {
+   
+  console.log(req.file);
+  var placesfile = fs.readFileSync('places.json');
+  var places = JSON.parse(placesfile);
+  
+  var storename = req.body['storename'];
+  var category = req.body['storetype'];
+  var phonenumber = req.body['phonenumber'];
+  var storetype = req.body['storetype'];
+  var storehours = req.body['storehours'];
+  var pricerange = req.body['pricerange'];
+  var address = req.body['address'];
+  var accessibility = req.body['accessibility'];
+  //console.log(storetype);
+  //console.log(storename);
+  
+  //get filename from multer request
+  //console.log(req.file);
+  //var mapName = req.file.filename;
+  
+  var newStore = {"name" : storename,
+                  'category' : category,
+                  "phoneNumber" : phonenumber,
+                  "storehours" : storehours,
+                  "priceRange" : pricerange,
+                  "address" : address,
+                  "storePhotos" : "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
+                  "accessibilityRating" : accessibility,
+                  "popups" : []
+                 };
+  
+  //test[storetype].push(newStore);
+  places['places'].push(newStore);
+  /**
+  fs.writeFile('data.json', JSON.stringify(test, null, 2), function(err){
+    console.log("error");
+  })
+  */
+  fs.writeFile('places.json', JSON.stringify(places, null, 2), function(err){
+    console.log("places error")
+  })
+});
+
 app.get('/bookstore', bookstore.view);
 app.get('/bookstore/search', bookstore.search);
 app.get('/categories', categories.view);
@@ -99,7 +146,7 @@ app.get('/help', help.view);
 app.get('/addToMap', addToMap.view);
 app.post('/addToMap/update', addToMap.update);
 app.get('/map/getPopups', map.getPopups);
-app.post('/addstore/update', addstore.update);
+//app.post('/addstore/update', addstore.update);
 
 app.get('/storeProfile', storeProfile.view)
 app.post('/storeProfile', storeProfile.view);

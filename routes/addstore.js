@@ -24,6 +24,7 @@ exports.update = function(req, res){
   var pricerange = req.body['pricerange'];
   var address = req.body['address'];
   var accessibility = req.body['accessibility'];
+  var mapImage = req.body['mapImage']
   //console.log(storetype);
   //console.log(storename);
   
@@ -39,6 +40,7 @@ exports.update = function(req, res){
                   "address" : address,
                   "storePhotos" : "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
                   "accessibilityRating" : accessibility,
+                  "mapImage" : mapImage,
                   "popups" : []
                  };
   
