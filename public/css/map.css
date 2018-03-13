@@ -3,13 +3,22 @@ html {
   margin-top: 0;
 }
 #image-map {
-  height: 60vh;
+  height: 70vh;
   border: 1px solid #ccc;
   margin-bottom: 1rem;
   margin-top: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
    
+}
+
+#add-map {
+  height: 60vh;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .row {

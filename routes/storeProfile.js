@@ -14,7 +14,7 @@ exports.view = function(req, res){
         'storeHours': req.body['hiddenStoreHours'],
         'priceRange' : req.body['hiddenPriceRange'],
         'address' : req.body['hiddenAddress'],
-        'accesibilityRating' : req.body['hiddenAccesibility'],
+        'accessibilityRating' : req.body['hiddenAccessibility'],
         'mapImage' : req.body['hiddenMapImage']
 
       }

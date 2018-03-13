@@ -1,7 +1,6 @@
 var placedPopup;
 
 function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
      placedPopup = L.popup()
         .setLatLng([e.latlng.lat, e.latlng.lng])
         .setContent($('#popups option:selected').text())
@@ -12,7 +11,7 @@ function onMapClick(e) {
 
 
 // Using leaflet.js to pan and zoom a big image.
-    var map = L.map('image-map', {
+    var map = L.map('add-map', {
       minZoom: 1,
       maxZoom: 4,
       center: [0, 0],
@@ -45,16 +44,16 @@ function onMapClick(e) {
 
 //to get dropdown menu to toggle
 $(document).ready(function() {
-    $(".dropdown-toggle").dropdown();
-    placedPopup = L.popup()
-        .setLatLng([map.getCenter().lat, map.getCenter().lng ])
-        .setContent("Type in field below to change text, and tap to change location")
-        .openOn(map);
-  
-    $('#saveButton').click(update);
+  $(".dropdown-toggle").dropdown();
+  placedPopup = L.popup()
+      .setLatLng([map.getCenter().lat, map.getCenter().lng ])
+      .setContent("Type in field below to change text, and tap to change location")
+      .openOn(map);
+
+  $('#saveButton').click(update);
 });
   
-$("#markerTextInput").change(textChanged);
+$("#popups").change(textChanged);
   
 function textChanged() {
   placedPopup.setContent($(this).val())
