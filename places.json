@@ -156,7 +156,13 @@
       "address": "4333 La Jolla Village Dr, San Diego, CA 92122",
       "storePhotos": "https://daks2k3a4ib2z.cloudfront.net/58a441f90f46d5e57d3de8f3/58f89d27e995e01c51e7e888_001-(1).jpg",
       "accessibilityRating": "3",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-64.5",
+          "longitude": "28.25",
+          "popupText": "Stairs"
+        }
+      ]
     },
     {
       "name": "Ross Dress For Less",
