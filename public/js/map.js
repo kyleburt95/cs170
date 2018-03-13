@@ -43,8 +43,8 @@ function unToggle(array) {
 
 
 
-
-
+var storeMap = '/' + $('#hiddenMapImage').val();
+console.log(storeMap);
 // Using leaflet.js to pan and zoom a big image.
     var map = L.map('image-map', {
       minZoom: 1,
@@ -58,7 +58,7 @@ function unToggle(array) {
  
     var w = 792,
         h = 612,
-        url = "/bookstoreBlack.png";
+        url = storeMap;
     // calculate the edges of the image, in coordinate space
     var southWest = map.unproject([0, h], map.getMaxZoom()-1);
     var northEast = map.unproject([w, 0], map.getMaxZoom()-1);

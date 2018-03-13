@@ -7,7 +7,6 @@ var fs = require('fs');
 exports.view = function(req, res){
         var mapImage = req.query.hiddenMapImage;
         var address = req.query.hiddenAddress;
-        //console.log(mapImage);
 		res.render('addToMap', {'data' : [
           {
             "mapImage" : mapImage,

@@ -8,9 +8,9 @@ function onMapClick(e) {
 } 
 
 
-
-
-// Using leaflet.js to pan and zoom a big image.
+var mapImage = '/' + $('#hiddenMapImage').val();
+  console.log(mapImage);
+  // Using leaflet.js to pan and zoom a big image.
     var map = L.map('add-map', {
       minZoom: 1,
       maxZoom: 4,
@@ -22,7 +22,7 @@ function onMapClick(e) {
  
     var w = 792,
         h = 612,
-        url = "/bookstoreBlack.png";
+        url = mapImage;
     // calculate the edges of the image, in coordinate space
     var southWest = map.unproject([0, h], map.getMaxZoom()-1);
     var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
@@ -45,6 +45,8 @@ function onMapClick(e) {
 //to get dropdown menu to toggle
 $(document).ready(function() {
   $(".dropdown-toggle").dropdown();
+  
+    
   placedPopup = L.popup()
       .setLatLng([map.getCenter().lat, map.getCenter().lng ])
       .setContent("Type in field below to change text, and tap to change location")
