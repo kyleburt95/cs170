@@ -51,8 +51,7 @@ function unToggle(array) {
       maxZoom: 4,
       center: [0, 0],
       zoom: 2,
-      dragging: false,
-      tap: false,
+      dragging: !L.Browser.mobile,
       crs: L.CRS.Simple
     });
     // dimensions of the image
