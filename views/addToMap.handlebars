@@ -51,13 +51,12 @@
    </div>
 </div>
 
-  <div id="image-map"></div>
-  
+  <div id="add-map"></div>
   {{#each data}}
   <div class="container">
    <form method="post" action="/addToMap/update">
     <div class="form-group">
-     <select multiple class="form-control" id="popups">
+     <select class="form-control" id="popups">
       <option id="elevator">Elevator</option>
       <option id="escalatorDown">Escalator Down</option>
       <option id="escalatorUp">Escalator Up</option>
@@ -70,10 +69,13 @@
     </div>
      <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
      <input id="hiddenAddress" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+     <button class="btn btn-primary" id="saveButton">Save</button>
    </form>
-    <button class="btn btn-primary" id="saveButton">Save</button>
   </div>
   {{/each}}
+  
+
+  
   
   
   
