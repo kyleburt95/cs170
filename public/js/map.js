@@ -14,6 +14,12 @@ function onMapClick(e) {
 } 
 */
 
+function onMarkerClick(e) {
+  e.target.closePopup();
+  $('.modal-body').val("Hello");
+  $('#exampleModal').modal('show');
+}
+
 function toggle(array) {
   //L.marker([-58.75, 43.5]).addTo(map);
   /**
@@ -30,14 +36,16 @@ function toggle(array) {
     alert("No popups have been added for this category yet")
   for(var i = 0; i < array.length; i++) {
     var currentPopup = array[i];
-    currentPopup.openOn(map);
+    //currentPopup.openOn(map);
+    currentPopup.addTo(map);
   }
 }
 
 function unToggle(array) {
   for(var i = 0; i < array.length; i++) {
     var currentPopup = array[i];
-    map.closePopup(currentPopup);
+    //map.closePopup(currentPopup);
+    currentPopup.removeFrom(map);
   }
 }
 
@@ -193,50 +201,32 @@ $(document).ready(function() {
         //create container to hold button
         //var pop = "<b>" + popupText + "</b>" + "<br>" + "<button> Delete </button>"
         
+        var currentMarker = L.marker([latitude, longitude]).bindPopup(popupText).on('click', onMarkerClick);
         
-        
+        /**
         var currentPopup = L.popup({autoClose:false})
         .setLatLng([latitude, longitude])
         .setContent(popupText);
-        /**
+        */
+               
         if(popupText == "Elevator")
-          elevatorArray.push(popupArray[i]);
+          elevatorArray.push(currentMarker);
         else if(popupText == "Escalator Down")
-          escalatorDownArray.push(popupArray[i]);
+          escalatorDownArray.push(currentMarker);
         else if(popupText == "Escalator Up")
-          escalatorUpArray.push(popupArray[i]);
+          escalatorUpArray.push(currentMarker);
         else if(popupText == "Closure")
-          closureArray.push(popupArray[i])
+          closureArray.push(currentMarker)
         else if(popupText == "Hazard")
-          hazardArray.push(popupArray[i])
+          hazardArray.push(currentMarker)
         else if(popupText == "Restroom")
-          restroomArray.push(popupArray[i])
+          restroomArray.push(currentMarker)
         else if(popupText == "Stairs")
-          stairsArray.push(popupArray[i])
+          stairsArray.push(currentMarker)
         else if(popupText == "Checkout")
-          checkoutArray.push(popupArray[i]);
+          checkoutArray.push(currentMarker);
         else
-          otherArray.push(popupArray[i]);
-          */
-        
-        if(popupText == "Elevator")
-          elevatorArray.push(currentPopup);
-        else if(popupText == "Escalator Down")
-          escalatorDownArray.push(currentPopup);
-        else if(popupText == "Escalator Up")
-          escalatorUpArray.push(currentPopup);
-        else if(popupText == "Closure")
-          closureArray.push(currentPopup)
-        else if(popupText == "Hazard")
-          hazardArray.push(currentPopup)
-        else if(popupText == "Restroom")
-          restroomArray.push(currentPopup)
-        else if(popupText == "Stairs")
-          stairsArray.push(currentPopup)
-        else if(popupText == "Checkout")
-          checkoutArray.push(currentPopup);
-        else
-          otherArray.push(currentPopup);
+          otherArray.push(currentMarker);
         
         
       }
