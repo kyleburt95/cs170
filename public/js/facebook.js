@@ -14,7 +14,7 @@ function statusChangeCallback(response) {
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
     console.log('Successfully logged in with Facebook');
-    FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+    FB.api('/me?fields=name,first_name,picture.width(480), email', changeUser);
     // window.top.location = "/index";
   }
 }
@@ -26,6 +26,7 @@ function changeUser(response) {
   // console.log(response.picture.data.url);
   sessionStorage.setItem("current_user", response.name);
   sessionStorage.setItem("current_user_photo", response.picture.data.url);
+  sessionStorage.setItem("current_user_email", response.email);
   window.top.location = "/page_B";
 }
 
