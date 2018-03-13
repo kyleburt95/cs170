@@ -41,14 +41,7 @@ function unToggle(array) {
   }
 }
 
-function onTwoFingerDrag(e) {
-  if(e.type === 'touchstart' && e.touches.length === 1) {
-    e.currentTarget.classList.add('swiping');
-  }
-  else {
-    e.currentTarget.classList.remove('swiping')
-  }
-}
+
 
 
 
@@ -58,6 +51,8 @@ function onTwoFingerDrag(e) {
       maxZoom: 4,
       center: [0, 0],
       zoom: 2,
+      dragging: false,
+      tap: false,
       crs: L.CRS.Simple
     });
     // dimensions of the image
@@ -171,8 +166,6 @@ eighthCheck.addEventListener( 'change', function() {
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
   
-    $('#image-map').addEventListener('touchstart', onTwoFingerDrag);
-    $('#image-map').addEventListener('touchend', onTwoFingerDrag);
     //hide checkboxes on page load
     //$('#checkboxes').hide();
   

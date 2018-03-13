@@ -11,9 +11,6 @@ html {
   margin-right: 1rem;
    
 }
-#image-map .swiping::after {
-    content: 'Use two fingers to move the map';
-  }
 
 .row {
   margin: 4vh;
