@@ -65,6 +65,11 @@
           "latitude": "-45",
           "longitude": "41.5",
           "popupText": "RestroomStairs"
+        },
+        {
+          "latitude": "-20.25",
+          "longitude": "41",
+          "popupText": "Closure"
         }
       ]
     },
