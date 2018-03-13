@@ -44,10 +44,13 @@
       <div class="container-fluid" id="contentBox">
          <img src="navgologo2.png" id="appname">
          <h3 id="where">Where to?</h3>
-         <div class="row align-items-center mb-5" id="searchbar">
-            <input class="search_bar" type="text" id="bar" placeholder="Search...">
-            <a href="#"><button class="searchButton btn btn-primary" id="searchbtn">Search</button></a>
+         <div class="input-group mb-5">
+            <input class="form-control" type="text" placeholder="Search..." id="searchbar">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-search" id="searchbtn"></i></button>
+            </span>
          </div>
+
          <div class="btn-group table" id="buttonbox">
             <a href="/hardware" id="category1"><button type="button" class="btn btn-outline-dark">Hardware</button></a>
             <a href="/clothing" id="category2"><button type="button" class="btn btn-outline-dark">Clothing</button></a>
