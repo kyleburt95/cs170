@@ -92,14 +92,14 @@ a {
 .navbar-toggler-icon{
   width:2rem;
   height:2.5rem;
-    background-color: #386F9A;
+  background-color: #386F9A;
 }
 
 .fa-history{
   width: 2.5rem !important;
   height: 2.5rem !important;
-    margin-top: .35rem;
-    z-index: -100;
+  margin-top: .35rem;
+  z-index: -100;
 }
 .btn-group {
   display: block;
