@@ -8,6 +8,14 @@ var stairsArray = [];
 var checkoutArray = [];
 var otherArray = [];
 
+var escalatorDownIcon = L.icon({
+    iconUrl: '/escalatordownpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 /**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
@@ -16,7 +24,8 @@ function onMapClick(e) {
 
 function onMarkerClick(e) {
   e.target.closePopup();
-  $('.modal-body').val("Hello");
+  var popupText = e.target._popup.getContent();
+  $('#modalText').html(popupText);
   $('#exampleModal').modal('show');
 }
 
@@ -59,7 +68,6 @@ console.log(storeMap);
       maxZoom: 4,
       center: [0, 0],
       zoom: 2,
-      dragging: !L.Browser.mobile,
       crs: L.CRS.Simple
     });
     // dimensions of the image
@@ -201,7 +209,7 @@ $(document).ready(function() {
         //create container to hold button
         //var pop = "<b>" + popupText + "</b>" + "<br>" + "<button> Delete </button>"
         
-        var currentMarker = L.marker([latitude, longitude]).bindPopup(popupText).on('click', onMarkerClick);
+        var currentMarker = L.marker([latitude, longitude], {icon : escalatorDownIcon}).bindPopup(popupText).on('click', onMarkerClick);
         
         /**
         var currentPopup = L.popup({autoClose:false})
