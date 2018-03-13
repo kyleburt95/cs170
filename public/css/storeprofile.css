@@ -104,6 +104,11 @@ button{
 
 }
 
+#mapPreview {
+  max-width: 45%;
+}
+
+
 .store h3 {
   margin-top: 20px;
   font-family: 'Roboto Condensed', sans-serif;
