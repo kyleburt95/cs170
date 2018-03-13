@@ -14,4 +14,6 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 #navbarSupportedContent15{
     margin-top: 7.8rem;
+    max-width: 80%;
+    padding-left: 15em;
 }

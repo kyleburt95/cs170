@@ -37,17 +37,23 @@
 .navbar{
     float: right;
 }
-#navbarSupportedContent15{
-    width: 100%;
+/*#navbarSupportedContent15{
+    max-width: 80%;
     text-align: left;
     position: absolute;
     background-color: azure;
     margin-top: 7rem;
     right: 1rem;
-    padding-left: .5rem;
+    padding-left: 25rem;
     width: 107%;
     z-index: 100;
+}*/
+
+#navbarSupportedContent15 {
+    max-width: 80%;
+    padding-left: 15em;
 }
+
 .navbar-toggler-icon{
   width:2rem;
   height:2.5rem;
