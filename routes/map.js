@@ -14,7 +14,7 @@ exports.view = function(req, res){
 };
 
 exports.getPopups = function(req, res) {
-  var datafile = fs.readFileSync('data.json');
+  var datafile = fs.readFileSync('places.json');
   var test = JSON.parse(datafile);
   
   var address = req.query.address;

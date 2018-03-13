@@ -1,7 +1,6 @@
 var placedPopup;
 
 function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
      placedPopup = L.popup()
         .setLatLng([e.latlng.lat, e.latlng.lng])
         .setContent($('#popups option:selected').text())

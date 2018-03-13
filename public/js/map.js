@@ -166,13 +166,18 @@ $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
   
     //hide checkboxes on page load
-    //$('#checkboxes').hide();
+    $('#checkboxes').hide();
   
-  /**
-    $("#filter").click(function() {
-      $('#checkboxes').slideToggle();
+  
+    $("#filter").click(function(event) {
+      event.preventDefault();
+      $a = $(this)
+      $('#checkboxes').slideToggle('slow', function() {
+        $(window).scrollTop($a.offset().top);
+      });
+      
     })
-   */ 
+    
     //send get request to get popups of store, address of store used as id to search through data.json
     $.get("/map/getPopups",{"address" : $('#hiddenAddress').val()}, function(data) {
       var popupArray = data.popupArray;

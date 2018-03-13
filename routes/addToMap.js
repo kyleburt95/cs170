@@ -1,4 +1,4 @@
-var data = require("../data.json");
+var data = require("../places.json");
 var fs = require('fs');
 //var datafile = fs.readFileSync('newData.json');
 //var test = JSON.parse(datafile);
@@ -7,7 +7,7 @@ var fs = require('fs');
 exports.view = function(req, res){
         var mapImage = req.query.hiddenMapImage;
         var address = req.query.hiddenAddress;
-        console.log(mapImage);
+        //console.log(mapImage);
 		res.render('addToMap', {'data' : [
           {
             "mapImage" : mapImage,
@@ -19,7 +19,7 @@ exports.view = function(req, res){
 
 exports.update = function(req, res) {
   //get data.json
-  var datafile = fs.readFileSync('data.json');
+  var datafile = fs.readFileSync('places.json');
   var test = JSON.parse(datafile);
   
   //get latitude and longitude of 
@@ -47,7 +47,7 @@ exports.update = function(req, res) {
   
   //console.log(req.body);
   //console.log(req.body['popupText']);
-  fs.writeFile('data.json', JSON.stringify(test, null, 2), function(err){
+  fs.writeFile('places.json', JSON.stringify(test, null, 2), function(err){
     console.log('anyth')
   });
 }
