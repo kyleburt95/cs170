@@ -68,7 +68,7 @@
 <div class="store">
 <img class="img-responsive" src="{{storePhotos}}">
   <div class="hiddenForm">
-  <form action="/storeProfile" method="post">
+  <form action="/storeProfile" method="post" id="myForm">
     <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
     <input type="hidden" name="hiddenName" value="{{name}}">
     <input type="hidden" name="hiddenDescription" value="{{description}}">
@@ -81,6 +81,7 @@
     <button type="submit" id="storename"> {{name}} </button>
   </form>
 </div>
+<!-- <a id="anchorID"> -->
 <p id="accesibilityRating">Accessibility Rating: {{accessibilityRating}}</p>
    <hr id="short">
    <div class="storeinfo">
@@ -90,12 +91,24 @@
       <p id="storeHours">{{storeHours}}</p>
       <p id="priceRange">{{priceRange}}</p>
    </div>
+<!-- </a> -->
 </div>
 <hr>
 {{else}}
   <h1>Oops!</h1>
 {{/each}}
 </div>
+
+
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+    $('#anchorID').click(function(){
+      document.getElementById('myForm').submit()});
+  });
+</script>
+ -->
+
+
 <script type="text/javascript">
   $(document).ready(function() {
     $('#fName').click(function(e){
