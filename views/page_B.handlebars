@@ -42,6 +42,7 @@
          </div>
       </div>
       <div class="container-fluid" id="contentBox">
+          <div class="container-fluid" id="logobox">
          <img src="navgologo2.png" id="appname">
          <h3 id="where">Where to?</h3>
          <div class="input-group mb-5">
@@ -50,7 +51,9 @@
               <button class="btn btn-primary" type="button" id="searchbtn"><i class="fa fa-search"></i></button>
             </span>
          </div>
+              </div>
 
+<!--
          <div class="btn-group table" id="buttonbox">
             <a href="/hardware" id="category1"><button type="button" class="btn btn-outline-dark">Hardware</button></a>
             <a href="/clothing" id="category2"><button type="button" class="btn btn-outline-dark">Clothing</button></a>
@@ -59,9 +62,30 @@
             <a href="/sporting" id="category5"><button type="button" class="btn btn-outline-dark">Sporting</button></a>
             <a href="/department" id="category6"><button type="button" class="btn btn-outline-dark">Department</button></a>
          </div>
-         <div class="text-center">
+-->
+         <div class="btn-group table container-fluid" id="buttonbox">
+            <div class="row" id="icon-row">
+                <div class="col-xs-4" id="icon-1">
+                    <a href="/hardware" id="category1"><div class="iconbtn" id="hardwareicon"><img id="hardwareicon" src="softhardwarestore.png"><br><p id="categoryname">Hardware</p></div></a></div>
+                <div class="col-xs-4" id="icon-1">
+                    <a href="/clothing" id="category1"><div class="iconbtn" id="hardwareicon"><img id="hardwareicon" src="clothingstoreicon.png"><br><p id="categoryname">Clothing</p></div></a></div>
+                <div class="col-xs-4" id="icon-1">
+                    <a href="/bookstore" id="category1"><div class="iconbtn" id="hardwareicon"><img id="hardwareicon" src="softbookstore.png"><br><p id="categoryname">Bookstore</p></div></a></div>
+            </div>
+            <div class="row" id="icon-row">
+                <div class="col-xs-4" id="icon-1">
+                    <a href="/grocery" id="category1"><div class="iconbtn" id="hardwareicon"><img id="hardwareicon" src="softgrocerystore.png"><br><p id="categoryname">Grocery</p></div></a></div>
+                <div class="col-xs-4" id="icon-1">
+                    <a href="/sporting" id="category1"><div class="iconbtn" id="hardwareicon"><img id="hardwareicon" src="softsporting.png"><br><p id="categoryname">Sporting</p></div></a></div>
+                <div class="col-xs-4" id="icon-1">
+                    <a href="/department" id="category1"><div class="iconbtn" id="hardwareicon"><img id="hardwareicon" src="softdepartmentstore.png"><br><p id="categoryname">Department</p></div></a></div>
+            </div>
+
+         </div> 
+          
+         <center class="text-center">
             <a  href="/addstore" id="addstore"> Don't see your store? </a>
-         </div>
+         </center>
       </div>
       <!--</div>-->
       <script>
