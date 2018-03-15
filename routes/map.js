@@ -2,7 +2,7 @@ var data = require("../data.json");
 var fs = require('fs');
 
 exports.view = function(req, res){
-  var mapImage = req.query.hiddenMapImage;
+        var mapImage = req.query.hiddenMapImage;
         var address = req.query.hiddenAddress;
         console.log(mapImage);
 		res.render('map', {'data' : [
