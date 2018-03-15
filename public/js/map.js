@@ -1,3 +1,6 @@
+//marker icon in modal that was previously selected
+var previouslySelectedModalMarker;
+
 var elevatorArray = [];
 var escalatorDownArray = [];
 var escalatorUpArray = [];
@@ -79,8 +82,16 @@ function onMarkerClick(e) {
 
 //function called when pin is selected from modal redirects to addToMap.handlebars
 function onModalPinClick(e) {
-  var divClicked = e.target.children('p').val();
-  alert(divClicked);
+  
+  e.preventDefault();
+  if (previouslySelectedModalMarker != null)
+  previouslySelectedModalMarker.css('background-color', '');
+  console.log("clicked");
+  $(this).css('background-color', '#D3D3D3');
+  var divClicked = $(this).children('p').text();
+  $('#hiddenMarkerType').val(divClicked);
+  previouslySelectedModalMarker = $(this);
+  
 }
 
 function toggle(array) {
@@ -235,20 +246,7 @@ eighthCheck.addEventListener( 'change', function() {
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
   
-    //hide checkboxes on page load
-  /**
-    $('#checkboxes').hide();
-  
-  
-    $("#filter").click(function(event) {
-      event.preventDefault();
-      $a = $(this)
-      $('#checkboxes').slideToggle('slow', function() {
-        $(window).scrollTop($a.offset().top);
-      });
-      
-    })
-    */
+    $(document).on("click", ".pinHolder", onModalPinClick );
     //send get request to get popups of store, address of store used as id to search through data.json
     $.get("/map/getPopups",{"address" : $('#hiddenAddress').val()}, function(data) {
       var popupArray = data.popupArray;

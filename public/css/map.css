@@ -93,6 +93,15 @@ html {
     width: 1.4rem;
 }
 
-.pinHolder {
-  display: block
+.markerModalButton {
+  height: 8;
+  width: 8;
+  padding: 0;
+  margin: 0;
+}
+
+.markerModalButton img {
+  display: block;
+  height: 4;
+  width: 4;
 }
