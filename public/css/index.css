@@ -197,5 +197,41 @@ a {
 #where {
   margin-top: 20px;
 }
+#hardwareicon{
+    height: 3rem;
+}
+#categoryname{
+    font-size: .75rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#icon-row{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: .005rem;
+}
+#icon-1{
+    width: 33.33%;
+}
+#logobox{
+    background-color: #e5e5e5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    height: 39%;
+
+}
+#buttonbox{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.addstorelink{
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
 
 

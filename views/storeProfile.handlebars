@@ -91,7 +91,29 @@
       {{/each}}
    </div>
 </div>
-<range name="rate" max="3" min="0" step="1">
+<div class="slidecontainer mx-auto">
+  <label for="handicap">Handicap Accessibility</label>
+  <a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom"><i class="fa fa-info-circle"></i></a>
+  <input type="range" min="0" max="4" value="50" step="1" class="slider" id="myRange" name="handicap">
+</div>
+
+
+<ul class="range-labels">
+  <li class="active selected">1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+</ul>
+<img src="./wheelchair.png">
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+
+</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/css/star-rating.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
