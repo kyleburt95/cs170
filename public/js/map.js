@@ -1,3 +1,6 @@
+//marker icon in modal that was previously selected
+var previouslySelectedModalMarker;
+
 var elevatorArray = [];
 var escalatorDownArray = [];
 var escalatorUpArray = [];
@@ -16,6 +19,89 @@ var escalatorDownIcon = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
+var checkoutIcon = L.icon({
+    iconUrl: '/checkoutpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var closureIcon = L.icon({
+    iconUrl: '/closurepin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var escalatorUpIcon = L.icon({
+    iconUrl: '/escalatoruppin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var hazardIcon = L.icon({
+    iconUrl: '/hazardpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var mensrestroomIcon = L.icon({
+    iconUrl: '/mensrestroompin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var stairsIcon = L.icon({
+    iconUrl: '/stairspin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var elevatorIcon = L.icon({
+    iconUrl: '/elevatorpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+function createMarker(markerType) {
+  if(markerType === "Closure") {
+    return closureIcon;
+  }
+  else if (markerType === "Elevator") {
+    return elevatorIcon;
+  }
+  else if(markerType === "Escalator Down") {
+    return escalatorDownIcon;
+  }
+  else if(markerType === "Escalator Up") {
+    return escalatorUpIcon;
+  }
+  else if(markerType === "Hazard") {
+    return hazardIcon;
+  }
+  else if(markerType === "Restroom") {
+    return mensrestroomIcon;
+  }
+  else if(markerType === "Stairs") {
+    return stairsIcon;
+  }
+  else if(markerType === "Checkout") {
+    return checkoutIcon;
+  }
+}
+
 /**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
@@ -27,6 +113,20 @@ function onMarkerClick(e) {
   var popupText = e.target._popup.getContent();
   $('#modalText').html(popupText);
   $('#exampleModal').modal('show');
+}
+
+//function called when pin is selected from modal redirects to addToMap.handlebars
+function onModalPinClick(e) {
+  
+  e.preventDefault();
+  if (previouslySelectedModalMarker != null)
+  previouslySelectedModalMarker.css('background-color', '');
+  console.log("clicked");
+  $(this).css('background-color', '#D3D3D3');
+  var divClicked = $(this).children('p').text();
+  $('#hiddenMarkerType').val(divClicked);
+  previouslySelectedModalMarker = $(this);
+  
 }
 
 function toggle(array) {
@@ -181,20 +281,7 @@ eighthCheck.addEventListener( 'change', function() {
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
   
-    //hide checkboxes on page load
-  /**
-    $('#checkboxes').hide();
-  
-  
-    $("#filter").click(function(event) {
-      event.preventDefault();
-      $a = $(this)
-      $('#checkboxes').slideToggle('slow', function() {
-        $(window).scrollTop($a.offset().top);
-      });
-      
-    })
-    */
+    $(document).on("click", ".pinHolder", onModalPinClick );
     //send get request to get popups of store, address of store used as id to search through data.json
     $.get("/map/getPopups",{"address" : $('#hiddenAddress').val()}, function(data) {
       var popupArray = data.popupArray;
@@ -206,10 +293,13 @@ $(document).ready(function() {
         var longitude = popupArray[i].longitude;
         var popupText = popupArray[i].popupText;
         
+        var markerIcon = createMarker(popupText);
+
+        
         //create container to hold button
         //var pop = "<b>" + popupText + "</b>" + "<br>" + "<button> Delete </button>"
         
-        var currentMarker = L.marker([latitude, longitude], {icon : escalatorDownIcon}).bindPopup(popupText).on('click', onMarkerClick);
+        var currentMarker = L.marker([latitude, longitude], {icon : markerIcon}).bindPopup(popupText).on('click', onMarkerClick);
         
         /**
         var currentPopup = L.popup({autoClose:false})

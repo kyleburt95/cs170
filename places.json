@@ -217,7 +217,13 @@
       "storePhotos": "https://media.sandiegoreader.com/img/places/la_jolla_shores_012_t260.jpg?3de258cb5744af84a211eb26dc28fb560aae5ab6",
       "accessibilityRating": "4",
       "mapImage": "store4.png",
-      "popups": []
+      "popups": [
+        {
+          "latitude": "-32.5",
+          "longitude": "72.5",
+          "popupText": "Stairs"
+        }
+      ]
     },
     {
       "name": "Ralphs",
@@ -283,6 +289,26 @@
           "latitude": "-38.25",
           "longitude": "47.5",
           "popupText": "Elevator"
+        },
+        {
+          "latitude": "-9.801747930082797",
+          "longitude": "58",
+          "popupText": "Checkout"
+        },
+        {
+          "latitude": "-24",
+          "longitude": "14",
+          "popupText": "Closure"
+        },
+        {
+          "latitude": "-29",
+          "longitude": "79",
+          "popupText": "Closure"
+        },
+        {
+          "latitude": "-9.551517939282434",
+          "longitude": "87.75",
+          "popupText": "Stairs"
         }
       ]
     },
@@ -295,12 +321,17 @@
       "address": "140 Orange Ave Coronado CA 92118",
       "storePhotos": "http://coronadovisitorcenter.com/static/media/uploads/lifestyle/.thumbnails/178303_383636491691987_145682180_o.jpg/178303_383636491691987_145682180_o-555x332.jpg",
       "accessibilityRating": "3",
-      "mapImage": "store10.png",
+      "mapImage": "store10.jpg",
       "popups": [
         {
           "latitude": "-37",
           "longitude": "56.25",
           "popupText": "Stairs"
+        },
+        {
+          "latitude": "-51",
+          "longitude": "27.25",
+          "popupText": "Elevator"
         }
       ]
     },
