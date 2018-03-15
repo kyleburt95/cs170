@@ -91,21 +91,14 @@
       {{/each}}
    </div>
 </div>
-<div class="slidecontainer mx-auto">
-  <label for="handicap">Handicap Accessibility</label>
-  <a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom"><i class="fa fa-info-circle"></i></a>
-  <input type="range" min="0" max="4" value="50" step="1" class="slider" id="myRange" name="handicap">
+<p>Handicap Accessibility</p>
+<a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom"><i class="fa fa-info-circle"></i></a>
+<div class="btn-group mr-2" role="group" aria-label="First group" id="rating1">
+  <button type="button" class="btn btn-secondary">1</button>
+  <button type="button" class="btn btn-secondary">2</button>
+  <button type="button" class="btn btn-secondary">3</button>
+  <button type="button" class="btn btn-secondary">4</button>
 </div>
-
-
-<ul class="range-labels">
-  <li class="active selected">1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-</ul>
-<img src="./wheelchair.png">
 
 <script>
 $(document).ready(function(){
