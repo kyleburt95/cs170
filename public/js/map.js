@@ -67,6 +67,14 @@ var stairsIcon = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
+var elevatorIcon = L.icon({
+    iconUrl: '/elevatorpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 /**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
