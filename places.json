@@ -9,7 +9,7 @@
       "address": "3793 30th St San Diego CA 92104",
       "storePhotos": "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
       "accessibilityRating": "3",
-      "mapImage": "store4.png",
+      "mapImage": "store11.png",
       "popups": [
         {
           "latitude": "-67.40486725663717",
@@ -75,6 +75,11 @@
           "latitude": "-61.09889604415824",
           "longitude": "18.75",
           "popupText": "Escalator Down"
+        },
+        {
+          "latitude": "-52.8413063477461",
+          "longitude": "23.75",
+          "popupText": "Escalator Up"
         }
       ]
     },
@@ -276,9 +281,34 @@
           "popupText": "Elevator"
         },
         {
-          "latitude": "-53.25",
-          "longitude": "12",
-          "popupText": "Escalator Up"
+          "latitude": "-40.830266789328434",
+          "longitude": "47.75",
+          "popupText": "Elevator"
+        },
+        {
+          "latitude": "-38.25",
+          "longitude": "47.5",
+          "popupText": "Elevator"
+        },
+        {
+          "latitude": "-9.801747930082797",
+          "longitude": "58",
+          "popupText": "Checkout"
+        },
+        {
+          "latitude": "-24",
+          "longitude": "14",
+          "popupText": "Closure"
+        },
+        {
+          "latitude": "-29",
+          "longitude": "79",
+          "popupText": "Closure"
+        },
+        {
+          "latitude": "-9.551517939282434",
+          "longitude": "87.75",
+          "popupText": "Stairs"
         }
       ]
     },
