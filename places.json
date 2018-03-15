@@ -70,6 +70,11 @@
           "latitude": "-20.25",
           "longitude": "41",
           "popupText": "Closure"
+        },
+        {
+          "latitude": "-61.09889604415824",
+          "longitude": "18.75",
+          "popupText": "Escalator Down"
         }
       ]
     },
@@ -194,7 +199,7 @@
       "address": "34401 La Jolla Village Dr, San Diego, CA 92122",
       "storePhotos": "https://media.nbcsandiego.com/images/1200*675/Nordstrom-Generic.jpg",
       "accessibilityRating": "3",
-      "mapImage": "store6.jpg",
+      "mapImage": "store6.png",
       "popups": []
     },
     {
@@ -259,6 +264,16 @@
           "latitude": "-31.5",
           "longitude": "46.5",
           "popupText": "Restroom"
+        },
+        {
+          "latitude": "-51.84038638454463",
+          "longitude": "22.75",
+          "popupText": "Escalator Down"
+        },
+        {
+          "latitude": "-15.923628000000008",
+          "longitude": "19.77444",
+          "popupText": "Elevator"
         }
       ]
     },
@@ -294,7 +309,7 @@
       "address": "3090 University Ave San Diego CA 92104",
       "storePhotos": "https://s3-media3.fl.yelpcdn.com/bphoto/rm6d6J2U1BXPPTcrf_1G4A/l.jpg",
       "accessibilityRating": "3",
-      "mapImage": "store3,jpg",
+      "mapImage": "store3.jpg",
       "popups": []
     },
     {
