@@ -67,9 +67,13 @@
 		var user_photo = sessionStorage.getItem("current_user_photo");
 		var user_email = sessionStorage.getItem("current_user_email");
 
-		if( user_name != null && user_photo !=null) {
+		if( user_name != null) {	
 			$("#facebookName").text(user_name);
+		}
+		if(user_photo != null) {
 			$("#fbPhoto").attr("src", user_photo);
+		}
+		if(user_email != null) {
 			$("#fbEmail").text(user_email);
 		}
 	</script>
