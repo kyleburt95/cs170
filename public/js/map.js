@@ -8,11 +8,26 @@ var stairsArray = [];
 var checkoutArray = [];
 var otherArray = [];
 
+var escalatorDownIcon = L.icon({
+    iconUrl: '/escalatordownpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 /**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
 } 
 */
+
+function onMarkerClick(e) {
+  e.target.closePopup();
+  var popupText = e.target._popup.getContent();
+  $('#modalText').html(popupText);
+  $('#exampleModal').modal('show');
+}
 
 function toggle(array) {
   //L.marker([-58.75, 43.5]).addTo(map);
@@ -30,35 +45,36 @@ function toggle(array) {
     alert("No popups have been added for this category yet")
   for(var i = 0; i < array.length; i++) {
     var currentPopup = array[i];
-    currentPopup.openOn(map);
+    //currentPopup.openOn(map);
+    currentPopup.addTo(map);
   }
 }
 
 function unToggle(array) {
   for(var i = 0; i < array.length; i++) {
     var currentPopup = array[i];
-    map.closePopup(currentPopup);
+    //map.closePopup(currentPopup);
+    currentPopup.removeFrom(map);
   }
 }
 
 
 
-
-
+var storeMap = '/' + $('#hiddenMapImage').val();
+console.log(storeMap);
 // Using leaflet.js to pan and zoom a big image.
     var map = L.map('image-map', {
       minZoom: 1,
       maxZoom: 4,
       center: [0, 0],
       zoom: 2,
-      dragging: !L.Browser.mobile,
       crs: L.CRS.Simple
     });
     // dimensions of the image
  
     var w = 792,
         h = 612,
-        url = "/bookstoreBlack.png";
+        url = storeMap;
     // calculate the edges of the image, in coordinate space
     var southWest = map.unproject([0, h], map.getMaxZoom()-1);
     var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
@@ -166,6 +182,7 @@ $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
   
     //hide checkboxes on page load
+  /**
     $('#checkboxes').hide();
   
   
@@ -177,7 +194,7 @@ $(document).ready(function() {
       });
       
     })
-    
+    */
     //send get request to get popups of store, address of store used as id to search through data.json
     $.get("/map/getPopups",{"address" : $('#hiddenAddress').val()}, function(data) {
       var popupArray = data.popupArray;
@@ -192,50 +209,32 @@ $(document).ready(function() {
         //create container to hold button
         //var pop = "<b>" + popupText + "</b>" + "<br>" + "<button> Delete </button>"
         
+        var currentMarker = L.marker([latitude, longitude], {icon : escalatorDownIcon}).bindPopup(popupText).on('click', onMarkerClick);
         
-        
+        /**
         var currentPopup = L.popup({autoClose:false})
         .setLatLng([latitude, longitude])
         .setContent(popupText);
-        /**
+        */
+               
         if(popupText == "Elevator")
-          elevatorArray.push(popupArray[i]);
+          elevatorArray.push(currentMarker);
         else if(popupText == "Escalator Down")
-          escalatorDownArray.push(popupArray[i]);
+          escalatorDownArray.push(currentMarker);
         else if(popupText == "Escalator Up")
-          escalatorUpArray.push(popupArray[i]);
+          escalatorUpArray.push(currentMarker);
         else if(popupText == "Closure")
-          closureArray.push(popupArray[i])
+          closureArray.push(currentMarker)
         else if(popupText == "Hazard")
-          hazardArray.push(popupArray[i])
+          hazardArray.push(currentMarker)
         else if(popupText == "Restroom")
-          restroomArray.push(popupArray[i])
+          restroomArray.push(currentMarker)
         else if(popupText == "Stairs")
-          stairsArray.push(popupArray[i])
+          stairsArray.push(currentMarker)
         else if(popupText == "Checkout")
-          checkoutArray.push(popupArray[i]);
+          checkoutArray.push(currentMarker);
         else
-          otherArray.push(popupArray[i]);
-          */
-        
-        if(popupText == "Elevator")
-          elevatorArray.push(currentPopup);
-        else if(popupText == "Escalator Down")
-          escalatorDownArray.push(currentPopup);
-        else if(popupText == "Escalator Up")
-          escalatorUpArray.push(currentPopup);
-        else if(popupText == "Closure")
-          closureArray.push(currentPopup)
-        else if(popupText == "Hazard")
-          hazardArray.push(currentPopup)
-        else if(popupText == "Restroom")
-          restroomArray.push(currentPopup)
-        else if(popupText == "Stairs")
-          stairsArray.push(currentPopup)
-        else if(popupText == "Checkout")
-          checkoutArray.push(currentPopup);
-        else
-          otherArray.push(currentPopup);
+          otherArray.push(currentMarker);
         
         
       }

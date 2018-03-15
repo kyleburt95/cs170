@@ -70,6 +70,11 @@
           "latitude": "-20.25",
           "longitude": "41",
           "popupText": "Closure"
+        },
+        {
+          "latitude": "-61.09889604415824",
+          "longitude": "18.75",
+          "popupText": "Escalator Down"
         }
       ]
     },
@@ -82,7 +87,7 @@
       "address": "3502 Adams Ave San Diego CA 92116",
       "storePhotos": "https://pics.librarything.com/picsizes/61/12/6112ebf293fd6dc63756a6541674259416c6743.jpg",
       "accessibilityRating": "3",
-      "mapImage": "bookstoreBlack.png",
+      "mapImage": "store6.png",
       "popups": [
         {
           "latitude": "-58.38893805309735",
@@ -105,12 +110,17 @@
       "address": "3817 th Ave San Diego CA 92103",
       "storePhotos": "http://lgbtweekly.com/wp-content/uploads/2013/06/bluestocking2.jpg",
       "accessibilityRating": "4",
-      "mapImage": "bookstoreBlack.png",
+      "mapImage": "store4.png",
       "popups": [
         {
           "latitude": "-45.115486725663715",
           "longitude": "48.9689968767224",
           "popupText": "Restroom"
+        },
+        {
+          "latitude": "-6.5",
+          "longitude": "51",
+          "popupText": "Elevator"
         }
       ]
     },
@@ -123,6 +133,7 @@
       "address": "4545 La Jolla Village Dr, San Diego, CA 92122",
       "storePhotos": "https://igx.4sqi.net/img/general/200x200/17691721_psdZn3ULK3CnNxGN8xfedAe5aoLpUIQ2AottkGZofUY.jpg",
       "accessibilityRating": "3",
+      "mapImage": "store7.png",
       "popups": []
     },
     {
@@ -134,6 +145,7 @@
       "address": "7007 Friars Rd #713, San Diego, CA 92108",
       "storePhotos": "https://crabtree-valley-mall.com/sites/default/files/styles/store_image/public/Commercial_Crabtree2117-3183027437-O.jpg?itok=LuII7iF4",
       "accessibilityRating": "4",
+      "mapImage": "store10.png",
       "popups": []
     },
     {
@@ -145,6 +157,7 @@
       "address": "4545 La Jolla Village Dr H 10, San Diego, CA 92122",
       "storePhotos": "https://media.glassdoor.com/l/13361/forever-21-office.jpg",
       "accessibilityRating": "3",
+      "mapImage": "store9.png",
       "popups": []
     },
     {
@@ -156,6 +169,7 @@
       "address": "4333 La Jolla Village Dr, San Diego, CA 92122",
       "storePhotos": "https://daks2k3a4ib2z.cloudfront.net/58a441f90f46d5e57d3de8f3/58f89d27e995e01c51e7e888_001-(1).jpg",
       "accessibilityRating": "3",
+      "mapImage": "store3.jpg",
       "popups": [
         {
           "latitude": "-64.5",
@@ -173,6 +187,7 @@
       "address": "3998 Clairemont Mesa Blvd, San Diego, CA 92117",
       "storePhotos": "https://coxclarkcom.files.wordpress.com/2016/07/rossdress.jpg?w=875&h=400&crop=1",
       "accessibilityRating": "3",
+      "mapImage": "store1.jpg",
       "popups": []
     },
     {
@@ -184,6 +199,7 @@
       "address": "34401 La Jolla Village Dr, San Diego, CA 92122",
       "storePhotos": "https://media.nbcsandiego.com/images/1200*675/Nordstrom-Generic.jpg",
       "accessibilityRating": "3",
+      "mapImage": "store6.png",
       "popups": []
     },
     {
@@ -195,6 +211,7 @@
       "address": "8825 Villa La Jolla Dr, La Jolla, CA 92037",
       "storePhotos": "https://media.sandiegoreader.com/img/places/la_jolla_shores_012_t260.jpg?3de258cb5744af84a211eb26dc28fb560aae5ab6",
       "accessibilityRating": "4",
+      "mapImage": "store4.png",
       "popups": []
     },
     {
@@ -206,6 +223,7 @@
       "address": "8657 Villa La Jolla Dr, La Jolla, CA 92037",
       "storePhotos": "https://media.nbcsandiego.com/images/652*367/Ralphs-Del-Mar-Heights-Rd.jpg",
       "accessibilityRating": "3",
+      "mapImage": "store9.png",
       "popups": []
     },
     {
@@ -217,6 +235,7 @@
       "address": "7788 Regents Rd, San Diego, CA 92122",
       "storePhotos": "http://www.amgmgt.com/sites/default/files/styles/property_photo_545px/public/photos-projects/237us-university-square/237usvons-2.jpg?itok=KA4JZXtn",
       "accessibilityRating": "4",
+      "mapImage": "store2.jpg",
       "popups": []
     },
     {
@@ -228,7 +247,29 @@
       "address": "675 6th Ave San Diego CA 92101",
       "storePhotos": "http://www.welcometosandiego.com/wp-content/uploads/2010/08/Ace-Hardware-San-Diego-1024x680.jpg",
       "accessibilityRating": "3",
-      "popups": []
+      "mapImage": "store2.jpg",
+      "popups": [
+        {
+          "latitude": "-40.83544804060239",
+          "longitude": "24.25",
+          "popupText": "Hazard"
+        },
+        {
+          "latitude": "-31.5",
+          "longitude": "46.5",
+          "popupText": "Restroom"
+        },
+        {
+          "latitude": "-51.84038638454463",
+          "longitude": "22.75",
+          "popupText": "Escalator Down"
+        },
+        {
+          "latitude": "-15.923628000000008",
+          "longitude": "19.77444",
+          "popupText": "Elevator"
+        }
+      ]
     },
     {
       "name": "Coronado Hardware Glass & Paint",
@@ -239,7 +280,14 @@
       "address": "140 Orange Ave Coronado CA 92118",
       "storePhotos": "http://coronadovisitorcenter.com/static/media/uploads/lifestyle/.thumbnails/178303_383636491691987_145682180_o.jpg/178303_383636491691987_145682180_o-555x332.jpg",
       "accessibilityRating": "3",
-      "popups": []
+      "mapImage": "store10.png",
+      "popups": [
+        {
+          "latitude": "-37",
+          "longitude": "56.25",
+          "popupText": "Stairs"
+        }
+      ]
     },
     {
       "name": "Northpark Hardware",
@@ -250,6 +298,7 @@
       "address": "3090 University Ave San Diego CA 92104",
       "storePhotos": "https://s3-media3.fl.yelpcdn.com/bphoto/rm6d6J2U1BXPPTcrf_1G4A/l.jpg",
       "accessibilityRating": "3",
+      "mapImage": "store3.jpg",
       "popups": []
     },
     {
@@ -261,6 +310,7 @@
       "address": "3265 Sports Arena Blvd San Diego CA 92110",
       "storePhotos": "http://storelocator.dickssportinggoods.com/store_photos/1026-1-l.jpg",
       "accessibilityRating": "3",
+      "mapImage": "store10.jpg",
       "popups": []
     },
     {
@@ -272,6 +322,7 @@
       "address": "3027 University Ave San Diego CA 92104",
       "storePhotos": "http://www.explorenorthpark.com/wp-content/uploads/2016/07/ABSP1.png",
       "accessibilityRating": "4",
+      "mapImage": "store5.png",
       "popups": []
     },
     {
@@ -283,6 +334,7 @@
       "address": "339 &th Ave San Diego CA 92101",
       "storePhotos": "https://s3-media1.fl.yelpcdn.com/bphoto/CpYVD6cIU04aoeo0wFeXOg/o.jpg",
       "accessibilityRating": "4",
+      "mapImage": "store1.jpg",
       "popups": []
     }
   ]

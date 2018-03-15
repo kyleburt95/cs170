@@ -3,12 +3,13 @@ html {
   margin-top: 0;
 }
 #image-map {
-  height: 70vh;
+  height: 50vh;
   border: 1px solid #ccc;
   margin-bottom: 1rem;
   margin-top: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  z-index: -100;
    
 }
 
@@ -46,7 +47,7 @@ html {
 .navbar{
     float: right;
 }
-#navbarSupportedContent15{
+/*#navbarSupportedContent15{
     width: 100%;
     text-align: left;
     position: absolute;
@@ -56,7 +57,13 @@ html {
     padding-left: .5rem;
     width: 107%;
     z-index: 100;
+}*/
+
+#navbarSupportedContent15 {
+  max-width: 80%;
+  padding-left: 15em;
 }
+
 .navbar-toggler-icon{
   width:2rem;
   height:2.5rem;

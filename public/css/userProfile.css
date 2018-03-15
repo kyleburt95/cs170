@@ -2,14 +2,19 @@
 	box-sizing: border-box;
 }
 
-#facebookPhoto img {
+/*#facebookPhoto img {
 	border: 0.07em black solid;
 }
-
+*/
 .img-responsive{
-	width: 65%;
+	width: 50%;
 	height: auto;
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 2em
+    /*justify-content: center;*/
 }
+
 .contentbox{
     text-align: center;
     margin-top: 1rem;
@@ -20,6 +25,17 @@
     font-family: 'Roboto Condensed', sans-serif;
 
 }
+
+#facebookName{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.details p{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
 .row{
     width: 100%;
 }
@@ -37,17 +53,23 @@
 .navbar{
     float: right;
 }
-#navbarSupportedContent15{
-    width: 100%;
+/*#navbarSupportedContent15{
+    max-width: 80%;
     text-align: left;
     position: absolute;
     background-color: azure;
     margin-top: 7rem;
     right: 1rem;
-    padding-left: .5rem;
+    padding-left: 25rem;
     width: 107%;
     z-index: 100;
+}*/
+
+#navbarSupportedContent15 {
+    max-width: 80%;
+    padding-left: 15em;
 }
+
 .navbar-toggler-icon{
   width:2rem;
   height:2.5rem;
@@ -63,4 +85,16 @@
 #log button{
     font-family: 'Roboto Condensed', sans-serif;
 
+}
+
+.panel-body {
+    text-align: center;
+}
+
+.panel-body img {
+    text-align: center;
+}
+
+#imgProfile {
+    right: 20em !important;
 }

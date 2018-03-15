@@ -8,8 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
-  <link rel="stylesheet" type="text/css" href="/css/categories.css">  
   <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/css/categories.css">  
+
 <!--   <script defer src="/staticassets/fontawesome-all.js"></script>
 -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -67,7 +68,7 @@
 <div class="store">
 <img class="img-responsive" src="{{storePhotos}}">
   <div class="hiddenForm">
-  <form action="/storeProfile" method="post">
+  <form action="/storeProfile" method="post" id="myForm">
     <input type="hidden" name="hiddenStorePhotos" value="{{storePhotos}}">
     <input type="hidden" name="hiddenName" value="{{name}}">
     <input type="hidden" name="hiddenDescription" value="{{description}}">
@@ -80,6 +81,7 @@
     <button type="submit" id="storename"> {{name}} </button>
   </form>
 </div>
+<!-- <a id="anchorID"> -->
 <p id="accesibilityRating">Accessibility Rating: {{accessibilityRating}}</p>
    <hr id="short">
    <div class="storeinfo">
@@ -89,12 +91,24 @@
       <p id="storeHours">{{storeHours}}</p>
       <p id="priceRange">{{priceRange}}</p>
    </div>
+<!-- </a> -->
 </div>
 <hr>
 {{else}}
   <h1>Oops!</h1>
 {{/each}}
 </div>
+
+
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+    $('#anchorID').click(function(){
+      document.getElementById('myForm').submit()});
+  });
+</script>
+ -->
+
+
 <script type="text/javascript">
   $(document).ready(function() {
     $('#fName').click(function(e){
