@@ -16,6 +16,54 @@ var escalatorDownIcon = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
+var checkoutIcon = L.icon({
+    iconUrl: '/checkoutpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var closureIcon = L.icon({
+    iconUrl: '/closurepin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var escalatorUpIcon = L.icon({
+    iconUrl: '/escalatoruppin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var hazardIcon = L.icon({
+    iconUrl: '/hazardpin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var mensrestroomIcon = L.icon({
+    iconUrl: '/mensrestroompin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var stairsIcon = L.icon({
+    iconUrl: '/stairspin.png',
+
+    iconSize:     [50, 61], // size of the icon
+    iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 /**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
@@ -27,6 +75,12 @@ function onMarkerClick(e) {
   var popupText = e.target._popup.getContent();
   $('#modalText').html(popupText);
   $('#exampleModal').modal('show');
+}
+
+//function called when pin is selected from modal redirects to addToMap.handlebars
+function onModalPinClick(e) {
+  var divClicked = e.target.children('p').val();
+  alert(divClicked);
 }
 
 function toggle(array) {

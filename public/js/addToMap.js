@@ -48,7 +48,7 @@ $(document).ready(function() {
   
     
   placedPopup = L.popup()
-      .setLatLng([map.getCenter().lat, map.getCenter().lng ])
+      .setLatLng([-51, 51])
       .setContent("Type in field below to change text, and tap to change location")
       .openOn(map);
 

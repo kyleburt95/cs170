@@ -91,3 +91,7 @@ html {
 #pluspin{
     width: 1.4rem;
 }
+
+.pinHolder {
+  display: block
+}
