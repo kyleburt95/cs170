@@ -75,6 +75,33 @@ var elevatorIcon = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
+function createMarker(markerType) {
+  if(markerType === "Closure") {
+    return closureIcon;
+  }
+  else if (markerType === "Elevator") {
+    return elevatorIcon;
+  }
+  else if(markerType === "Escalator Down") {
+    return escalatorDownIcon;
+  }
+  else if(markerType === "Escalator Up") {
+    return escalatorUpIcon;
+  }
+  else if(markerType === "Hazard") {
+    return hazardIcon;
+  }
+  else if(markerType === "Restroom") {
+    return mensrestroomIcon;
+  }
+  else if(markerType === "Stairs") {
+    return stairsIcon;
+  }
+  else if(markerType === "Checkout") {
+    return checkoutIcon;
+  }
+}
+
 /**
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
@@ -266,10 +293,13 @@ $(document).ready(function() {
         var longitude = popupArray[i].longitude;
         var popupText = popupArray[i].popupText;
         
+        var markerIcon = createMarker(popupText);
+
+        
         //create container to hold button
         //var pop = "<b>" + popupText + "</b>" + "<br>" + "<button> Delete </button>"
         
-        var currentMarker = L.marker([latitude, longitude], {icon : escalatorDownIcon}).bindPopup(popupText).on('click', onMarkerClick);
+        var currentMarker = L.marker([latitude, longitude], {icon : markerIcon}).bindPopup(popupText).on('click', onMarkerClick);
         
         /**
         var currentPopup = L.popup({autoClose:false})

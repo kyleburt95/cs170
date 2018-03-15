@@ -9,7 +9,7 @@
       "address": "3793 30th St San Diego CA 92104",
       "storePhotos": "http://mctrealestategroup.com/wp-content/uploads/2017/04/Verbatim-Bookstore.jpg",
       "accessibilityRating": "3",
-      "mapImage": "bookstoreBlack.png",
+      "mapImage": "store4.png",
       "popups": [
         {
           "latitude": "-67.40486725663717",
@@ -145,7 +145,7 @@
       "address": "7007 Friars Rd #713, San Diego, CA 92108",
       "storePhotos": "https://crabtree-valley-mall.com/sites/default/files/styles/store_image/public/Commercial_Crabtree2117-3183027437-O.jpg?itok=LuII7iF4",
       "accessibilityRating": "4",
-      "mapImage": "store10.png",
+      "mapImage": "store10.jpg",
       "popups": []
     },
     {
@@ -274,6 +274,11 @@
           "latitude": "-15.923628000000008",
           "longitude": "19.77444",
           "popupText": "Elevator"
+        },
+        {
+          "latitude": "-53.25",
+          "longitude": "12",
+          "popupText": "Escalator Up"
         }
       ]
     },
@@ -286,7 +291,7 @@
       "address": "140 Orange Ave Coronado CA 92118",
       "storePhotos": "http://coronadovisitorcenter.com/static/media/uploads/lifestyle/.thumbnails/178303_383636491691987_145682180_o.jpg/178303_383636491691987_145682180_o-555x332.jpg",
       "accessibilityRating": "3",
-      "mapImage": "store10.png",
+      "mapImage": "store10.jpg",
       "popups": [
         {
           "latitude": "-37",
