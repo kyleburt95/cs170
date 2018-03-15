@@ -47,25 +47,28 @@
 <!-- Collapsible content -->
 <div class="text-center">
    {{#each projects}}
-   <div class="store">
-      <img class="img-responsive" src="{{storePhotos}}">
-      <a href="/storeProfile" id="name" value="{{name}}">
-         <h3>{{name}}</h3>
-      </a>
-      <p id="accesibilityRating">{{accesibilityRating}}</p>
-      <!--   <a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
-         -->  
-      <div class="hiddenForm">
+   <div class="hiddenForm">
          <form action="/map" method="get">
             <input type="hidden" name="hiddenAddress" value="{{address}}">
             <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
-            <button type="submit" id="buttonPreview" class="btn-outline-dark"><img class="img-responsive" src="{{mapImage}}" id="mapPreview" alt="preview"/></button>
+            <button type="submit" id="buttonPreview" class="btn-outline"><img class="img-responsive" src="{{mapImage}}" id="mapPreview" alt="preview"/></button>
             <!-- <br> -->
             <!-- <img class="img-responsive" src="{{mapImage}}" id="mapPreview" alt="preview"/> -->
 <!--             <br>
             <img src="bookstoreBlack.png" alt="preview" id="imgMap"/> -->
          </form>
       </div>
+   <div class="store">
+      <!--<img class="img-responsive" src="{{storePhotos}}">-->
+      <a href="/storeProfile" id="name" value="{{name}}">
+         <h3>{{name}}</h3>
+      </a>
+      <p id="accesibilityRating">{{accesibilityRating}}</p>
+
+
+      <!--   <a href="#"><button class="btn-outline-dark" id="try"> Click </button></a>
+         -->  
+      
       <hr id="short">
       <div class="info">
          <p id="description">{{description}}</p>
@@ -75,6 +78,7 @@
          <p id="priceRange">{{priceRange}}</p>
       </div>
       <hr id="short">
+      
       <div class="text-center" id="storeRate">
          <h6>How accessible is this store?</h6>
          <form class="star-rating">
@@ -91,14 +95,47 @@
       {{/each}}
    </div>
 </div>
-<p>Handicap Accessibility</p>
-<a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom"><i class="fa fa-info-circle"></i></a>
-<div class="btn-group mr-2" role="group" aria-label="First group" id="rating1">
-  <button type="button" class="btn btn-secondary">1</button>
-  <button type="button" class="btn btn-secondary">2</button>
-  <button type="button" class="btn btn-secondary">3</button>
-  <button type="button" class="btn btn-secondary">4</button>
-</div>
+
+
+<form>
+  <div class="switch-field">
+      <div class="rating-type switch-title">
+        <p>Handicap Accessibility</p>
+        <a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
+      </div>
+      <input type="radio" id="ha1" name="switch_1" value="1" checked/>
+      <label for="ha1">1</label>
+      <input type="radio" id="switch_3_2" name="switch_1" value="2" />
+      <label for="switch_3_2">2</label>
+      <input type="radio" id="switch_3_3" name="switch_1" value="3" />
+      <label for="switch_3_3">3</label>
+      <input type="radio" id="switch_3_4" name="switch_1" value="4" />
+      <label for="switch_3_4">4</label>
+      <input type="radio" id="switch_3_right" name="switch_1" value="5" />
+      <label for="switch_3_right">5</label>
+    </div>
+    <div class="switch-field">
+      <div class="rating-type switch-title">
+        <p>Signs and Directories</p>
+        <a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
+      </div>
+      <input type="radio" id="sd1" name="switch_2" value="1" checked/>
+      <label for="sd1">1</label>
+      <input type="radio" id="sd2" name="switch_2" value="2" />
+      <label for="sd2">2</label>
+      <input type="radio" id="sd3" name="switch_2" value="3" />
+      <label for="sd3">3</label>
+      <input type="radio" id="sd4" name="switch_2" value="4" />
+      <label for="sd4">4</label>
+      <input type="radio" id="switch_4_right" name="switch_2" value="5" />
+      <label for="switch_4_right">5</label>
+    </div>
+    
+</form>
+
+<div class="text-center">
+         <button type="submit" class="btn btn-primary mt-4" id="submit">Submit</button>
+      </div>
 
 <script>
 $(document).ready(function(){
