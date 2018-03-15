@@ -75,6 +75,11 @@
           "latitude": "-61.09889604415824",
           "longitude": "18.75",
           "popupText": "Escalator Down"
+        },
+        {
+          "latitude": "-52.8413063477461",
+          "longitude": "23.75",
+          "popupText": "Escalator Up"
         }
       ]
     },
@@ -267,6 +272,16 @@
         {
           "latitude": "-15.923628000000008",
           "longitude": "19.77444",
+          "popupText": "Elevator"
+        },
+        {
+          "latitude": "-40.830266789328434",
+          "longitude": "47.75",
+          "popupText": "Elevator"
+        },
+        {
+          "latitude": "-38.25",
+          "longitude": "47.5",
           "popupText": "Elevator"
         }
       ]
