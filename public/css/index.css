@@ -241,4 +241,8 @@ a {
   font-size: 12px;
 }
 
-
+#logoicon{
+    position: absolute;
+    height: 3rem;
+    left: 35%;
+}

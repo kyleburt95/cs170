@@ -40,6 +40,18 @@
           "longitude": "35.75",
           "popupText": "Elevator",
           "userDescription": "Elevator broken"
+        },
+        {
+          "latitude": "-41.71111197875996",
+          "longitude": "56.5",
+          "popupText": "Escalator Up",
+          "userDescription": "up"
+        },
+        {
+          "latitude": "-50.95677807277838",
+          "longitude": "56.75",
+          "popupText": "Escalator Up",
+          "userDescription": "up"
         }
       ]
     },
