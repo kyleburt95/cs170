@@ -183,7 +183,7 @@ function update() {
     
   });
   
-  alert("Popup Saved");
+  window.history.back();
 }
 
 

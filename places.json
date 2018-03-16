@@ -16,6 +16,12 @@
           "longitude": "43.5",
           "popupText": "Stairs",
           "userDescription": "These stairs only go to the third floor"
+        },
+        {
+          "latitude": "-36.326126954921804",
+          "longitude": "25.75",
+          "popupText": "Hazard",
+          "userDescription": "Floor is wet"
         }
       ]
     },
