@@ -240,5 +240,7 @@ a {
 .stars p {
   font-size: 12px;
 }
-
+.hidden {
+  display: none;
+}
 

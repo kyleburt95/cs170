@@ -47,6 +47,7 @@
 <!-- Collapsible content -->
 <div class="text-center">
  {{#each projects}}
+ <p id="hiddenRating" class="hidden">{{accessibilityRating}}</p>
  <div class="hiddenForm">
   <div class="store1">
     <a href="#" id="name" value="{{name}}">
@@ -70,7 +71,7 @@
   
 </div>
 <div class="rate">
-    <p class="num"><b>3</b> / 5</p>
+    <p class="num"><b>{{accessibilityRating}}</b> / 5</p>
     <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
   </div>
 <!--<p id="accessibilityRating">{{accessibilityRating}}</p>-->
