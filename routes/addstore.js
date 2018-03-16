@@ -53,5 +53,7 @@ exports.update = function(req, res){
   */
   fs.writeFile('places.json', JSON.stringify(places, null, 2), function(err){
     console.log("places error")
-  })
+  });
+  
+  window.history.back();
 }
