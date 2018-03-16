@@ -22,6 +22,12 @@ html {
   margin-right: 1rem;
 }
 
+
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 .row {
   margin: 4vh;
   width: 100%;
@@ -47,6 +53,29 @@ html {
 .navbar{
     float: right;
 }
+
+.modal-title{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.modal-footer
+{
+ font-family: 'Roboto Condensed', sans-serif;
+ background-color: white; */
+}
+
+/*input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:3em;
+    cursor: pointer;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: #555;
+}*/
 /*#navbarSupportedContent15{
     width: 100%;
     text-align: left;
@@ -90,7 +119,9 @@ html {
 }
 
 #checkboxes {
-  display: block
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 #pluspin{
     width: 1.4rem;

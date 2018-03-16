@@ -64,7 +64,20 @@
 
 .store {
   margin: 5% 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+
 }
+.store1 h3{
+  margin: 3% 0;
+  color: #194FA2;
+  margin-top: 5%;
+  /*font-weight: bold;*/
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+}
+
+
 
 #short {
     width: 40px;
@@ -115,6 +128,15 @@ button{
 
 }
 
+#accessibleID {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 30px;
+
+
+}
+
 .info {
   text-align: left;
   line-height: 85%;
@@ -137,9 +159,10 @@ button{
   display: flex;
 }
 .switch-field {
-
+  font-family: 'Roboto Condensed', sans-serif;
   padding-left: 40px;
-    overflow: hidden;
+  overflow: hidden;
+  font-style: 16px;
 }
 
 .switch-title {
@@ -202,10 +225,16 @@ button{
   border: 1px solid lightgray;
 }
 
+
 h3 {
   color: #194FA2;
   font-weight: bold;
   margin: 15px 0;
+}
+
+.icon {
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 #accessibilityRating {
@@ -213,9 +242,11 @@ h3 {
   color: #EBC53E;
   font-weight: bold;
 }
-#accessibleID {
+
+/*#accessibleID {
   margin-left: 30px;
-}
+
+}*/
 .progress {
   width: 55%;
   margin: 10px;

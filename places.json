@@ -28,6 +28,18 @@
           "longitude": "48.25",
           "popupText": "Restroom",
           "userDescription": "Restroom closed"
+        },
+        {
+          "latitude": "-56.59475620975161",
+          "longitude": "26.75",
+          "popupText": "Closure",
+          "userDescription": "Door closed"
+        },
+        {
+          "latitude": "-73.36016559337628",
+          "longitude": "35.75",
+          "popupText": "Elevator",
+          "userDescription": "Elevator broken"
         }
       ]
     },
