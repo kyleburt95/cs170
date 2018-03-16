@@ -232,3 +232,15 @@ h3 {
 .num {
   font-size: 10px;
 }
+.icons b {
+  font-size: 12px;
+}
+.checked {
+    color: orange;
+}
+.stars {
+  margin: 5% 0;
+}
+.stars p {
+  font-size: 12px;
+}
