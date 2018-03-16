@@ -22,6 +22,12 @@
           "longitude": "25.75",
           "popupText": "Hazard",
           "userDescription": "Floor is wet"
+        },
+        {
+          "latitude": "-40.07957681692733",
+          "longitude": "48.25",
+          "popupText": "Restroom",
+          "userDescription": "Restroom closed"
         }
       ]
     },
