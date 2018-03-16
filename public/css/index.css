@@ -235,10 +235,16 @@ a {
     color: orange;
 }
 .stars {
-  margin: 5% 0;
+  margin-bottom: 5%;
 }
 .stars p {
   font-size: 12px;
 }
-
+.hidden {
+  display: none;
+}
+.title {
+  display: flex;
+  margin-left: 32%;
+}
 
