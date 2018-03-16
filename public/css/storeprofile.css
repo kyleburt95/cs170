@@ -65,6 +65,14 @@
 .store {
   margin: 5% 0;
 }
+.store1 h3{
+  margin: 3% 0;
+  color: #194FA2;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 
 #short {
     width: 40px;
@@ -113,6 +121,12 @@ button{
   margin-top: 0.8em;
   font-family: 'Roboto Condensed', sans-serif;
 
+}
+
+#accessibleID {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 .info {
@@ -201,10 +215,7 @@ button{
   border: 1px solid lightgray;
 }
 
-h3 {
-  color: #194FA2;
-  font-weight: bold;
-}
+
 
 #accessibilityRating {
   font-size: 1.5em;
