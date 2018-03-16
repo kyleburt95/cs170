@@ -237,12 +237,20 @@
   <div id="image-map"></div>
   <div id="checkboxes" class="container-fluid boxofcheckboxes">
     <div class="row">
-      <div class="col-4">
-        Elevators
+      <div class="col-6">
+        <p>Elevators</p>
+       <!-- <input class="mapCheck" id="firstCheck" type="checkbox">-->
+        <div class="onoffswitch2">
+          <input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox" id="firstCheck" checked>
+          <label class="onoffswitch2-label" for="myonoffswitch2">
+            <span class="onoffswitch2-inner"></span>
+            <span class="onoffswitch2-switch"></span>
+          </label>
+        </div>
       </div>
-      <div class="col-2">
+      <!--<div class="col-2">
         <input class="mapCheck" id="firstCheck" type="checkbox">
-      </div>
+      </div>-->
       <div class="col-4">
         Hazard
       </div>
@@ -297,7 +305,13 @@
     </div>
     
   </div>
-  
+  {{#each popups}}
+  <div>
+    <div class="{{popupText}}">
+      <h1>{{popupText}}</h1>
+    </div>
+  </div>
+  {{/each}}
   
   
   
