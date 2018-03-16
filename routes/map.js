@@ -1,4 +1,4 @@
-var data = require("../data.json");
+var data = require("../places.json");
 var fs = require('fs');
 
 exports.view = function(req, res){
