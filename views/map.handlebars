@@ -149,73 +149,7 @@
   </div>
 -->
 
-<div class="modal fade" id="pinSelectionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Select a pin to add to the map:</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <div class="row">
-          <div id="closureModalDiv" class="pinHolder">
-            <img class="pinImage" src="closurepin.png" height="42" width="42">
-            <p>Closure</p>
-          </div>
-          <div id="elevatorModalDiv" class="pinHolder">
-            <img class="pinImage" src="elevatorpin.png" height="42" width="42">
-            <p>Elevator</p>
-           </div>
-         </div>
-         <div class="row">
-           <div class="pinHolder">
-              <img class="pinImage" src="escalatordownpin.png" height="42" width="42">
-              <p>Escalator<br>Down</p>
-            </div>
-            <div class="pinHolder">
-              <img class="pinImage" src="escalatoruppin.png" height="42" width="42">
-              <p>Escalator<br>Up</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="pinHolder">
-              <img class="pinImage" src="hazardpin.png" height="42" width="42">
-              <p>Hazard</p>
-            </div>
-            <div class="pinHolder">
-              <img class="pinImage" src="mensrestroompin.png" height="42" width="42">
-              <p>Restroom</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="pinHolder">
-              <img class="pinImage" src="stairspin.png" height="42" width="42">
-              <p>Stairs</p>
-            </div>
-            <div class="pinHolder">
-              <img class="pinImage" src="checkoutpin.png" height="42" width="42">
-              <p>Checkout</p>
-            </div>
-          </div>
-         </div>
-        </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          {{#each data}}
-          <form method="get" action="/addToMap">
-            <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
-            <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
-            <input id="hiddenMarkerType" type="hidden" name="hiddenMarkerType" value="Closure">
-            <button type="submit" class="btn btn-primary" id="place">Place Pin</button>
-          </form>
-          {{/each}}
-        </div>
-      </div>
-    </div>
-  </div>
   
   <!--
     <form method="get" action="/addToMap">
@@ -224,6 +158,83 @@
       <button type="submit" class="btn" id="addPinButton"><img id="pluspin" src="PlusPin(1).png"></button>
     </form>
   -->
+  
+  <div class="modal fade" id="pinSelectionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add a Pin to the Map</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body row">
+          <div class="container-fluid">
+              <div class="col-xs-6">
+                 <div id="closureModalDiv" class="pinHolder">
+                    <img class="pinImage" src="closurepin.png" height="42" width="42">
+                    <p>Closure</p>
+                  </div>
+              </div>
+              <div class="col-xs-6">
+                 <div id="elevatorModalDiv" class="pinHolder">
+                  <img class="pinImage" src="elevatorpin.png" height="42" width="42">
+                  <p>Elevator</p>
+                 </div>
+              </div>      
+              <div class="col-xs-6">
+                 <div class="pinHolder">
+                  <img class="pinImage" src="escalatordownpin.png" height="42" width="42">
+                  <p>Escalator Down</p>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                 <div class="pinHolder">
+                  <img class="pinImage" src="escalatoruppin.png" height="42" width="42">
+                  <p>Escalator Up</p>
+                </div>
+              </div>        
+              <div class="col-xs-6">
+                 <div class="pinHolder">
+                  <img class="pinImage" src="hazardpin.png" height="42" width="42">
+                  <p>Hazard</p>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                 <div class="pinHolder">
+                  <img class="pinImage" src="mensrestroompin.png" height="42" width="42">
+                  <p>Restroom</p>
+                </div>
+              </div>         
+              <div class="col-xs-6">
+                 <div class="pinHolder">
+                  <img class="pinImage" src="stairspin.png" height="42" width="42">
+                  <p>Stairs</p>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                 <div class="pinHolder">
+                  <img class="pinImage" src="checkoutpin.png" height="42" width="42">
+                  <p>Checkout</p>
+                </div>
+              </div>  
+           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          {{#each data}}
+          <form method="get" action="/addToMap">
+            <input id="hiddenAddress" type="hidden" name="hiddenAddress" value="{{address}}">
+            <input id="hiddenMapImage" type="hidden" name="hiddenMapImage" value="{{mapImage}}">
+            <input id="hiddenMarkerType" type="hidden" name="hiddenMarkerType" value="Closure">
+            <button type="submit" class="btn btn-primary">Place Pin</button>
+          </form>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
   <button type="button" class="btn" id="addPinButton" data-toggle="modal" data-target="#pinSelectionModal"><img id="pluspin" src="PlusPin(1).png"></button>
   <div id="image-map"></div>
   <div id="checkboxes" class="container-fluid boxofcheckboxes">

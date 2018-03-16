@@ -229,7 +229,7 @@ button{
 h3 {
   color: #194FA2;
   font-weight: bold;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 
 .icon {
@@ -255,7 +255,7 @@ h3 {
   display: flex;
 }
 #category-rating {
-  margin-left: 20%;
+  margin-left: 12%;
 }
 #category-rating i {
   width: 15px;
@@ -263,3 +263,33 @@ h3 {
 .num {
   font-size: 10px;
 }
+.icons b {
+  font-size: 12px;
+}
+.checked {
+    color: orange;
+}
+.stars {
+  margin: 5% 0;
+}
+.stars p {
+  font-size: 12px;
+}
+.modal-content h4 {
+  margin: 10% 0;
+}
+#closebtn {
+  margin-top: 10%;
+}
+.rate {
+  display: flex;
+  margin-left: 45%;
+}
+.hidden {
+  display: none;
+}
+#plus {
+  position: absolute;
+  right: 5%;
+}
+
