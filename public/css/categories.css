@@ -3,7 +3,9 @@
 }
 
 .store img {
-	width: 60%;
+    width: 60%;
+    height: 25vh;
+
 }
 
 #title b{
@@ -120,4 +122,3 @@ font-family: 'Roboto Condensed', sans-serif;
     top: .5rem;
     align-self: center;
 }
-
