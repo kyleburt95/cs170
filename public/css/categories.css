@@ -114,4 +114,10 @@ font-family: 'Roboto Condensed', sans-serif;
 #title {
     text-align: center;
 }
+#appnamelogo{
+    height: 3rem;
+    position: absolute;
+    top: .5rem;
+    align-self: center;
+}
 

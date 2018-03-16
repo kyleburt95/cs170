@@ -110,7 +110,7 @@ button{
 
 
 .store h3 {
-  margin-top: 20px;
+  margin-top: 0.8em;
   font-family: 'Roboto Condensed', sans-serif;
 
 }
@@ -199,4 +199,15 @@ button{
 .btn-outline {
   margin: 10px;
   border: 1px solid lightgray;
+}
+
+h3 {
+  color: #194FA2;
+  font-weight: bold;
+}
+
+#accessibilityRating {
+  font-size: 1.5em;
+  color: #EBC53E;
+  font-weight: bold;
 }
