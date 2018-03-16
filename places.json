@@ -40,6 +40,30 @@
           "longitude": "35.75",
           "popupText": "Elevator",
           "userDescription": "Elevator broken"
+        },
+        {
+          "latitude": "-17.55887764489421",
+          "longitude": "24.5",
+          "popupText": "Restroom",
+          "userDescription": "Bathroom closed"
+        },
+        {
+          "latitude": "-30.32060717571298",
+          "longitude": "13",
+          "popupText": "Escalator Up",
+          "userDescription": "Escalator closed"
+        },
+        {
+          "latitude": "-53.341766329346825",
+          "longitude": "49.5",
+          "popupText": "Stairs",
+          "userDescription": "Stairs are wet"
+        },
+        {
+          "latitude": "-44.08325666973322",
+          "longitude": "86.5",
+          "popupText": "Checkout",
+          "userDescription": "Checkout Stand"
         }
       ]
     },
