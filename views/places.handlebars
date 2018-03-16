@@ -82,8 +82,20 @@
     <button type="submit" id="storename"> {{name}} </button>
   </form>
 </div>
-<!-- <a id="anchorID"> -->
-<p id="accesibilityRating">Accessibility Rating: {{accessibilityRating}}</p>
+<!-- <a id="anchorID">
+<p id="accesibilityRating">Accessibility Rating: {{accessibilityRating}}</p> -->
+<!--<p id="hiddenRating" class="hidden">{{accessibilityRating}}</p>-->
+<div class="stars" id="stars">
+  <span class="fa fa-star fa-2x checked"></span>
+  <span class="fa fa-star fa-2x checked"></span>
+  <span class="fa fa-star fa-2x checked"></span>
+  <span class="fa fa-star fa-2x"></span>
+  <span class="fa fa-star fa-2x"></span>
+  <div class="rate">
+    <p class="num"><b>{{accessibilityRating}}</b> / 5</p>
+    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
+  </div>
+</div>
    <hr id="short">
    <div class="storeinfo">
       <p id="description">{{description}}</p>
@@ -97,7 +109,10 @@
 <hr>
 {{else}}
   <h1>Oops!</h1>
-  <i class="fa fa-frown fa-8x"></i>
+  <br>
+  <i class="fa fa-frown fa-8x"></i><br><br>
+  <a class="btn btn-primary" href="/page_B" role="button">Back to home</a>
+<!--   <button type="button" class="btn-primary" style="text-align: center" id="homebutton"> Go back to home page! </a> -->
 
 {{/each}}
 </div>
@@ -166,6 +181,21 @@
        return null;
       }
   });
+  var rating = $('#hiddenRating').html();
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover(); 
+      $('#submit').click(function(){
+        document.getElementById('rating').reset();
+      });
+      var starsHtml = '';
+      for (var i = 0; i < rating; i++){
+        starsHtml += '<span class="fa fa-star fa-2x checked"></span>'
+      }
+      for (var i = 0; i < 5 - rating; i++){
+        starsHtml += '<span class="fa fa-star fa-2x"></span>'
+      }
+      $("#stars").html(starsHtml);
+    });
 </script>
 <!--   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

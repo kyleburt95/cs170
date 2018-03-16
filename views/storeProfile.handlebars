@@ -61,19 +61,24 @@
   <input type="radio" name="rating" value="4"><i></i>
   <input type="radio" name="rating" value="5"><i></i>
 </div>-->
-<div class="stars">
+<div class="stars" id="stars">
   <span class="fa fa-star fa-2x checked"></span>
   <span class="fa fa-star fa-2x checked"></span>
   <span class="fa fa-star fa-2x checked"></span>
   <span class="fa fa-star fa-2x"></span>
   <span class="fa fa-star fa-2x"></span>
-  <p class="num"><b>3</b> / 5</p>
+  
 </div>
+<div class="rate">
+    <p class="num"><b>3</b> / 5</p>
+    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
+  </div>
 <!--<p id="accessibilityRating">{{accessibilityRating}}</p>-->
 <div class="icons" id="category-rating">
   <div class="cat-rating mx-auto">
     <i class="fab fa-accessible-icon fa-2x"></i>
-    <i class="fa fa-question-circle" style="color: lightgray;"></i>
+    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
+    
       <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:78%">
@@ -84,7 +89,7 @@
   </div>
   <div class="cat-rating mx-auto">
     <i class="fas fa-universal-access fa-2x"></i>
-    <i class="fa fa-question-circle" style="color: lightgray;"></i>
+    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
       <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:64%">
@@ -95,7 +100,7 @@
   </div>
   <div class="cat-rating mx-auto">
     <i class="fas fa-blind fa-2x"></i>
-    <i class="fa fa-question-circle" style="color: lightgray;"></i>
+    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
       <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:84%">
@@ -104,7 +109,7 @@
     </div>
     <p class="num"><b>4.2</b> / 5</p>
   </div>
-
+</div>
 </div>
 
 
@@ -112,7 +117,8 @@
 <form action="/map" method="get">
   <input type="hidden" name="hiddenAddress" value="{{address}}">
   <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
-  <button type="submit" id="buttonPreview" class="btn-outline"><img class="img-responsive" src="{{mapImage}}" id="mapPreview" alt="preview"/></button>
+  <button type="submit" id="buttonPreview" class="btn-outline"><img class="img-responsive" src="{{mapImage}}" id="mapPreview" alt="preview"/>
+    <i class="fa fa-search-plus" id="plus"></i></button>
   <!-- <br> -->
   <!-- <img class="img-responsive" src="{{mapImage}}" id="mapPreview" alt="preview"/> -->
 <!--             <br>
@@ -137,6 +143,7 @@
        <p id="phoneNumber">{{phoneNumber}}</p>
        <p id="storeHours">{{storeHours}} <b style="font-size:1.3em;">&nbsp;&nbsp; &bull; &nbsp;&nbsp;{{priceRange}}</b> </p>
        <!--          <p id="priceRange">{{priceRange}}</p> -->
+       <p id="hiddenRating" class="hidden">{{accessibilityRating}}</p>
      </div>
      <hr id="short">
 
@@ -209,6 +216,7 @@
   </div>
       <div class="modal-body text-center">
         <h4>Thanks for your feedback!</h4>
+        <i class="far fa-smile fa-4x"></i><br>
         <button type="button" class="btn btn-primary" data-dismiss="modal" id="closebtn">Close</button>
       </div>
 
@@ -223,8 +231,34 @@
       document.getElementById('rating').reset();
     });
   });
-
+  var rating = $('#hiddenRating').html();
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+    $('#submit').click(function(){
+      document.getElementById('rating').reset();
+    });
+    var starsHtml = '';
+    for (var i = 0; i < rating; i++){
+      starsHtml += '<span class="fa fa-star fa-2x checked"></span>'
+    }
+    for (var i = 0; i < 5 - rating; i++){
+      starsHtml += '<span class="fa fa-star fa-2x"></span>'
+    }
+    $("#stars").html(starsHtml);
+  });
 </script>
+
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+    $("#submit").click(message)
+  });
+
+  function message() {
+    window.alert("Thanks for submitting");
+    
+  }
+</script> -->
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/css/star-rating.min.css" />
