@@ -231,5 +231,14 @@ a {
     top: 85vh;
     left: 0;
 }
+.checked {
+    color: orange;
+}
+.stars {
+  margin: 5% 0;
+}
+.stars p {
+  font-size: 12px;
+}
 
 
