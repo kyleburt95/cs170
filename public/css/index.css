@@ -235,7 +235,7 @@ a {
     color: orange;
 }
 .stars {
-  margin: 5% 0;
+  margin-bottom: 5%;
 }
 .stars p {
   font-size: 12px;
@@ -246,3 +246,11 @@ a {
     height: 3rem;
     left: 35%;
 }
+.hidden {
+  display: none;
+}
+.title {
+  display: flex;
+  margin-left: 32%;
+}
+

@@ -47,6 +47,7 @@
 <!-- Collapsible content -->
 <div class="text-center">
  {{#each projects}}
+ <p id="hiddenRating" class="hidden">{{accessibilityRating}}</p>
  <div class="hiddenForm">
   <div class="store1">
     <a href="#" id="name" value="{{name}}">
@@ -70,14 +71,14 @@
   
 </div>
 <div class="rate">
-    <p class="num"><b>3</b> / 5</p>
-    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
+    <p class="num"><b>{{accessibilityRating}}</b> / 5</p>
+    <a data-toggle="popover" title="Accessibility Rating" data-content="Takes into account the ratings for physical handicap accessibility, staff availability, and visual assistance" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
   </div>
 <!--<p id="accessibilityRating">{{accessibilityRating}}</p>-->
 <div class="icons" id="category-rating">
   <div class="cat-rating mx-auto">
     <i class="fab fa-accessible-icon fa-2x"></i>
-    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
+    <a data-toggle="popover" title="Physical Handicap Accessibilty" data-content="The establishment provides wheelchair ramps, functional elevators, and accessible walkways" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
     
       <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -89,7 +90,7 @@
   </div>
   <div class="cat-rating mx-auto">
     <i class="fas fa-universal-access fa-2x"></i>
-    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
+    <a data-toggle="popover" title="Staff Availability" data-content="The establishment provides knowledgable staff who readily can readily provide assistance to customers" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
       <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:64%">
@@ -99,8 +100,8 @@
     <p class="num"><b>3.2</b> / 5</p>
   </div>
   <div class="cat-rating mx-auto">
-    <i class="fas fa-blind fa-2x"></i>
-    <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
+    <i class="fas fa-eye fa-2x"></i>
+    <a data-toggle="popover" title="Visual Assistance" data-content="The quantity, quality and placement of signs in the establishment" data-placement="bottom" data-placement="bottom" class="ml-2"><i class="fa fa-question-circle fa-sm" style="color: lightgray;"></i></a>
       <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:84%">
@@ -164,12 +165,12 @@
  </div>
 </div>
 
-<h4 id="accessibleID">How accessible is this store?</h4>
+<h4 id="accessibleID"><b>How accessible is this store?</b></h4>
 <form id="rating">
   <div class="switch-field">
     <div class="rating-type switch-title">
-      <p>Handicap Accessibility</p>
-      <a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
+      <p><i class="fab fa-accessible-icon fa-lg"></i> Physical Handicap Accessibility</p>
+      <a data-toggle="popover" title="Physical Handicap Accessibility" data-content="The establishment provides wheelchair ramps, functional elevators, and accessible walkways" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
     </div>
     <input type="radio" id="ha1" name="switch_1" value="1" checked/>
     <label for="ha1">1</label>
@@ -184,8 +185,8 @@
   </div>
   <div class="switch-field">
     <div class="rating-type switch-title">
-      <p>Signs and Directories</p>
-      <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
+      <p><i class="fas fa-universal-access fa-lg"></i> Staff Availability</p>
+      <a data-toggle="popover" title="Staff Availability" data-content="The establishment provides knowledgable staff who readily can readily provide assistance to customers" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
     </div>
     <input type="radio" id="sd1" name="switch_2" value="1" checked/>
     <label for="sd1">1</label>
@@ -196,6 +197,22 @@
     <input type="radio" id="sd4" name="switch_2" value="4" />
     <label for="sd4">4</label>
     <input type="radio" id="switch_4_right" name="switch_2" value="5" />
+    <label for="switch_4_right">5</label>
+  </div>
+  <div class="switch-field">
+    <div class="rating-type switch-title">
+      <p><i class="fas fa-eye fa-lg"></i> Visual Assistance</p>
+      <a data-toggle="popover" title="Visual Assistance" data-content="The quantity, quality and placement of signs in the establishment" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
+    </div>
+    <input type="radio" id="va1" name="switch_3" value="1" checked/>
+    <label for="va1">1</label>
+    <input type="radio" id="va2" name="switch_3" value="2" />
+    <label for="va2">2</label>
+    <input type="radio" id="va3" name="switch_3" value="3" />
+    <label for="va3">3</label>
+    <input type="radio" id="va4" name="switch_3" value="4" />
+    <label for="va4">4</label>
+    <input type="radio" id="switch_5_right" name="switch_2" value="5" />
     <label for="switch_4_right">5</label>
   </div>
 
