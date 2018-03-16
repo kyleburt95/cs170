@@ -42,18 +42,7 @@
           "userDescription": "Elevator broken"
         },
         {
-<<<<<<< HEAD
-          "latitude": "-41.71111197875996",
-          "longitude": "56.5",
-          "popupText": "Escalator Up",
-          "userDescription": "up"
-        },
-        {
-          "latitude": "-50.95677807277838",
-          "longitude": "56.75",
-          "popupText": "Escalator Up",
-          "userDescription": "up"
-=======
+
           "latitude": "-17.55887764489421",
           "longitude": "24.5",
           "popupText": "Restroom",
@@ -76,7 +65,7 @@
           "longitude": "86.5",
           "popupText": "Checkout",
           "userDescription": "Checkout Stand"
->>>>>>> f221933ade7a3500519a944904ead0fa46b040cc
+
         }
       ]
     },
