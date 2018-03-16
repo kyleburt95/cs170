@@ -7,7 +7,7 @@
 }
 */
 .img-responsive{
-	width: 50%;
+	max-width: 50%;
 	height: auto;
     text-align: center;
     margin-top: 1em;
