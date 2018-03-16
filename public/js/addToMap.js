@@ -171,11 +171,13 @@ function update() {
   //var popupText = $('#popups option:selected').text();
   var popupText = $('#hiddenMarkerType').val();
   var address = $('#hiddenAddress').val();
+  var userDescription = $('#userDescription').val();
   $.post('/addToMap/update', {
     "lat" : lat,
     "lng" : lng,
     "popupText" : popupText,
-    "address" : address
+    "address" : address,
+    "userDescription" : userDescription
   }, function() {
     console.log('update')
     
