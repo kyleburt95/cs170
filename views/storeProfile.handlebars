@@ -48,13 +48,35 @@
 <div class="text-center">
  {{#each projects}}
  <div class="hiddenForm">
-  <div class="store">
-  <a href="/storeProfile" id="name" value="{{name}}">
-   <h3>{{name}}</h3>
- </a>
+  <div class="store1">
+    <a href="#" id="name" value="{{name}}">
+     <h3>{{name}}</h3>
+   </a>
 </div>
- <p id="accessibilityRating">{{accessibilityRating}}</p>
- <form action="/map" method="get">
+<p id="accessibilityRating">{{accessibilityRating}}</p>
+<div class="btn-group table container-fluid" id="accesibilityIcon">
+  <div class="row" id="icon-row">
+    <div class="col-xs-3" id="icon1">
+    <span class="iconsAccessibility">
+    <i class="fab fa-accessible-icon"></i><!-- <br><p style="font-size: 0.5em">Handicap Accessibility</p> -->
+    </span>
+  </div>
+    <div class="row" id="icon-row">
+    <div class="col-xs-3" id="icon1">
+    <span class="iconsAccessibility">
+    <i class="fas fa-universal-access"></i><!-- <br><p style="font-size: 0.5em">Handicap Accessibility</p> -->
+    </span>
+  </div>
+</div>
+    <div class="row" id="icon-row">
+    <div class="col-xs-3" id="icon1">
+    <span class="iconsAccessibility">
+    <i class="fas fa-blind"></i><!-- <br><p style="font-size: 0.5em">Handicap Accessibility</p> -->
+    </span>
+  </div>
+
+</div>
+<form action="/map" method="get">
   <input type="hidden" name="hiddenAddress" value="{{address}}">
   <input type="hidden" name="hiddenMapImage" value="{{mapImage}}">
   <button type="submit" id="buttonPreview" class="btn-outline"><img class="img-responsive" src="{{mapImage}}" id="mapPreview" alt="preview"/></button>
@@ -85,7 +107,7 @@
      </div>
      <hr id="short">
 
-     <div class="text-center" id="storeRate">
+   <!--  <div class="text-center" id="storeRate">
        <h6>How accessible is this store?</h6>
        <form class="star-rating">
         <input type="radio" name="rating" value="1"><i></i>
@@ -97,12 +119,12 @@
     </div>
     <div class="text-center">
      <button type="submit" class="btn btn-primary mt-4" id="submit">Submit</button>
-   </div>
+   </div>-->
    {{/each}}
  </div>
 </div>
 
-
+<h6 id="accessibleID">How accessible is this store?</h6>
 <form>
   <div class="switch-field">
     <div class="rating-type switch-title">
