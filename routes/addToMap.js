@@ -29,7 +29,8 @@ exports.update = function(req, res) {
   var longitude = req.body['lng'];
   var popupText = req.body['popupText'];
   var address = req.body['address'];
-  var newPopup = {"latitude" : latitude, "longitude" : longitude, "popupText" : popupText};
+  var userDescription = req.body['userDescription'];
+  var newPopup = {"latitude" : latitude, "longitude" : longitude, "popupText" : popupText, "userDescription" : userDescription};
   for(storeCategory in test) {
     var array = test[storeCategory];
     //console.log(array);

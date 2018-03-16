@@ -12,74 +12,16 @@
       "mapImage": "bookstoreBlack.png",
       "popups": [
         {
-          "latitude": "-67.40486725663717",
-          "longitude": "7.242008083777328",
-          "popupText": "Elevator"
+          "latitude": "-20.811867525298993",
+          "longitude": "43.5",
+          "popupText": "Stairs",
+          "userDescription": "These stairs only go to the third floor"
         },
         {
-          "latitude": "-58.90398230088496",
-          "longitude": "8.236068404371068",
-          "popupText": "Elevator"
-        },
-        {
-          "latitude": "-21.824336283185843",
-          "longitude": "30.71584512039358",
-          "popupText": "Hazard"
-        },
-        {
-          "latitude": "-25.577433628318587",
-          "longitude": "60",
-          "popupText": "Restroom"
-        },
-        {
-          "latitude": "-23.573893805309737",
-          "longitude": "40",
-          "popupText": "Closure"
-        },
-        {
-          "latitude": "-18.56504424778761",
-          "longitude": "27.5",
-          "popupText": "Restroom"
-        },
-        {
-          "latitude": "-24.568888888888893",
-          "longitude": "88.5",
-          "popupText": "Stairs"
-        },
-        {
-          "latitude": "-23.066716641679164",
-          "longitude": "5.25",
-          "popupText": "Closure"
-        },
-        {
-          "latitude": "-16.05622188905547",
-          "longitude": "51.5",
-          "popupText": "Restroom"
-        },
-        {
-          "latitude": "-10.0472263868066",
-          "longitude": "57.75",
-          "popupText": "Checkout"
-        },
-        {
-          "latitude": "-45",
-          "longitude": "41.5",
-          "popupText": "RestroomStairs"
-        },
-        {
-          "latitude": "-20.25",
-          "longitude": "41",
-          "popupText": "Closure"
-        },
-        {
-          "latitude": "-61.09889604415824",
-          "longitude": "18.75",
-          "popupText": "Escalator Down"
-        },
-        {
-          "latitude": "-52.8413063477461",
-          "longitude": "23.75",
-          "popupText": "Escalator Up"
+          "latitude": "-36.326126954921804",
+          "longitude": "25.75",
+          "popupText": "Hazard",
+          "userDescription": "Floor is wet"
         }
       ]
     },
@@ -93,18 +35,7 @@
       "storePhotos": "https://pics.librarything.com/picsizes/61/12/6112ebf293fd6dc63756a6541674259416c6743.jpg",
       "accessibilityRating": "3",
       "mapImage": "store6.png",
-      "popups": [
-        {
-          "latitude": "-58.38893805309735",
-          "longitude": "34.47814517536207",
-          "popupText": "Escalator Up"
-        },
-        {
-          "latitude": "-68.63407407407406",
-          "longitude": "8.75",
-          "popupText": "Elevator"
-        }
-      ]
+      "popups": []
     },
     {
       "name": "Hoboes",
@@ -116,18 +47,7 @@
       "storePhotos": "http://lgbtweekly.com/wp-content/uploads/2013/06/bluestocking2.jpg",
       "accessibilityRating": "4",
       "mapImage": "store4.png",
-      "popups": [
-        {
-          "latitude": "-45.115486725663715",
-          "longitude": "48.9689968767224",
-          "popupText": "Restroom"
-        },
-        {
-          "latitude": "-6.5",
-          "longitude": "51",
-          "popupText": "Elevator"
-        }
-      ]
+      "popups": []
     },
     {
       "name": "Zara",
@@ -175,13 +95,7 @@
       "storePhotos": "https://daks2k3a4ib2z.cloudfront.net/58a441f90f46d5e57d3de8f3/58f89d27e995e01c51e7e888_001-(1).jpg",
       "accessibilityRating": "3",
       "mapImage": "store3.jpg",
-      "popups": [
-        {
-          "latitude": "-64.5",
-          "longitude": "28.25",
-          "popupText": "Stairs"
-        }
-      ]
+      "popups": []
     },
     {
       "name": "Ross Dress For Less",
@@ -217,13 +131,7 @@
       "storePhotos": "https://media.sandiegoreader.com/img/places/la_jolla_shores_012_t260.jpg?3de258cb5744af84a211eb26dc28fb560aae5ab6",
       "accessibilityRating": "4",
       "mapImage": "store4.png",
-      "popups": [
-        {
-          "latitude": "-32.5",
-          "longitude": "72.5",
-          "popupText": "Stairs"
-        }
-      ]
+      "popups": []
     },
     {
       "name": "Ralphs",
@@ -261,54 +169,16 @@
       "mapImage": "store2.jpg",
       "popups": [
         {
-          "latitude": "-40.83544804060239",
-          "longitude": "24.25",
-          "popupText": "Hazard"
+          "latitude": "-15.807267709291636",
+          "longitude": "26.75",
+          "popupText": "Escalator Down",
+          "userDescription": "Escalator is broken"
         },
         {
-          "latitude": "-31.5",
-          "longitude": "46.5",
-          "popupText": "Restroom"
-        },
-        {
-          "latitude": "-51.84038638454463",
-          "longitude": "22.75",
-          "popupText": "Escalator Down"
-        },
-        {
-          "latitude": "-15.923628000000008",
-          "longitude": "19.77444",
-          "popupText": "Elevator"
-        },
-        {
-          "latitude": "-40.830266789328434",
-          "longitude": "47.75",
-          "popupText": "Elevator"
-        },
-        {
-          "latitude": "-38.25",
-          "longitude": "47.5",
-          "popupText": "Elevator"
-        },
-        {
-          "latitude": "-9.801747930082797",
-          "longitude": "58",
-          "popupText": "Checkout"
-        },
-        {
-          "latitude": "-24",
-          "longitude": "14",
-          "popupText": "Closure"
-        },
-        {
-          "latitude": "-29",
-          "longitude": "79",
-          "popupText": "Closure"
-        },
-        {
-          "latitude": "-9.551517939282434",
-          "longitude": "87.75",
-          "popupText": "Stairs"
+          "latitude": "-14.55611775528979",
+          "longitude": "85.5",
+          "popupText": "Escalator Down",
+          "userDescription": "This escalator is working"
         }
       ]
     },
@@ -322,18 +192,7 @@
       "storePhotos": "http://coronadovisitorcenter.com/static/media/uploads/lifestyle/.thumbnails/178303_383636491691987_145682180_o.jpg/178303_383636491691987_145682180_o-555x332.jpg",
       "accessibilityRating": "3",
       "mapImage": "store10.jpg",
-      "popups": [
-        {
-          "latitude": "-37",
-          "longitude": "56.25",
-          "popupText": "Stairs"
-        },
-        {
-          "latitude": "-51",
-          "longitude": "27.25",
-          "popupText": "Elevator"
-        }
-      ]
+      "popups": []
     },
     {
       "name": "Northpark Hardware",

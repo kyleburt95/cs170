@@ -110,8 +110,12 @@ function onMapClick(e) {
 
 function onMarkerClick(e) {
   e.target.closePopup();
-  var popupText = e.target._popup.getContent();
-  $('#modalText').html(popupText);
+  var popupContent = e.target._popup.getContent();
+  popupContent = popupContent.split('>');
+  var userDescription = popupContent[0];
+  var modalTitle = popupContent[1];
+  $('#modalText').html(userDescription);
+  $('#exampleModalLabel').html(modalTitle);
   $('#exampleModal').modal('show');
 }
 
@@ -292,14 +296,15 @@ $(document).ready(function() {
         var latitude = popupArray[i].latitude;
         var longitude = popupArray[i].longitude;
         var popupText = popupArray[i].popupText;
-        
+        var userDescription = popupArray[i].userDescription;
+        console.log(userDescription);
         var markerIcon = createMarker(popupText);
 
         
         //create container to hold button
         //var pop = "<b>" + popupText + "</b>" + "<br>" + "<button> Delete </button>"
         
-        var currentMarker = L.marker([latitude, longitude], {icon : markerIcon}).bindPopup(popupText).on('click', onMarkerClick);
+        var currentMarker = L.marker([latitude, longitude], {icon : markerIcon}).bindPopup(userDescription+'>' + popupText).on('click', onMarkerClick);
         
         /**
         var currentPopup = L.popup({autoClose:false})

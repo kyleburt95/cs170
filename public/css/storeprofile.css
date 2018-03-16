@@ -151,8 +151,8 @@ button{
   display: flex;
 }
 .switch-field {
-  
-  padding: 40px;
+
+  padding-left: 40px;
     overflow: hidden;
 }
 
@@ -198,7 +198,8 @@ button{
 }
 
 .switch-field input:checked + label {
-  background-color: #A5DC86;
+  background-color: #194FA2;
+  color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -216,9 +217,34 @@ button{
 }
 
 
+h3 {
+  color: #194FA2;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
 
 #accessibilityRating {
   font-size: 1.5em;
   color: #EBC53E;
   font-weight: bold;
+}
+#accessibleID {
+  margin-left: 30px;
+}
+.progress {
+  width: 55%;
+  margin: 10px;
+}
+.cat-rating {
+  display: flex;
+}
+#category-rating {
+  margin-left: 20%;
+}
+#category-rating i {
+  width: 15px;
+}
+.num {
+  font-size: 10px;
 }
