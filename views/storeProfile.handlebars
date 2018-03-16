@@ -53,29 +53,51 @@
      <h3>{{name}}</h3>
    </a>
 </div>
-<p id="accessibilityRating">{{accessibilityRating}}</p>
-<div class="btn-group table container-fluid" id="accesibilityIcon">
-  <div class="row" id="icon-row">
-    <div class="col-xs-3" id="icon1">
-    <span class="iconsAccessibility">
-    <i class="fab fa-accessible-icon"></i><!-- <br><p style="font-size: 0.5em">Handicap Accessibility</p> -->
-    </span>
+
+<div class="star-rating">
+  <input type="radio" name="rating" value="1"><i></i>
+  <input type="radio" name="rating" value="2"><i></i>
+  <input type="radio" name="rating" value="3"><i></i>
+  <input type="radio" name="rating" value="4"><i></i>
+  <input type="radio" name="rating" value="5"><i></i>
+</div>
+
+<!--<p id="accessibilityRating">{{accessibilityRating}}</p>-->
+<div class="icons" id="category-rating">
+  <div class="cat-rating mx-auto">
+    <i class="fab fa-accessible-icon fa-lg"></i>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:78%">
+        <span class="sr-only">70% Complete</span>
+      </div>
+    </div>
+    <p class="num">3.9/5</p>
+  </div>
+  <div class="cat-rating mx-auto">
+    <i class="fas fa-universal-access fa-lg"></i>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:64%">
+        <span class="sr-only">70% Complete</span>
+      </div>
+    </div>
+    <p class="num">3.2/5</p>
+  </div>
+  <div class="cat-rating mx-auto">
+    <i class="fas fa-blind fa-lg"></i>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:84%">
+        <span class="sr-only">70% Complete</span>
+      </div>
+    </div>
+    <p class="num">4.2/5</p>
   </div>
 </div>
-    <div class="row" id="icon-row">
-    <div class="col-xs-3" id="icon1">
-    <span class="iconsAccessibility">
-    <i class="fas fa-universal-access"></i><!-- <br><p style="font-size: 0.5em">Handicap Accessibility</p> -->
-    </span>
-  </div>
 </div>
-    <div class="row" id="icon-row">
-    <div class="col-xs-3" id="icon1">
-    <span class="iconsAccessibility">
-    <i class="fas fa-blind"></i><!-- <br><p style="font-size: 0.5em">Handicap Accessibility</p> -->
-    </span>
-  </div>
-</div>
+
+
 </div>
 <form action="/map" method="get">
   <input type="hidden" name="hiddenAddress" value="{{address}}">
@@ -125,7 +147,7 @@
  </div>
 </div>
 
-<h6 id="accessibleID">How accessible is this store?</h6>
+<h4 id="accessibleID">How accessible is this store?</h4>
 <form>
   <div class="switch-field">
     <div class="rating-type switch-title">
@@ -146,7 +168,7 @@
   <div class="switch-field">
     <div class="rating-type switch-title">
       <p>Signs and Directories</p>
-      <a data-toggle="popover" title="Handicap Accessibility" data-content="Information on accessibility" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
+      <a data-toggle="popover" title="Signs and Directories" data-content="Signs and Directories" data-placement="bottom" class="ml-2"><i class="fa fa-info-circle"></i></a>
     </div>
     <input type="radio" id="sd1" name="switch_2" value="1" checked/>
     <label for="sd1">1</label>
