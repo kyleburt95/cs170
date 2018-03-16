@@ -9,7 +9,11 @@
     padding-left: 1.4rem;
     font-size: 1.4rem;
     font-family: 'Roboto Condensed', sans-serif;
-
+    height: 5%;
+}
+.mb-5{
+    width: 75%;
+    left: 12%;
 }
 
 /*
@@ -18,7 +22,6 @@
   display: inline-block;
 }
 */
-
 input {
   display: block
   padding: 0.2px;
@@ -168,6 +171,7 @@ a {
 #contentBox{
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px;
 
 }
 .contentbox{
@@ -214,13 +218,7 @@ a {
 }
 #logobox{
     background-color: #e5e5e5;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    height: 39%;
+    height: 40vh;
 
 }
 #buttonbox{
@@ -230,7 +228,7 @@ a {
 }
 .addstorelink{
     position: absolute;
-    top: 80%;
+    top: 85vh;
     left: 0;
 }
 
